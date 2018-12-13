@@ -282,16 +282,6 @@ h1 {
       box-sizing: border-box;
       width: 50%;
       float: left; }
-    .tile-list .ai,
-    .tile-list .center,
-    .tile-list .news-first,
-    .tile-list .social-media-block {
-      padding-right: 7px; }
-    .tile-list .office-process,
-    .tile-list .agency,
-    .tile-list .news-archive,
-    .tile-list .work {
-      padding-left: 7px; }
     .tile-list .taxes {
       position: relative;
       width: 100%; }
@@ -845,6 +835,16 @@ ul {
   .main-content .news-archive:hover {
     cursor: pointer;
     background: #496299; }
+  .main-content .tile-list .ai,
+  .main-content .tile-list .center,
+  .main-content .tile-list .news-first,
+  .main-content .tile-list .social-media-block {
+    padding-right: 2px; }
+  .main-content .tile-list .office-process,
+  .main-content .tile-list .agency,
+  .main-content .tile-list .news-archive,
+  .main-content .tile-list .work {
+    padding-left: 2px; }
   .main-content .tile-list .horizontal-block .expanded-description-block {
     padding: 25px 30px;
     background-color: #fff; }
@@ -907,10 +907,24 @@ ul {
   .menu-column:last-child {
     padding: 0; }
 
+@media (min-width: 600px) {
+  .main-content .one-column {
+    padding-left: 15px;
+    padding-right: 15px; } }
 @media (min-width: 720px) {
-  .one-column {
+  .main-content .one-column {
     padding-left: 25px;
     padding-right: 25px; }
+  .main-content .tile-list .ai,
+  .main-content .tile-list .center,
+  .main-content .tile-list .news-first,
+  .main-content .tile-list .social-media-block {
+    padding-right: 7px; }
+  .main-content .tile-list .office-process,
+  .main-content .tile-list .agency,
+  .main-content .tile-list .news-archive,
+  .main-content .tile-list .work {
+    padding-left: 7px; }
 
   .footer-main {
     padding-top: 55px;

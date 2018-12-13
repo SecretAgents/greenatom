@@ -339,18 +339,6 @@ h1 {
     &-item {
       @include span(3 of 6 first no-gutter);
     }
-    .ai,
-    .center,
-    .news-first,
-    .social-media-block {
-      padding-right: 7px;
-    }
-    .office-process,
-    .agency,
-    .news-archive,
-    .work {
-      padding-left: 7px;
-    }
     .taxes {
       position: relative;
       width: 100%;

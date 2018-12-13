@@ -183,6 +183,19 @@ ul {
     }
   }
   .tile-list {
+    .ai,
+    .center,
+    .news-first,
+    .social-media-block {
+      padding-right: 2px;
+    }
+
+    .office-process,
+    .agency,
+    .news-archive,
+    .work {
+      padding-left: 2px;
+    }
     .horizontal-block {
       .expanded-description-block {
         padding: 25px 30px;
@@ -279,11 +292,35 @@ ul {
     padding: 0;
   }
 }
-
+@include breakpoint(600px, 6) {
+  .main-content {
+    .one-column {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
 @include breakpoint(720px, 6) {
-  .one-column {
-    padding-left: 25px;
-    padding-right: 25px;
+  .main-content {
+    .one-column {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .tile-list {
+      .ai,
+      .center,
+      .news-first,
+      .social-media-block {
+        padding-right: 7px;
+      }
+
+      .office-process,
+      .agency,
+      .news-archive,
+      .work {
+        padding-left: 7px;
+      }
+    }
   }
   .footer-main {
     padding-top: 55px;
