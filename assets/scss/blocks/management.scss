@@ -1,0 +1,87 @@
+@import '../config/_base';
+@import "../../../node_modules/susy/sass/susy";
+@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+
+
+.main-content-wrapper {
+  background: white;
+}
+
+.menu-open {
+  display: none;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  right: 20px;
+  margin-top: -28px;
+  img {
+    margin-top: 10px;
+  }
+}
+
+.additional-menu {
+  .menu-header {
+    display: none;
+  }
+}
+
+.users-list {
+  margin-top: 60px;
+  margin-bottom: 90px;
+  .users-list-item {
+    margin-bottom: 30px;
+    .user-name {
+      margin-top: 20px;
+    }
+    .user-position {
+      margin: 10px 0px;
+    }
+  }
+  .user-avatar {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@include breakpoint(480px, 6) {
+  .menu-open {
+    right: 35px;
+  }
+
+  .users-list {
+    .users-list-item {
+      @include span(3 of 6);
+    }
+  }
+}
+
+@include breakpoint(720px, 6) {
+  .users-list {
+    .users-list-item {
+      @include span(2 of 6);
+    }
+  }
+}
+
+@include breakpoint(960px, 12) {
+  .additional-menu {
+    height: auto;
+    margin-top: 37px;
+    .menu-header {
+      display: block;
+    }
+    .menu-close {
+      display: none;
+    }
+    @include span(3 of 12);
+  }
+  .users-list {
+    @include span(9 of 12);
+    .users-list-item {
+      height: 400px;
+      @include span(4 of 12);
+    }
+  }
+}
+
