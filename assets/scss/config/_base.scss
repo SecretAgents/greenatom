@@ -1,0 +1,9 @@
+@import '_variables';
+
+$susy: (
+        columns: 3,
+        gutters: 0.2,
+        math: fluid,
+        output: float,
+        gutter-position: inside,
+);
