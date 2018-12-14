@@ -1,7 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic);
 
 @import "blocks/blocks";
+@import "blocks/front_page";
 @import "main/main";
+@import "main/front_page";
 @import "main/helper_classes";
 @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";

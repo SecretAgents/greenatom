@@ -4,9 +4,15 @@
 @import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 $susy: (
-        columns: 3,
-        gutters: 0.2,
-        math: fluid,
-        output: float,
-        gutter-position: inside,
+  columns: 3,
+  gutters: 0.15,
+  math: fluid,
+  output: float
+);
+
+$susy_desktop: (
+    columns: 12,
+    gutters: 0.15,
+    math: fluid,
+    output: float
 );

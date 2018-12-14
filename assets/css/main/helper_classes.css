@@ -1,13 +1,10 @@
 @charset "UTF-8";
-.clearfix {
-  overflow: hidden;
-  clear: both; }
-  .clearfix::after {
-    content: '.';
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
+.clearfix::before, .clearfix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
 
 .main-content-wrapper,
 .header-inner,
@@ -50,12 +47,6 @@
 .secondary-color-green {
   background-color: #bed33f; }
 
-.tile-list-item .title {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 14px;
-  padding: 10px 5px; }
-
 .tile-list-item .no-dot-title {
   font-size: 12px;
   text-align: center; }
@@ -77,6 +68,9 @@
 
 .font-black {
   color: #000; }
+
+.font-semibold {
+  font-weight: 600; }
 
 a {
   text-decoration: none;

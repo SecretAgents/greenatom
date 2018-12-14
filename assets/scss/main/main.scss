@@ -192,77 +192,77 @@ ul {
       background: #496299;
     }
   }
-  .tile-list {
-    .ai,
-    .center,
-    .news-first,
-    .social-media-block {
-      padding-right: 2px;
-    }
-
-    .office-process,
-    .agency,
-    .news-archive,
-    .work {
-      padding-left: 2px;
-    }
-    .horizontal-block {
-      .expanded-description-block {
-        padding: 25px 30px;
-        background-color: $white;
-      }
-    }
-    .vertical-block {
-      .expanded-description-block {
-        padding: 15px 30px;
-      }
-    }
-    .news-second-expanded-description-inner,
-    .news-third-expanded-description-inner,
-    .news-fourth-expanded-description-inner {
-      padding: 75px 25px 75px 40px;
-    }
-    .news-block {
-      .expanded-description-block {
-        padding: 85px 30px 0 30px;
-      }
-      .date-block {
-        background: url(../images/icon-calendar-white.png) no-repeat 0 center;
-        padding-left: 25px;
-      }
-    }
-    .news-second {
-      .date-block {
-        background: url(../images/icon-calendar.png) no-repeat 0 center;
-      }
-    }
-    .news-fourth {
-      &:hover {
-        background: #16b9b7;
-      }
-      .date-block {
-        background: url(../images/icon-calendar-white.png) no-repeat 0 center;
-      }
-    }
-    .news-third {
-      .date-block {
-        background: url(../images/icon-calendar.png) no-repeat 0 center;
-      }
-    }
-    .media-archive-title {
-      padding: 25px 30px;
-    }
-    .half-horizontal {
-      .title-block {
-        position: static;
-      }
-    }
-    .back_white {
-      .tile-inner {
-        background: $white;
-      }
-    }
-  }
+  //.tile-list {
+  //  .ai,
+  //  .center,
+  //  .news-first,
+  //  .social-media-block {
+  //    padding-right: 2px;
+  //  }
+  //
+  //  .office-process,
+  //  .agency,
+  //  .news-archive,
+  //  .work {
+  //    padding-left: 2px;
+  //  }
+  //  .horizontal-block {
+  //    .expanded-description-block {
+  //      padding: 25px 30px;
+  //      background-color: $white;
+  //    }
+  //  }
+  //  .vertical-block {
+  //    .expanded-description-block {
+  //      padding: 15px 30px;
+  //    }
+  //  }
+  //  .news-second-expanded-description-inner,
+  //  .news-third-expanded-description-inner,
+  //  .news-fourth-expanded-description-inner {
+  //    padding: 75px 25px 75px 40px;
+  //  }
+  //  .news-block {
+  //    .expanded-description-block {
+  //      padding: 85px 30px 0 30px;
+  //    }
+  //    .date-block {
+  //      background: url(../images/icon-calendar-white.png) no-repeat 0 center;
+  //      padding-left: 25px;
+  //    }
+  //  }
+  //  .news-second {
+  //    .date-block {
+  //      background: url(../images/icon-calendar.png) no-repeat 0 center;
+  //    }
+  //  }
+  //  .news-fourth {
+  //    &:hover {
+  //      background: #16b9b7;
+  //    }
+  //    .date-block {
+  //      background: url(../images/icon-calendar-white.png) no-repeat 0 center;
+  //    }
+  //  }
+  //  .news-third {
+  //    .date-block {
+  //      background: url(../images/icon-calendar.png) no-repeat 0 center;
+  //    }
+  //  }
+  //  .media-archive-title {
+  //    padding: 25px 30px;
+  //  }
+  //  .half-horizontal {
+  //    .title-block {
+  //      position: static;
+  //    }
+  //  }
+  //  .back_white {
+  //    .tile-inner {
+  //      background: $white;
+  //    }
+  //  }
+  //}
 }
 .rewards-title {
   font-size: 32px;
@@ -382,29 +382,29 @@ ul {
 }
 
 @include breakpoint(960px, 12) {
-  .tile-list {
-    .half-vertical {
-      .left-block {
-        vertical-align: top;
-        padding-right: 7px;
-      }
-      .right-block {
-        vertical-align: top;
-        padding-left: 7px;
-      }
-      .text-block {
-        vertical-align: middle;
-      }
-    }
-    .tile-list-item {
-      &.first {
-        padding-right: 7px;
-      }
-      &.last {
-        padding-left: 7px;
-      }
-    }
-  }
+  //.tile-list {
+  //  .half-vertical {
+  //    .left-block {
+  //      vertical-align: top;
+  //      padding-right: 7px;
+  //    }
+  //    .right-block {
+  //      vertical-align: top;
+  //      padding-left: 7px;
+  //    }
+  //    .text-block {
+  //      vertical-align: middle;
+  //    }
+  //  }
+  //  .tile-list-item {
+  //    &.first {
+  //      padding-right: 7px;
+  //    }
+  //    &.last {
+  //      padding-left: 7px;
+  //    }
+  //  }
+  //}
 }
 
 @include breakpoint(1200px, 12) {

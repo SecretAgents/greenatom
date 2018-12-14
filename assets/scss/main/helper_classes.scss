@@ -3,8 +3,7 @@
 @import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 .clearfix {
-  overflow: hidden;
-  clear: both;
+  &::before,
   &::after {
     content: '.';
     display: block;
@@ -61,15 +60,6 @@
 }
 
 // Fonts
-.title {
-  .tile-list-item & {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14px;
-    padding: 10px 5px;
-
-  }
-}
 .no-dot-title {
   .tile-list-item & {
     font-size: 12px;
@@ -97,6 +87,9 @@
 }
 .font-black {
   color: $black;
+}
+.font-semibold {
+  font-weight: 600;
 }
 
 // Links
