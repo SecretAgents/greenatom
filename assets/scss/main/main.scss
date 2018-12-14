@@ -4,9 +4,6 @@
 //}
 
 @import '../config/_base';
-@import "../../../node_modules/susy/sass/susy";
-@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic);
 
 // Main tags styles
 html,
@@ -27,21 +24,26 @@ ul {
   }
 }
 .owl_carousel_simple {
-  padding: 20px 0;
-
   .owl-nav {
     position: absolute;
-    top: calc(50% - 30px);
+    top: calc(50% - 15px);
     z-index: 1;
-    //.owl-prev {
-    //  background: image_url('backgrounds/arrow_carousel_prev.png') no-repeat 0 0;
-    //}
-    //.owl-next {
-    //  background: image_url('backgrounds/arrow_carousel_next.png') no-repeat 0 0;
-    //}
+    [class*='owl-'] {
+    }
+    button {
+      &.owl-prev {
+        background: url('../images/arrow-prev.png') no-repeat 0 0;
+        left: 0;
+      }
+      &.owl-next {
+        background: url('../images/arrow-next.png') no-repeat 0 0;
+        right: 0;
+      }
+    }
   }
 
   .owl-dots {
+    position: absolute;
     text-align: center;
 
     span {
@@ -56,6 +58,14 @@ ul {
     }
   }
 }
+
+.main-slider {
+  .slider-text-block,
+  .slider-image-block {
+    vertical-align: middle;
+  }
+}
+
 //Header styles
 .header {
   .logo-block {
@@ -242,6 +252,16 @@ ul {
     .media-archive-title {
       padding: 25px 30px;
     }
+    .half-horizontal {
+      .title-block {
+        position: static;
+      }
+    }
+    .back_white {
+      .tile-inner {
+        background: $white;
+      }
+    }
   }
 }
 .rewards-title {
@@ -300,9 +320,12 @@ ul {
     .tile-list {
       .ai,
       .center,
-      .news-first,
-      .social-media-block {
+      .news-first {
         padding-right: 7px;
+      }
+
+      .social-media-block {
+        padding-left: 0;
       }
 
       .office-process,
@@ -347,6 +370,39 @@ ul {
   .dropdown-menu {
     li {
       text-indent: $text-indent-li-bullet;
+    }
+  }
+
+  .main-slider {
+    .slider-text-block {
+      padding-left: span(1 of 12);
+      padding-right: span(0.5 of 12);
+    }
+  }
+}
+
+@include breakpoint(960px, 12) {
+  .tile-list {
+    .half-vertical {
+      .left-block {
+        vertical-align: top;
+        padding-right: 7px;
+      }
+      .right-block {
+        vertical-align: top;
+        padding-left: 7px;
+      }
+      .text-block {
+        vertical-align: middle;
+      }
+    }
+    .tile-list-item {
+      &.first {
+        padding-right: 7px;
+      }
+      &.last {
+        padding-left: 7px;
+      }
     }
   }
 }

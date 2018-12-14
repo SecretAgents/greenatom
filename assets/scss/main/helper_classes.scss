@@ -121,6 +121,22 @@ a {
   }
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 //Buttons
 .button-detail {
   .horizontal-block & {
@@ -212,6 +228,14 @@ a {
       font-weight: 300;
       line-height: 16px;
     }
+  }
+
+  .font-huge {
+    font: $font-huge;
+  }
+
+  .font-bold {
+    font-weight: 700;
   }
 }
 
