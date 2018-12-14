@@ -1,0 +1,26 @@
+.tile-list {
+  color: #000; }
+  .tile-list .wide .tile-list-item {
+    vertical-align: top; }
+    .tile-list .wide .tile-list-item.simple-color {
+      vertical-align: middle; }
+  .tile-list .simple-color {
+    vertical-align: middle;
+    text-align: center; }
+    .tile-list .simple-color.blue::before {
+      background-color: #5978b6; }
+    .tile-list .simple-color.green::before {
+      background-color: #bed33f; }
+    .tile-list .simple-color.brown::before {
+      background-color: #dfaa85; }
+    .tile-list .simple-color .tile-title {
+      padding-left: 0;
+      padding-top: 0; }
+  .tile-list .half-horizontal .tile-text {
+    background: #fff; }
+  .tile-list .tile-title {
+    font-weight: 600;
+    padding-left: 15px;
+    padding-top: 10px; }
+
+/*# sourceMappingURL=front_page.css.map */
