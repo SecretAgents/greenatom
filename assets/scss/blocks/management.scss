@@ -7,8 +7,16 @@
   background: white;
 }
 
+.menu-change-visibility {
+  .additional-menu {
+    display: block;
+  }
+  .menu-open {
+    display: none;
+  }
+}
+
 .menu-open {
-  display: none;
   width: 56px;
   height: 56px;
   position: absolute;
@@ -20,8 +28,60 @@
 }
 
 .additional-menu {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: none;
+  height: 240px;
+
+  .menu-close {
+    position: absolute;
+    right: 30px;
+  }
+
   .menu-header {
     display: none;
+  }
+
+  a {
+    margin-left: 20px;
+    margin-top: -18px;
+    display: block;
+  }
+
+  .top-blur-block {
+    width: 80%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+  }
+
+  .bottom-blur-block {
+    width: 80%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  ul {
+    width: 88%;
+    margin: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 200px;
+
+    li {
+      > ul {
+        height: auto;
+      }
+
+      button {
+        a {
+          margin: 0;
+
+        }
+      }
+    }
   }
 }
 
@@ -52,6 +112,9 @@
   .users-list {
     .users-list-item {
       @include span(3 of 6);
+      &:nth-child(2n-1){
+        clear: left;
+      }
     }
   }
 }
@@ -59,20 +122,38 @@
 @include breakpoint(720px, 6) {
   .users-list {
     .users-list-item {
+      clear: none;
       @include span(2 of 6);
+      &:nth-child(2n-1){
+        clear: none;
+      }
+      &:nth-child(3n+1){
+        clear: left;
+      }
     }
   }
 }
 
 @include breakpoint(960px, 12) {
+  .menu-open {
+    display: none;
+  }
   .additional-menu {
-    height: auto;
+    display: block;
     margin-top: 37px;
+    .top-blur-block,
+    .bottom-blur-block {
+      display: none;
+    }
     .menu-header {
       display: block;
     }
     .menu-close {
       display: none;
+    }
+    ul {
+      height: auto;
+      overflow: visible;
     }
     @include span(3 of 12);
   }
@@ -81,6 +162,12 @@
     .users-list-item {
       height: 400px;
       @include span(4 of 12);
+      &:nth-child(2n-1){
+        clear: none;
+      }
+      &:nth-child(3n+1){
+        clear: left;
+      }
     }
   }
 }
