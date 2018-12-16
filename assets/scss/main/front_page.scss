@@ -43,6 +43,16 @@
         background-color: $white;
       }
     }
+    &.cyan {
+      &::before {
+        background-color: $bg-cyan;
+      }
+    }
+    &.with-image {
+      &::before {
+        opacity: 0.95;
+      }
+    }
     .tile-title {
       padding-left: 0;
       padding-top: 0;
@@ -83,6 +93,8 @@
 
   .tile-text {
     text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -90,11 +102,13 @@
   .clients-list-item {
     text-align: center;
     vertical-align: middle;
-    &:first-child {
-      text-align: left;
+    img {
+      filter: grayscale(1);
     }
-    &:last-child {
-      text-align: right;
+    &:hover {
+      img {
+        filter: grayscale(0);
+      }
     }
   }
 }

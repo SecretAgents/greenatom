@@ -59,7 +59,15 @@
       top: 0;
       width: span(3) - gutter(3);
       height: 100%;
-      z-index: 10;
+      z-index: 20;
+    }
+    &.with-text {
+      &::before {
+        z-index: 80;
+      }
+      .tile-image {
+        z-index: 60;
+      }
     }
     .tile-text,
     .tile-title,
@@ -70,6 +78,7 @@
     .tile-text {
       display: block;
     }
+
   }
 
   .half-horizontal {
@@ -106,6 +115,7 @@
 
   .tile-text {
     display: none;
+    box-sizing: border-box;
   }
 
   .tile-title {
@@ -221,6 +231,12 @@
       .owl-carousel {
         padding-left: span(2);
         padding-right: span(2);
+      }
+    }
+
+    .icon-with-list {
+      .tile-text {
+        display: none;
       }
     }
   }
