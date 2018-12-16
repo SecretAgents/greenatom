@@ -5,7 +5,6 @@
 html,
 body {
   min-width: 300px;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -100,13 +99,59 @@ h1 {
     }
   }
 }
-
+.page-title-inscription {
+  display: none;
+}
 .dropdown-menu-search {
   display: none;
   position: absolute;
   top: 0;
   z-index: 2;
   width: 100%;
+}
+//Pages styles
+.persons-list {
+  &-item {
+    margin-top: 35px;
+    &:first-child {
+      margin-top: 0;
+    }
+    .person-information {
+      margin-top: 15px;
+      .person-title {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .person-description {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.description-html-safe {
+  ul {
+    li {
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+      ul {
+        li {
+          margin-top: 0;
+          &:first-child {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.page-image {
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 //Top dropdown-menu styles
 .dropdown-menu-list {
@@ -302,6 +347,17 @@ h1 {
 }
 
 @include breakpoint(480px, 3) {
+  .persons-list {
+    &-item {
+      .person-image {
+        @include span(1 first no-gutters);
+      }
+      .person-information {
+        @include span(2 last);
+        margin-top: 0;
+      }
+    }
+  }
   //.tile-list-item {
   //  .title-block {
   //    .archive-icon {
@@ -424,6 +480,20 @@ h1 {
 }
 
 @include breakpoint(960px, 12) {
+  //Page styles
+  .page-title-inscription {
+    @include span(3 of 12 first);
+    display: block;
+  }
+  .page-title-block {
+    @include span(9 of 12 last);
+  }
+  .page-content {
+    @include span(9 of 12 last);
+  }
+  .page-menu {
+    @include span(3 of 12 first);
+  }
   //main content styles
   //.first-column {
   //  @include span(6 of 12 no-gutter);

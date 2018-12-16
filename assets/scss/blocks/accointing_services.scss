@@ -1,0 +1,7 @@
+@import '../config/_base';
+@import "../../../node_modules/susy/sass/susy";
+@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+
+.persons-list {
+  margin-top: 35px;
+}

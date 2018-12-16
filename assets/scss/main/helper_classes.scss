@@ -2,6 +2,11 @@
 @import "../../../node_modules/susy/sass/susy";
 @import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
+h1 {
+  font: $font-base;
+  font-weight: 600;
+  font-size: 18px;
+}
 .clearfix {
   &::before,
   &::after {
@@ -13,14 +18,14 @@
   }
 }
 //Wrappers and inners
-.main-content-wrapper,
-.header-inner,
-.footer-bottom-inner,
-.footer-main-inner {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
+//.main-content,
+//.header-inner,
+//.footer-bottom-inner,
+//.footer-main-inner,
+//.page-title-block-inner {
+//  max-width: 1140px;
+//  margin: 0 auto;
+//}
 //Paddings
 .padding-general {
   padding-left: 10px;
@@ -88,7 +93,6 @@
 .font-black {
   color: $black;
 }
-
 .font-label-small {
   font: $font-label-small;
 }
@@ -102,15 +106,15 @@
 .font-semibold {
   font-weight: 600;
 }
-
 // Links
 a {
   text-decoration: none;
   color: $link-primary;
   cursor: pointer;
   .breadcrumb-block & {
-    &:hover {
-      color: $link-primary-pressed
+    color: $link-primary-pressed;
+    &:last-child {
+      color: $link-primary;
     }
   }
   .menu-block-footer & {
@@ -121,6 +125,11 @@ a {
   }
   .parent-menu & {
     color: $black;
+  }
+}
+.breadcrumb-block {
+  span {
+    color: $link-primary;
   }
 }
 
@@ -177,6 +186,12 @@ a {
   }
 }
 @include breakpoint(480px, 3) {
+  h1 {
+    font: $font-base;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+  }
   .title {
     .tile-list-item & {
       font-size: 18px;
@@ -192,6 +207,12 @@ a {
   }
 }
 @include breakpoint(600px, 6) {
+  h1 {
+    font: $font-base;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+  }
   .title {
     .tile-list-item & {
       font-size: 20px;
@@ -217,6 +238,15 @@ a {
   }
 }
 @include breakpoint(720px, 6) {
+  .page-image {
+    margin-bottom: 55px;
+  }
+  h1 {
+    font: $font-base;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 36px;
+  }
   .padding-general,
   .padding-general-header,
   .padding-general-footer-bottom,
@@ -241,7 +271,9 @@ a {
     font-weight: 700;
   }
 }
+@include breakpoint(960px, 12) {
 
+}
 @include breakpoint(1200px, 12) {
   .title {
     .horizontal-block & {
