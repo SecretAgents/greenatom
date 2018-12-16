@@ -4,12 +4,14 @@
     <meta lang="EN">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
     <link href="assets/css/application.css" rel="stylesheet">
+    <link href="assets/css/plagin/easytree.css" rel="stylesheet">
     <link href="assets/css/main/management.css" rel="stylesheet">
     <link href="assets/css/blocks/management.css" rel="stylesheet">
     <title>Гринатом</title>
 </head>
 <body>
 <div class="container">
+
     <div id="header" class="header primary-color padding-general-header">
         <div class="header-inner clearfix">
             <div class="logo-block">
@@ -99,38 +101,54 @@
         <div class="main-content-wrapper clearfix">
             <div class="additional-menu-wrapper pushy">
                 <div class="menu-open"><img src="assets/images/cross.png" alt="cross"></div>
-                <div class="additional-menu pushy-content">
+                <div class="additional-menu">
                     <div class="menu-close"><img src="assets/images/cross-close.png" alt="cross-close"></div>
                     <div class="menu-header">
                         <h3>О компании</h3>
                     </div>
                     <div class="top-blur-block"></div>
-                    <ul class="scrollbar-dynamic">
-                        <li><a href="">Цели и задачи</a></li>
-                        <li><a href="">Направления деятельности</a></li>
-                        <li><a href="">Гринатом сегодня</a></li>
-                        <li><a href="">Структура управления услугами</a></li>
-                        <li><a href="">Гринатом в структуре Росатома</a></li>
-                        <li><a href="">Ценности</a></li>
-                        <li class="pushy-submenu">
-                            <button><a href="">Руководство</a></button>
-                            <ul>
-                                <li><a href="">Ермолаев Михаил Юрьевич</a></li>
-                                <li><a href="">Сидоренко Евгения Александровна</a></li>
-                                <li><a href="">Кривоносов Денис Викторович</a></li>
-                                <li><a href="">Борматова Светлана Сергеевна</a></li>
-                                <li><a href="">Корнильцев Сергей Владимирович</a></li>
-                                <li><a href="">Маняхин Сергей Васильевич</a></li>
-                                <li><a href="">Михайлова Оксана Маратовна</a></li>
-                                <li><a href="">Арбекова Наталья Борисовна</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Оргструктура</a></li>
-                        <li><a href="">Лицензии</a></li>
-                        <li><a href="">Защита персональных данных</a></li>
-                        <li><a href="">Противодействие коррупции</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
+                    <div id="additional-menu" class="scrollbar-dynamic">
+                        <ul>
+                            <li><a href="#">Цели и задачи</a></li>
+                            <li><a href="#">Направления деятельности</a></li>
+                            <li><a href="#">Гринатом сегодня</a></li>
+                            <li><a href="#">Структура управления услугами</a></li>
+                            <li><a href="#">Гринатом в структуре Росатома</a></li>
+                            <li><a href="#">Ценности</a></li>
+                            <li class="isExpanded">
+                                <a href="sdfasasd">Руководство</a>
+                                <ul>
+                                    <li><a href="">Ермолаев Михаил Юрьевич</a></li>
+                                    <li><a href="">Сидоренко Евгения Александровна</a></li>
+                                    <li><a href="">Кривоносов Денис Викторович</a></li>
+                                    <li class="isActive"><a href="">Борматова Светлана Сергеевна</a></li>
+                                    <li><a href="">Корнильцев Сергей Владимирович</a></li>
+                                    <li>
+                                        <a href="#">Руководство</a>
+                                        <ul>
+                                            <li><a href="">Ермолаев Михаил Юрьевич</a></li>
+                                            <li><a href="">Сидоренко Евгения Александровна</a></li>
+                                            <li><a href="">Кривоносов Денис Викторович</a></li>
+                                            <li><a href="">Борматова Светлана Сергеевна</a></li>
+                                            <li><a href="">Корнильцев Сергей Владимирович</a></li>
+                                            <li><a href="">Маняхин Сергей Васильевич</a></li>
+                                            <li><a href="">Михайлова Оксана Маратовна</a></li>
+                                            <li><a href="">Арбекова Наталья Борисовна</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Маняхин Сергей Васильевич</a></li>
+                                    <li><a href="">Михайлова Оксана Маратовна</a></li>
+                                    <li><a href="">Арбекова Наталья Борисовна</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Оргструктура</a></li>
+                            <li><a href="">Лицензии</a></li>
+                            <li><a href="">Защита персональных данных</a></li>
+                            <li><a href="">Противодействие коррупции</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+
                     <div class="bottom-blur-block"></div>
                 </div>
             </div>
@@ -307,14 +325,14 @@
 </body>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
-<script type="text/javascript" src="assets/js/pushy.min.js"></script>
+
+<script type="text/javascript" src="assets/js/jquery.easytree.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script>
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel();
     });
-</script>
-<script>
+
     $('.owl-carousel').owlCarousel({
         items: 1,
         loop: true,
@@ -322,5 +340,10 @@
         nav: true,
         autoHeight: true,
     })
+
+    $('#additional-menu').easytree({disableIcons: true});
+</script>
+<script>
+
 </script>
 </html>

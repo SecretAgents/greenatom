@@ -37,6 +37,7 @@
   .menu-close {
     position: absolute;
     right: 30px;
+    z-index: 10;
   }
 
   .menu-header {
@@ -44,42 +45,34 @@
   }
 
   a {
-    margin-left: 20px;
-    margin-top: -18px;
-    display: block;
+    text-decoration: none;
   }
 
   .top-blur-block {
-    width: 80%;
+    width: 100%;
     height: 60px;
     position: absolute;
     top: 0;
+    z-index: 1;
   }
 
   .bottom-blur-block {
-    width: 80%;
+    width: 100%;
     height: 60px;
     position: absolute;
     bottom: 0;
+    z-index: 1;
   }
 
-  ul {
-    width: 88%;
+  .scrollbar-dynamic {
     margin: 0;
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    height: 200px;
+    height: 240px;
 
     li {
       > ul {
         height: auto;
-      }
-
-      button {
-        a {
-          margin: 0;
-
-        }
       }
     }
   }
@@ -151,9 +144,12 @@
     .menu-close {
       display: none;
     }
-    ul {
+    .scrollbar-dynamic {
       height: auto;
       overflow: visible;
+    }
+    ul {
+      padding: 0;
     }
     @include span(3 of 12);
   }

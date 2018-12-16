@@ -17,4 +17,12 @@ $(document).ready(function(){
   });
 
   $('.scrollbar-dynamic').scrollbar();
+
+  // $('li.current_place.pushy-submenu').addClass('pushy-submenu-open').removeClass('pushy-submenu-closed');
+  //
+  // $('li.current_place').parents().each(function () {
+  //   if ($(this).hasClass('pushy-submenu')) {
+  //     $(this).addClass('pushy-submenu-open').removeClass('pushy-submenu-closed');
+  //   }
+  // });
 });
