@@ -16,5 +16,5 @@ $(document).ready(function(){
     $('.additional-menu-wrapper').removeClass('menu-change-visibility')
   });
 
-  $('.scrollbar-macosx').scrollbar();
+  $('.scrollbar-dynamic').scrollbar();
 });
