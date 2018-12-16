@@ -1,0 +1,159 @@
+.tile-list-wrapper .two-columns {
+  display: none; }
+
+.tile-list .tile-list-row {
+  margin-bottom: 4.5454545455%; }
+.tile-list .wide > .first {
+  width: 47.7272727273%;
+  float: left;
+  margin-right: 4.5454545455%;
+  padding-right: 2.2727272727%;
+  display: table-cell;
+  float: none; }
+.tile-list .wide > .last {
+  width: 47.7272727273%;
+  float: right;
+  margin-right: 0;
+  padding-left: 2.2727272727%;
+  display: table-cell;
+  float: none; }
+.tile-list .tile-list-item {
+  position: relative;
+  overflow: hidden; }
+  .tile-list .tile-list-item img {
+    max-width: 100%; }
+.tile-list .items_3 .tile-list-item {
+  width: 100%;
+  float: right;
+  margin-right: 0; }
+.tile-list .items_3 > .first {
+  width: 47.7272727273%;
+  float: left;
+  margin-right: 4.5454545455%;
+  margin-bottom: 4.5454545455%; }
+.tile-list .items_3 > .last {
+  width: 47.7272727273%;
+  float: right;
+  margin-right: 0;
+  margin-bottom: 4.5454545455%; }
+.tile-list .simple-color {
+  position: relative; }
+  .tile-list .simple-color::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 95.4545454545%;
+    height: 100%;
+    z-index: 10; }
+  .tile-list .simple-color .tile-text,
+  .tile-list .simple-color .tile-title,
+  .tile-list .simple-color .tile-image {
+    position: relative;
+    z-index: 100; }
+  .tile-list .simple-color .tile-text {
+    display: block; }
+.tile-list .half-horizontal .tile-text {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 95.4545454545%; }
+.tile-list .slider .tile-title {
+  position: static;
+  width: 100%; }
+.tile-list .slider .owl-carousel {
+  padding-left: 65.1515151515%;
+  padding-right: 65.1515151515%;
+  box-sizing: border-box; }
+.tile-list .slider.full .tile-title {
+  position: absolute;
+  z-index: 10; }
+.tile-list .slider.full .owl-carousel {
+  padding-left: 0;
+  padding-right: 0; }
+.tile-list .tile-text {
+  display: none; }
+.tile-list .tile-title {
+  position: absolute;
+  top: 0; }
+.tile-list .tile-icon {
+  margin-bottom: 40px; }
+.tile-list .cities-list {
+  display: none; }
+
+.clients-list {
+  width: 100%;
+  font-size: 0;
+  margin-top: 35px; }
+  .clients-list:first-child {
+    margin-top: 0; }
+  .clients-list .clients-list-item {
+    display: inline-block;
+    width: 25%;
+    font: 300 15px/18px "Open Sans", sans-serif; }
+    .clients-list .clients-list-item img {
+      display: inline; }
+
+@media (min-width: 700px) {
+  .one-column {
+    max-width: 650px;
+    margin: 0 auto; } }
+@media (min-width: 800px) {
+  .tile-list-wrapper .one-column {
+    display: none; }
+  .tile-list-wrapper .two-columns {
+    display: block; }
+
+  .tile-list {
+    width: 49.4505494505%;
+    float: left;
+    margin-right: 1.0989010989%; }
+    .tile-list:last-child {
+      width: 49.4505494505%;
+      float: right;
+      margin-right: 0; }
+    .tile-list .tile-list-row {
+      margin-bottom: 2.2222222222%; }
+    .tile-list .wide > .first {
+      width: 49.4505494505%;
+      float: left;
+      margin-right: 1.0989010989%;
+      padding-right: 1.1111111111%;
+      float: none; }
+    .tile-list .wide > .last {
+      width: 49.4505494505%;
+      float: right;
+      margin-right: 0;
+      padding-left: 1.1111111111%;
+      float: none; }
+    .tile-list .items_3 .tile-list-item {
+      width: 100%;
+      float: right;
+      margin-right: 0;
+      margin-bottom: 0; }
+    .tile-list .items_3 > .first {
+      width: 47.7272727273%;
+      float: left;
+      margin-right: 4.5454545455%;
+      margin-bottom: 4.5454545455%; }
+    .tile-list .items_3 > .last {
+      width: 47.7272727273%;
+      float: right;
+      margin-right: 0;
+      margin-bottom: 4.5454545455%; }
+    .tile-list .simple-color::before {
+      width: 97.7777777778%; }
+    .tile-list .simple-color.with-text .tile-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 97.7777777778%; }
+    .tile-list .half-horizontal .tile-text {
+      width: 97.7777777778%;
+      height: 47.2283272283%; }
+    .tile-list .slider .owl-carousel {
+      padding-left: 15.7509157509%;
+      padding-right: 15.7509157509%; } }
+
+/*# sourceMappingURL=front_page.css.map */

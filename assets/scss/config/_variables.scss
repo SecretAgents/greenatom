@@ -9,8 +9,11 @@ $grey:            #a0a0a0;
 $bg-primary:           #6e7073;
 $bg-primary-light:     #e2e2e2;
 $bg-primary-dark:      #424750;
-$bg-dropdown:          #bed33f;
+$bg-dropdown:          $green;
 $bg-dropdown-li-hover: #ecf2c6;
+$bg-blue:              #5978b6;
+$bg-brown:             #dfaa85;
+$bg-green:              $green;
 
 
 // Text colors
@@ -48,7 +51,11 @@ $padding-li-bullet-mobile:               15px;
 $text-indent-li-bullet-mobile:            0px;
 
 // Fonts
-$font-base: 400 15px/18px "Open Sans", sans-serif;
+$font-base: 300 15px/18px "Open Sans", sans-serif;
+$font-label-small: 300 18px/22px "Open Sans", sans-serif;
+$font-label: 300 24px/28px "Open Sans", sans-serif;
+$font-label-big: 300 32px/36px "Open Sans", sans-serif;
+$font-huge: 300 44px/50px "Open Sans", sans-serif;
 
 //Heights
 $header-navigation: 75px;
