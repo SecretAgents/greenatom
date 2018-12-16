@@ -15,6 +15,10 @@
       background-color: #dfaa85; }
     .tile-list .simple-color.white::before {
       background-color: #fff; }
+    .tile-list .simple-color.cyan::before {
+      background-color: #21b2ad; }
+    .tile-list .simple-color.with-image::before {
+      opacity: 0.95; }
     .tile-list .simple-color .tile-title {
       padding-left: 0;
       padding-top: 0; }
@@ -37,14 +41,16 @@
     padding-left: 15px;
     padding-top: 10px; }
   .tile-list .tile-text {
-    text-align: left; }
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px; }
 
 .clients-list .clients-list-item {
   text-align: center;
   vertical-align: middle; }
-  .clients-list .clients-list-item:first-child {
-    text-align: left; }
-  .clients-list .clients-list-item:last-child {
-    text-align: right; }
+  .clients-list .clients-list-item img {
+    filter: grayscale(1); }
+  .clients-list .clients-list-item:hover img {
+    filter: grayscale(0); }
 
 /*# sourceMappingURL=front_page.css.map */
