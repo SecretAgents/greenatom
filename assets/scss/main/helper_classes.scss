@@ -88,6 +88,17 @@
 .font-black {
   color: $black;
 }
+
+.font-label-small {
+  font: $font-label-small;
+}
+.font-label {
+  font: $font-label;
+}
+.font-label-big {
+  font: $font-label-big;
+}
+
 .font-semibold {
   font-weight: 600;
 }

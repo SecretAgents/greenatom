@@ -4,9 +4,6 @@
 
 .tile-list {
   color: $black;
-  .tile-text {
-  }
-
   .tile-list-row {
 
   }
@@ -41,6 +38,11 @@
         background-color: $bg-brown;
       }
     }
+    &.white {
+      &::before {
+        background-color: $white;
+      }
+    }
     .tile-title {
       padding-left: 0;
       padding-top: 0;
@@ -53,9 +55,46 @@
     }
   }
 
+  .slider {
+    background: $white;
+    .tile-title {
+      text-align: center;
+      padding: 25px 0 0;
+    }
+    .slider-item {
+      padding-top: 25px;
+      padding-bottom: 35px;
+    }
+    &.full {
+      .tile-title {
+        text-align: center;
+      }
+      .slider-item {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
   .tile-title {
-    font-weight: 600;
     padding-left: 15px;
     padding-top: 10px;
+  }
+
+  .tile-text {
+    text-align: left;
+  }
+}
+
+.clients-list {
+  .clients-list-item {
+    text-align: center;
+    vertical-align: middle;
+    &:first-child {
+      text-align: left;
+    }
+    &:last-child {
+      text-align: right;
+    }
   }
 }

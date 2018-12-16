@@ -343,7 +343,7 @@ ul {
     }
   }
 }
-@include breakpoint(720px, 6) {
+@include breakpoint(700px, 6) {
   .main-content {
     .one-column {
       padding-left: 25px;

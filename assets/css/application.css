@@ -29,6 +29,9 @@ h1 {
     width: auto;
     max-width: 100%; }
 
+.owl-carousel .owl-item img {
+  width: auto; }
+
 .owl-theme .owl-nav {
   width: 100%;
   margin-top: 0; }
@@ -166,7 +169,7 @@ h1 {
     display: table-cell;
     vertical-align: middle;
     padding-left: 25px; } }
-@media (min-width: 720px) {
+@media (min-width: 700px) {
   .header .top-menu-block .top-menu-list .sitemap {
     display: inline-block; }
 
@@ -409,12 +412,46 @@ h1 {
   bottom: 0;
   height: 50%;
   width: 95.4545454545%; }
+.tile-list .slider .tile-title {
+  position: static;
+  width: 100%; }
+.tile-list .slider .owl-carousel {
+  padding-left: 65.1515151515%;
+  padding-right: 65.1515151515%;
+  box-sizing: border-box; }
+.tile-list .slider.full .tile-title {
+  position: absolute;
+  z-index: 10; }
+.tile-list .slider.full .owl-carousel {
+  padding-left: 0;
+  padding-right: 0; }
 .tile-list .tile-text {
   display: none; }
 .tile-list .tile-title {
   position: absolute;
   top: 0; }
+.tile-list .tile-icon {
+  margin-bottom: 40px; }
+.tile-list .cities-list {
+  display: none; }
 
+.clients-list {
+  width: 100%;
+  font-size: 0;
+  margin-top: 35px; }
+  .clients-list:first-child {
+    margin-top: 0; }
+  .clients-list .clients-list-item {
+    display: inline-block;
+    width: 25%;
+    font: 300 15px/18px "Open Sans", sans-serif; }
+    .clients-list .clients-list-item img {
+      display: inline; }
+
+@media (min-width: 700px) {
+  .one-column {
+    max-width: 650px;
+    margin: 0 auto; } }
 @media (min-width: 800px) {
   .tile-list-wrapper .one-column {
     display: none; }
@@ -460,16 +497,24 @@ h1 {
       margin-bottom: 4.5454545455%; }
     .tile-list .simple-color::before {
       width: 97.7777777778%; }
+    .tile-list .simple-color.with-text .tile-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 97.7777777778%; }
     .tile-list .half-horizontal .tile-text {
       width: 97.7777777778%;
-      height: 47.2283272283%; } }
+      height: 47.2283272283%; }
+    .tile-list .slider .owl-carousel {
+      padding-left: 15.7509157509%;
+      padding-right: 15.7509157509%; } }
 html,
 body {
   padding: 0;
-  font: 400 15px/18px "Open Sans", sans-serif; }
+  font: 300 15px/18px "Open Sans", sans-serif; }
 
 h1 {
-  font: 400 15px/18px "Open Sans", sans-serif;
+  font: 300 15px/18px "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 34px/38px; }
 
@@ -560,7 +605,7 @@ ul {
   .main-content .breadcrumb-block {
     padding-top: 35px; }
   .main-content .dropdown-menu {
-    font: 400 15px/18px "Open Sans", sans-serif;
+    font: 300 15px/18px "Open Sans", sans-serif;
     box-shadow: 0 2px 4px #a0a0a0; }
     .main-content .dropdown-menu li {
       text-indent: 0px; }
@@ -568,12 +613,12 @@ ul {
       padding-right: 10px;
       content: "•";
       color: #fff;
-      font: 400 15px/18px "Open Sans", sans-serif; }
+      font: 300 15px/18px "Open Sans", sans-serif; }
   .main-content .work li::before {
     padding-right: 10px;
     content: "•";
     color: #fff;
-    font: 400 15px/18px "Open Sans", sans-serif; }
+    font: 300 15px/18px "Open Sans", sans-serif; }
   .main-content .ai:hover {
     background: #216c8a; }
   .main-content .news-first:hover {
@@ -639,7 +684,7 @@ ul {
     padding-right: 7px; }
   .main-content .tile-list .facebook {
     padding-left: 7px; } }
-@media (min-width: 720px) {
+@media (min-width: 700px) {
   .main-content .one-column {
     padding-left: 25px;
     padding-right: 25px; }
@@ -676,15 +721,39 @@ ul {
       background-color: #bed33f; }
     .tile-list .simple-color.brown::before {
       background-color: #dfaa85; }
+    .tile-list .simple-color.white::before {
+      background-color: #fff; }
     .tile-list .simple-color .tile-title {
       padding-left: 0;
       padding-top: 0; }
   .tile-list .half-horizontal .tile-text {
     background: #fff; }
+  .tile-list .slider {
+    background: #fff; }
+    .tile-list .slider .tile-title {
+      text-align: center;
+      padding: 25px 0 0; }
+    .tile-list .slider .slider-item {
+      padding-top: 25px;
+      padding-bottom: 35px; }
+    .tile-list .slider.full .tile-title {
+      text-align: center; }
+    .tile-list .slider.full .slider-item {
+      padding-top: 0;
+      padding-bottom: 0; }
   .tile-list .tile-title {
-    font-weight: 600;
     padding-left: 15px;
     padding-top: 10px; }
+  .tile-list .tile-text {
+    text-align: left; }
+
+.clients-list .clients-list-item {
+  text-align: center;
+  vertical-align: middle; }
+  .clients-list .clients-list-item:first-child {
+    text-align: left; }
+  .clients-list .clients-list-item:last-child {
+    text-align: right; }
 
 .clearfix::before, .clearfix::after {
   content: '.';
@@ -739,13 +808,13 @@ ul {
   text-align: center; }
 
 .vertical-block .date-block {
-  font: 400 15px/18px "Open Sans", sans-serif;
+  font: 300 15px/18px "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px; }
 
 .horizontal-block .short-description {
-  font: 400 15px/18px "Open Sans", sans-serif;
+  font: 300 15px/18px "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 16px; }
@@ -755,6 +824,15 @@ ul {
 
 .font-black {
   color: #000; }
+
+.font-label-small {
+  font: 300 18px/22px "Open Sans", sans-serif; }
+
+.font-label {
+  font: 300 24px/28px "Open Sans", sans-serif; }
+
+.font-label-big {
+  font: 300 32px/36px "Open Sans", sans-serif; }
 
 .font-semibold {
   font-weight: 600; }
@@ -790,14 +868,14 @@ a {
   border: none;
   padding: 12px 50px;
   text-transform: uppercase;
-  font: 400 15px/18px "Open Sans", sans-serif;
+  font: 300 15px/18px "Open Sans", sans-serif;
   font-weight: 600; }
 .vertical-block .button-detail {
   color: #fff;
   border: 1px solid #fff;
   padding: 12px 50px;
   text-transform: uppercase;
-  font: 400 15px/18px "Open Sans", sans-serif;
+  font: 300 15px/18px "Open Sans", sans-serif;
   font-weight: 600; }
 
 @media (min-width: 360px) {
@@ -844,13 +922,13 @@ a {
     padding-right: 75px; }
 
   .horizontal-block .short-description {
-    font: 400 15px/18px "Open Sans", sans-serif;
+    font: 300 15px/18px "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 16px; }
 
   .font-huge {
-    font: 400 44px/50px "Open Sans", sans-serif; }
+    font: 300 44px/50px "Open Sans", sans-serif; }
 
   .font-bold {
     font-weight: 700; } }
@@ -901,14 +979,14 @@ a {
     border: none;
     padding: 5px 30px;
     text-transform: uppercase;
-    font: 400 15px/18px "Open Sans", sans-serif;
+    font: 300 15px/18px "Open Sans", sans-serif;
     font-weight: 600; }
   .vertical-block .button-detail {
     color: #fff;
     border: 1px solid #fff;
     padding: 5px 30px;
     text-transform: uppercase;
-    font: 400 15px/18px "Open Sans", sans-serif;
+    font: 300 15px/18px "Open Sans", sans-serif;
     font-weight: 600; } }
 
 /*# sourceMappingURL=application.css.map */

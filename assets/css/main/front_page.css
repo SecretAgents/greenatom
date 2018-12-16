@@ -13,14 +13,38 @@
       background-color: #bed33f; }
     .tile-list .simple-color.brown::before {
       background-color: #dfaa85; }
+    .tile-list .simple-color.white::before {
+      background-color: #fff; }
     .tile-list .simple-color .tile-title {
       padding-left: 0;
       padding-top: 0; }
   .tile-list .half-horizontal .tile-text {
     background: #fff; }
+  .tile-list .slider {
+    background: #fff; }
+    .tile-list .slider .tile-title {
+      text-align: center;
+      padding: 25px 0 0; }
+    .tile-list .slider .slider-item {
+      padding-top: 25px;
+      padding-bottom: 35px; }
+    .tile-list .slider.full .tile-title {
+      text-align: center; }
+    .tile-list .slider.full .slider-item {
+      padding-top: 0;
+      padding-bottom: 0; }
   .tile-list .tile-title {
-    font-weight: 600;
     padding-left: 15px;
     padding-top: 10px; }
+  .tile-list .tile-text {
+    text-align: left; }
+
+.clients-list .clients-list-item {
+  text-align: center;
+  vertical-align: middle; }
+  .clients-list .clients-list-item:first-child {
+    text-align: left; }
+  .clients-list .clients-list-item:last-child {
+    text-align: right; }
 
 /*# sourceMappingURL=front_page.css.map */

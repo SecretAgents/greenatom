@@ -2,10 +2,10 @@
 html,
 body {
   padding: 0;
-  font: 400 15px/18px "Open Sans", sans-serif; }
+  font: 300 15px/18px "Open Sans", sans-serif; }
 
 h1 {
-  font: 400 15px/18px "Open Sans", sans-serif;
+  font: 300 15px/18px "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 34px/38px; }
 
@@ -96,7 +96,7 @@ ul {
   .main-content .breadcrumb-block {
     padding-top: 35px; }
   .main-content .dropdown-menu {
-    font: 400 15px/18px "Open Sans", sans-serif;
+    font: 300 15px/18px "Open Sans", sans-serif;
     box-shadow: 0 2px 4px #a0a0a0; }
     .main-content .dropdown-menu li {
       text-indent: 0px; }
@@ -104,12 +104,12 @@ ul {
       padding-right: 10px;
       content: "•";
       color: #fff;
-      font: 400 15px/18px "Open Sans", sans-serif; }
+      font: 300 15px/18px "Open Sans", sans-serif; }
   .main-content .work li::before {
     padding-right: 10px;
     content: "•";
     color: #fff;
-    font: 400 15px/18px "Open Sans", sans-serif; }
+    font: 300 15px/18px "Open Sans", sans-serif; }
   .main-content .ai:hover {
     background: #216c8a; }
   .main-content .news-first:hover {
@@ -175,7 +175,7 @@ ul {
     padding-right: 7px; }
   .main-content .tile-list .facebook {
     padding-left: 7px; } }
-@media (min-width: 720px) {
+@media (min-width: 700px) {
   .main-content .one-column {
     padding-left: 25px;
     padding-right: 25px; }
