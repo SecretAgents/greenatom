@@ -2,89 +2,10 @@
 @import "../../../node_modules/susy/sass/susy";
 @import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
-.image-block {
-  img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-.description-html-safe {
-  ul {
-    li {
-      margin-top: 10px;
-      &:first-child {
-        margin-top: 0;
-      }
-      ul {
-        li {
-          margin-top: 0;
-          &:first-child {
-            margin-top: 10px;
-          }
-        }
-      }
-    }
-  }
-}
 .persons-list {
   margin-top: 35px;
-  &-item {
-    margin-top: 35px;
-    &:first-child {
-      margin-top: 0;
-    }
-    .person-information {
-      margin-top: 15px;
-      .person-title {
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-      .person-description {
-        margin-bottom: 10px;
-      }
-    }
-  }
 }
 
 @include breakpoint(480px, 3) {
-  .persons-list {
-    &-item {
-      .person-image {
-        @include span(1 first no-gutters);
-      }
-      .person-information {
-        @include span(2 last);
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-@include breakpoint(600px, 6) {
-
-}
-
-@include breakpoint(720px, 6) {
-
-}
-
-@include breakpoint(960px, 12) {
-  .page-title-inscription {
-    @include span(3 of 12 first);
-    text-transform: uppercase;
-  }
-  .page-title-block {
-    @include span(9 of 12 last)
-  }
-  .page-content {
-    @include span(9 of 12 last)
-  }
-  .page-menu {
-    @include span(3 of 12 first)
-  }
-}
-
-@include breakpoint(1200px, 12) {
 
 }
