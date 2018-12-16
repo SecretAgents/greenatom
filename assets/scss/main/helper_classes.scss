@@ -8,8 +8,7 @@ h1 {
   font-size: 18px;
 }
 .clearfix {
-  overflow: hidden;
-  clear: both;
+  &::before,
   &::after {
     content: '.';
     display: block;
@@ -19,14 +18,14 @@ h1 {
   }
 }
 //Wrappers and inners
-.main-content,
-.header-inner,
-.footer-bottom-inner,
-.footer-main-inner,
-.page-title-block-inner {
-  max-width: 1140px;
-  margin: 0 auto;
-}
+//.main-content,
+//.header-inner,
+//.footer-bottom-inner,
+//.footer-main-inner,
+//.page-title-block-inner {
+//  max-width: 1140px;
+//  margin: 0 auto;
+//}
 //Paddings
 .padding-general {
   padding-left: 10px;
@@ -66,15 +65,6 @@ h1 {
 }
 
 // Fonts
-.title {
-  .tile-list-item & {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14px;
-    padding: 10px 5px;
-
-  }
-}
 .no-dot-title {
   .tile-list-item & {
     font-size: 12px;
@@ -121,6 +111,20 @@ h1 {
       }
     }
   }
+}
+
+.font-label-small {
+  font: $font-label-small;
+}
+.font-label {
+  font: $font-label;
+}
+.font-label-big {
+  font: $font-label-big;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .description-html-safe {
@@ -173,6 +177,22 @@ a {
   span {
     color: $link-primary;
   }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 //Buttons
@@ -298,6 +318,14 @@ a {
       font-weight: 300;
       line-height: 16px;
     }
+  }
+
+  .font-huge {
+    font: $font-huge;
+  }
+
+  .font-bold {
+    font-weight: 700;
   }
 }
 @include breakpoint(960px, 12) {
