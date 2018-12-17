@@ -6,7 +6,8 @@ $(document).ready(function(){
     nav: true,
     autoHeight: true,
     navText: ""
-  })
+  });
+
 
   $('.menu-open').on("click", function() {
     $('.additional-menu-wrapper').addClass('menu-change-visibility')
@@ -20,7 +21,5 @@ $(document).ready(function(){
     $('.scrollbar-dynamic').scrollbar();
   }
 
-  if ($('#additional-menu').size) {
-    $('#additional-menu').easytree({disableIcons: true});
-  }
+  $('#additional-menu').easytree({disableIcons: true});
 });
