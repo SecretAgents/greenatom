@@ -18,6 +18,17 @@ $(document).ready(function(){
 
   // $('.scrollbar-dynamic').scrollbar();
 
+  $('.navigation-toggle-link').on('click', function(e) {
+    e.preventDefault();
+    $('.navigation-list').toggleClass('active');
+  });
+
+  $('.navigation-list-item > a').on('click', function(e) {
+    e.preventDefault();
+    $('.navigation-list ul').removeClass('active');
+    $(this).siblings('ul').toggleClass('active');
+  });
+
   if ($('#additional-menu').size) {
     $('#additional-menu').easytree({disableIcons: true});
   }

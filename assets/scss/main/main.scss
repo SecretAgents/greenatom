@@ -291,14 +291,14 @@ ul {
       vertical-align: middle;
     }
   }
+  .navigation-toggle-link {
+    background: url(../images/icon-navigation.png) no-repeat center center;
+    &:hover {
+      background: $green url(../images/icon-navigation-white.png) no-repeat center center;
+    }
+  }
   .top-menu-list {
     font-size: 0;
-    .navigation {
-      background: url(../images/icon-navigation.png) no-repeat center center;
-      &:hover {
-        background: $green url(../images/icon-navigation-white.png) no-repeat center center;
-      }
-    }
     .sitemap {
       background: url(../images/icon-sitemap.png) no-repeat center center;
       &:hover {
@@ -445,6 +445,29 @@ ul {
   padding: 0;
   &:last-child {
     padding: 0;
+  }
+}
+
+@include susy-breakpoint(0px 959px, 3) {
+  .navigation-list {
+    background: $green;
+    padding: 40px 10px;
+    a {
+      color: $black;
+      &:hover {
+        color: $white;
+      }
+    }
+    .navigation-list-item {
+      &  > a {
+        padding: 8px 0 10px 25px;
+        text-transform: uppercase;
+        &:hover {
+          background: rgba(255, 255, 255, 0.7);
+          color: $black;
+        }
+      }
+    }
   }
 }
 
