@@ -176,6 +176,7 @@ h1 {
 }
 //management person page
 .persons-list-item {
+  margin-bottom: 15px;
   .management-person-wrapper & {
     .person-image {
       float: none;
@@ -193,7 +194,17 @@ h1 {
     }
   }
 }
-
+.subsidiary-block {
+  .persons-list {
+    &-item {
+      .person-information {
+        .person-post {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
 .description-html-safe {
   ul {
     li {
