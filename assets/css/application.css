@@ -398,31 +398,26 @@ h1 {
 .person-avatar img {
   width: 100%; }
 
-.persons-list-item {
-  margin-bottom: 15px; }
-  .management-wrapper .persons-list-item {
+.management-wrapper .persons-list-item {
+  width: 48.8888888889%;
+  float: left;
+  margin-right: 2.2222222222%; }
+  .management-wrapper .persons-list-item:nth-child(2n) {
     width: 48.8888888889%;
-    float: left;
-    margin-right: 2.2222222222%; }
-    .management-wrapper .persons-list-item:nth-child(2n) {
-      width: 48.8888888889%;
-      float: right;
-      margin-right: 0; }
-    .management-wrapper .persons-list-item:nth-child(2n-1) {
-      clear: both; }
-  .management-person-wrapper .persons-list-item .person-image {
-    float: none; }
-  .management-person-wrapper .persons-list-item .person-information {
-    float: none;
-    margin-top: 15px; }
-    .management-person-wrapper .persons-list-item .person-information .person-title {
-      font-weight: 600;
-      margin-bottom: 10px; }
-    .management-person-wrapper .persons-list-item .person-information .person-description {
-      margin-bottom: 10px; }
-
-.subsidiary-block .persons-list-item .person-information .person-post {
-  margin-bottom: 15px; }
+    float: right;
+    margin-right: 0; }
+  .management-wrapper .persons-list-item:nth-child(2n-1) {
+    clear: both; }
+.management-person-wrapper .persons-list-item .person-image {
+  float: none; }
+.management-person-wrapper .persons-list-item .person-information {
+  float: none;
+  margin-top: 15px; }
+  .management-person-wrapper .persons-list-item .person-information .person-title {
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .management-person-wrapper .persons-list-item .person-information .person-description {
+    margin-bottom: 10px; }
 
 .description-html-safe ul li {
   margin-top: 10px; }
@@ -1044,9 +1039,9 @@ ul {
   margin-top: -4px;
   height: 4px;
   width: 100%;
-  box-shadow: 0px 0px 15px black; }
+  box-shadow: 0px 0px 10px black; }
 
-.menu-open {
+.additional-menu-wrapper .menu-open {
   background: #bed33f;
   border-radius: 50%;
   vertical-align: middle;
@@ -1114,9 +1109,6 @@ ul {
   .content-wrapper .page-content {
     padding: 65px 5px; }
 
-.page-title-wrapper {
-  padding: 15px 5px; }
-
 .description-html-safe ul {
   list-style-type: disc;
   padding-left: 17px; }
@@ -1163,10 +1155,6 @@ ul {
   width: 10%;
   padding-right: 10px; }
 
-.persons-list-item .person-email a {
-  color: #587daa; }
-  .persons-list-item .person-email a:hover {
-    color: #7a7a7a; }
 .management-wrapper .persons-list-item {
   text-align: center; }
   .management-wrapper .persons-list-item .person-data a {
@@ -1181,10 +1169,6 @@ ul {
       display: block; }
   .management-wrapper .persons-list-item .person-position {
     font-size: 13px; }
-
-.subsidiary-block .persons-list-item {
-  padding-bottom: 40px;
-  border-bottom: 1px solid #dcdcdc; }
 
 .owl-carousel-simple .owl-nav {
   position: absolute;
@@ -1335,18 +1319,12 @@ ul {
     padding-left: 10px;
     padding-right: 10px; }
 
-  .page-title-wrapper {
-    padding: 25px 10px; }
-
   .additional-menu {
     padding: 20px 90px 20px 0px; } }
 @media (min-width: 600px) {
   .content-wrapper .page-content {
     padding-left: 15px;
     padding-right: 15px; }
-
-  .page-title-wrapper {
-    padding: 45px 15px; }
 
   .main-content .one-column {
     padding-left: 15px;
@@ -1357,7 +1335,8 @@ ul {
     padding-right: 75px; }
 
   .page-title-wrapper {
-    padding: 60px 75px; }
+    padding-left: 75px;
+    padding-right: 75px; }
 
   .main-content .one-column {
     padding-left: 25px;

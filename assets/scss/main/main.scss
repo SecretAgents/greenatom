@@ -26,15 +26,18 @@ ul {
     margin-top: -4px;
     height: 4px;
     width: 100%;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 10px black;
   }
 }
+
 //Additional page menu
-.menu-open {
-  background: $green;
-  border-radius: 50%;
-  vertical-align: middle;
-  text-align: center;
+.additional-menu-wrapper {
+  .menu-open {
+    background: $green;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+  }
 }
 
 .additional-menu {
