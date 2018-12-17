@@ -16,7 +16,7 @@ $(document).ready(function(){
     $('.additional-menu-wrapper').removeClass('menu-change-visibility')
   });
 
-  // $('.scrollbar-dynamic').scrollbar();
+  $('.scrollbar-dynamic').scrollbar();
 
   $('#additional-menu').easytree({disableIcons: true});
 });

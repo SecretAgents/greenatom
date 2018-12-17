@@ -176,6 +176,15 @@ h1 {
 }
 //management person page
 .persons-list-item {
+  .management-wrapper & {
+    @include span(3 of 6 first);
+    &:nth-child(2n){
+      @include span(3 of 6 last);
+    }
+    &:nth-child(2n-1){
+      clear: both;
+    }
+  }
   .management-person-wrapper & {
     .person-image {
       float: none;
@@ -248,9 +257,20 @@ h1 {
   margin: 0 auto;
   display: none;
 
+  span {
+    &.easytree-expander {
+      position: absolute;
+      &:after {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
   .menu-close {
     position: absolute;
     right: 30px;
+    top: 20px;
     z-index: 10;
   }
 
@@ -262,25 +282,26 @@ h1 {
     text-decoration: none;
   }
 
-  .top-blur-block {
-    width: 100%;
-    height: 60px;
+  .top-blur-block,
+  .bottom-blur-block {
+    width: 88%;
+    height: 20px;
     position: absolute;
-    top: 0;
     z-index: 1;
   }
 
+  .top-blur-block {
+    top: 0;
+  }
+
   .bottom-blur-block {
-    width: 100%;
-    height: 60px;
-    position: absolute;
     bottom: 0;
-    z-index: 1;
   }
 
   .scrollbar-dynamic {
     margin: 0;
     overflow-y: scroll;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     height: 240px;
 
@@ -503,18 +524,7 @@ h1 {
       }
     }
   }
-  //management page
-  .persons-list-item {
-    .management-wrapper & {
-      @include span(3 of 6 first);
-      &:nth-child(2n){
-        @include span(3 of 6 last);
-      }
-      &:nth-child(2n-1){
-        clear: both;
-      }
-    }
-  }
+
   //.tile-list-item {
   //  .title-block {
   //    .archive-icon {
