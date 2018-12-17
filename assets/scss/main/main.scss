@@ -136,8 +136,12 @@ ul {
 // Page styles
 .content-wrapper {
   background-color: $white;
-  padding: 65px 5px;
+  padding: 0px;
+  .page-content {
+    padding: 65px 5px;
+  }
 }
+
 .description-html-safe {
   ul {
     list-style-type: disc;
@@ -480,20 +484,20 @@ ul {
 @include breakpoint(480px, 3) {
   // Page styles
   .content-wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
+    .page-content {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
 
 @include breakpoint(600px, 6) {
   //Page styles
   .content-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  //Additional page menu
-  .page-menu {
-    margin: -65px -15px 60px;
+    .page-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   //Main page styles
   .main-content {
@@ -505,9 +509,12 @@ ul {
 }
 @include breakpoint(700px, 6) {
   //Page styles
+  //Page styles
   .content-wrapper {
-    padding-left: 75px;
-    padding-right: 75px;
+    .page-content {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
   }
   .page-title-wrapper {
     padding-left: 75px;
@@ -555,12 +562,16 @@ ul {
   }
 }
 @include breakpoint(720px, 6) {
-  //Additional page menu
-  .page-menu {
-    margin: -65px -75px 60px;
-  }
+
 }
 @include breakpoint(960px, 12) {
+  //Page styles
+  .content-wrapper {
+    padding: 65px 60px;
+    .page-content {
+      padding: 0;
+    }
+  }
   //Additional page menu
   .page-menu {
     margin: 0;
@@ -568,7 +579,6 @@ ul {
   .menu-open {
     display: none;
   }
-
   .additional-menu {
     font-weight: 300;
     background: none;

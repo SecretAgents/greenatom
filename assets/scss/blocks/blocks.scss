@@ -237,9 +237,7 @@ h1 {
     display: none;
   }
 }
-.page-menu {
-  margin: -65px -5px 60px;
-}
+
 .menu-open {
   width: 56px;
   height: 56px;
@@ -256,6 +254,10 @@ h1 {
   max-width: 1140px;
   margin: 0 auto;
   display: none;
+
+  ul {
+    margin-top: 0;
+  }
 
   span {
     &.easytree-expander {
@@ -507,9 +509,6 @@ h1 {
 
 @include breakpoint(480px, 3) {
   //Additional page menu
-  .page-menu {
-    margin: -65px -10px 60px;
-  }
   .menu-open {
     right: 35px;
   }
@@ -689,7 +688,7 @@ h1 {
       overflow: visible;
     }
     ul {
-      padding: 0;
+      margin-top: 20px;
     }
   }
   //Page styles
