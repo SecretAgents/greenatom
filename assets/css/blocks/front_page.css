@@ -72,6 +72,8 @@
   bottom: 0;
   height: 50%;
   width: 95.4545454545%; }
+.tile-list .slider .slider-item-title {
+  display: none; }
 .tile-list .slider .tile-title {
   position: static;
   width: 100%; }

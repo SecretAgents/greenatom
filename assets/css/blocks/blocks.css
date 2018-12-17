@@ -73,6 +73,10 @@ h1 {
   height: 75px; }
   .header .top-menu-block .navigation-list {
     display: none; }
+    .header .top-menu-block .navigation-list .navigation-root {
+      margin: 0; }
+      .header .top-menu-block .navigation-list .navigation-root ul {
+        display: none; }
   .header .top-menu-block .top-menu-list {
     display: inline-block;
     height: 100%; }
@@ -282,9 +286,6 @@ h1 {
     float: left;
     margin-right: 1.0989010989%; }
 
-  .header .top-menu-list .navigation {
-    display: none; }
-
   .menu-block-footer {
     width: 57.8754578755%;
     float: left;
@@ -352,6 +353,8 @@ h1 {
   .container {
     max-width: 1140px; }
 
+  .header .top-menu-list .navigation {
+    display: none; }
   .header .top-menu-block .navigation-list {
     display: inline-block; }
     .header .top-menu-block .navigation-list-item {
@@ -359,8 +362,9 @@ h1 {
       text-transform: uppercase;
       height: 75px;
       vertical-align: middle;
-      color: #fff;
       font-size: 13px; }
+      .header .top-menu-block .navigation-list-item a {
+        color: #fff; }
     .header .top-menu-block .navigation-list .navigation-list-item::before {
       padding-right: 10px;
       padding-left: 10px;
@@ -377,26 +381,6 @@ h1 {
     width: 571px;
     float: right;
     margin-right: 75px; }
-
-  .tile-list-item {
-    margin-bottom: 12px; }
-  .tile-list .news-first .background,
-  .tile-list .news-second .background,
-  .tile-list .news-third .background,
-  .tile-list .news-fourth .background,
-  .tile-list .news-first-description .background {
-    height: 277px; }
-  .tile-list .half-horizontal .background {
-    height: 145px; }
-  .tile-list .half-horizontal .title-block {
-    height: 132px; }
-  .tile-list .vk .background,
-  .tile-list .facebook .background {
-    height: 133px; }
-  .tile-list .instagram {
-    margin-top: 12px; }
-  .tile-list .social-media-block {
-    padding-left: 0; }
 
   .menu-column {
     width: 19.9367088608%;
