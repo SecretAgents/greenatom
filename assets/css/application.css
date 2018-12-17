@@ -398,16 +398,21 @@ h1 {
 .person-avatar img {
   width: 100%; }
 
-.management-person-wrapper .persons-list-item .person-image {
-  float: none; }
-.management-person-wrapper .persons-list-item .person-information {
-  float: none;
-  margin-top: 15px; }
-  .management-person-wrapper .persons-list-item .person-information .person-title {
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .management-person-wrapper .persons-list-item .person-information .person-description {
-    margin-bottom: 10px; }
+.persons-list-item {
+  margin-bottom: 15px; }
+  .management-person-wrapper .persons-list-item .person-image {
+    float: none; }
+  .management-person-wrapper .persons-list-item .person-information {
+    float: none;
+    margin-top: 15px; }
+    .management-person-wrapper .persons-list-item .person-information .person-title {
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .management-person-wrapper .persons-list-item .person-information .person-description {
+      margin-bottom: 10px; }
+
+.subsidiary-block .persons-list-item .person-information .person-post {
+  margin-bottom: 15px; }
 
 .description-html-safe ul li {
   margin-top: 10px; }
@@ -1085,6 +1090,9 @@ ul {
   background-color: #fff;
   padding: 65px 5px; }
 
+.page-title-wrapper {
+  padding: 15px 5px; }
+
 .description-html-safe ul {
   list-style-type: disc;
   padding-left: 17px; }
@@ -1131,6 +1139,10 @@ ul {
   width: 10%;
   padding-right: 10px; }
 
+.persons-list-item .person-email a {
+  color: #587daa; }
+  .persons-list-item .person-email a:hover {
+    color: #7a7a7a; }
 .management-wrapper .persons-list-item {
   text-align: center; }
   .management-wrapper .persons-list-item .person-data a {
@@ -1145,6 +1157,10 @@ ul {
       display: block; }
   .management-wrapper .persons-list-item .person-position {
     font-size: 13px; }
+
+.subsidiary-block .persons-list-item {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dcdcdc; }
 
 .owl-carousel-simple .owl-nav {
   position: absolute;
@@ -1293,11 +1309,17 @@ ul {
 @media (min-width: 480px) {
   .content-wrapper {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  .page-title-wrapper {
+    padding: 25px 10px; } }
 @media (min-width: 600px) {
   .content-wrapper {
     padding-left: 15px;
     padding-right: 15px; }
+
+  .page-title-wrapper {
+    padding: 45px 15px; }
 
   .page-menu {
     margin: -65px -15px 60px; }
@@ -1311,8 +1333,7 @@ ul {
     padding-right: 75px; }
 
   .page-title-wrapper {
-    padding-left: 75px;
-    padding-right: 75px; }
+    padding: 60px 75px; }
 
   .main-content .one-column {
     padding-left: 25px;

@@ -119,16 +119,21 @@ h1 {
 .person-avatar img {
   width: 100%; }
 
-.management-person-wrapper .persons-list-item .person-image {
-  float: none; }
-.management-person-wrapper .persons-list-item .person-information {
-  float: none;
-  margin-top: 15px; }
-  .management-person-wrapper .persons-list-item .person-information .person-title {
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .management-person-wrapper .persons-list-item .person-information .person-description {
-    margin-bottom: 10px; }
+.persons-list-item {
+  margin-bottom: 15px; }
+  .management-person-wrapper .persons-list-item .person-image {
+    float: none; }
+  .management-person-wrapper .persons-list-item .person-information {
+    float: none;
+    margin-top: 15px; }
+    .management-person-wrapper .persons-list-item .person-information .person-title {
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .management-person-wrapper .persons-list-item .person-information .person-description {
+      margin-bottom: 10px; }
+
+.subsidiary-block .persons-list-item .person-information .person-post {
+  margin-bottom: 15px; }
 
 .description-html-safe ul li {
   margin-top: 10px; }
