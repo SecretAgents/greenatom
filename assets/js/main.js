@@ -21,7 +21,7 @@ $(document).ready(function(){
     $('.scrollbar-dynamic').scrollbar();
   }
 
-  if ($('.scrollbar-dynamic').size()) {
+  if ($('#additional-menu').size()) {
     $('#additional-menu').easytree({disableIcons: true});
   }
 });
