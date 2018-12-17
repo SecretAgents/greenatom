@@ -17,9 +17,11 @@ $(document).ready(function(){
     $('.additional-menu-wrapper').removeClass('menu-change-visibility')
   });
 
-  if ($('.scrollbar-dynamic').size) {
+  if ($('.scrollbar-dynamic').size()) {
     $('.scrollbar-dynamic').scrollbar();
   }
 
-  $('#additional-menu').easytree({disableIcons: true});
+  if ($('#additional-menu').size()) {
+    $('#additional-menu').easytree({disableIcons: true});
+  }
 });
