@@ -30,7 +30,7 @@ ul {
 .additional-menu {
   font-weight: 400;
   background: $green;
-  padding: 20px 10px 20px 0px;
+  padding: 20px 60px 20px 0px;
 
   span {
     &.easytree-node {
@@ -489,6 +489,10 @@ ul {
       padding-right: 10px;
     }
   }
+  // Additional page menu
+  .additional-menu {
+    padding: 20px 90px 20px 0px;
+  }
 }
 
 @include breakpoint(600px, 6) {
@@ -556,13 +560,12 @@ ul {
       padding-right: span(0.5 of 12);
     }
   }
-  // Additional page menu
-  .additional-menu {
-    padding: 20px 100px 20px 70px;
-  }
 }
 @include breakpoint(720px, 6) {
-
+  // Additional page menu
+  .additional-menu {
+    padding: 20px 160px 20px 70px;
+  }
 }
 @include breakpoint(960px, 12) {
   //Page styles

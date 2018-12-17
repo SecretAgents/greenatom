@@ -271,7 +271,7 @@ h1 {
 
   .menu-close {
     position: absolute;
-    right: 30px;
+    right: 23px;
     top: 20px;
     z-index: 10;
   }
@@ -658,6 +658,9 @@ h1 {
         clear: both;
       }
     }
+  }
+  .additional-menu .menu-close {
+    right: 90px;
   }
 }
 @include susy-breakpoint(800px, 12) {
