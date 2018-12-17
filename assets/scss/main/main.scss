@@ -19,16 +19,31 @@ ul {
   }
 }
 
+.page-menu {
+  .menu-change-visibility:after {
+    content: '';
+    display: block;
+    margin-top: -4px;
+    height: 4px;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+  }
+}
+
 //Additional page menu
-.menu-open {
-  background: $green;
-  border-radius: 50%;
-  vertical-align: middle;
-  text-align: center;
+.additional-menu-wrapper {
+  .menu-open {
+    background: $green;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+  }
 }
 
 .additional-menu {
+  font-weight: 400;
   background: $green;
+  padding: 20px 60px 20px 0px;
 
   span {
     &.easytree-node {
@@ -38,16 +53,37 @@ ul {
 
     &.easytree-expander {
       display: inline-block;
-      position: absolute;
+      font-weight: bold;
+
+      &:after {
+        padding-left: 4px;
+      }
+    }
+    &.easytree-exp-c {
+      span.easytree-expander {
+        &:after {
+          content: '+';
+        }
+      }
+    }
+
+    &.easytree-exp-e {
+      span.easytree-expander {
+        &:after {
+          content: '-';
+        }
+      }
     }
   }
 
   .top-blur-block {
-    background: linear-gradient(to bottom, $green, rgba(0,0,0,0));
+    background: $green;
+    box-shadow: 0px 13px 27px $green;
   }
 
   .bottom-blur-block {
-    background: linear-gradient(to top, $green, rgba(0,0,0,0));
+    background: $green;
+    box-shadow: 0px -13px 27px $green;
   }
 
   .easytree-focused span.easytree-active .easytree-title {
@@ -58,37 +94,43 @@ ul {
     color: $white;
   }
 
-  ul.easytree-container ul {
-    margin: 0;
-  }
-  ul.easytree-container li {
-    .easytree-title {
-      padding-left: 20px;
-    }
-
-    .easytree-node {
-      padding: 10px 0px;
-      cursor: pointer;
-      width: 100%;
-      &:before {
-        content: '·';
-        font-size: 41px;
-        margin-top: 0;
-        position: absolute;
-        padding-left: 5px;
-      }
-    }
-
-  }
-
   ul {
     padding: 20px 0px;
     font-size: 17px;
-    list-style: disc inside;
+
+    &.easytree-container ul {
+      margin: 0;
+    }
+
+    &.easytree-container li {
+      .easytree-title {
+        padding-left: 20px;
+      }
+
+      .easytree-node {
+        padding: 10px 0px;
+        width: 100%;
+
+        &:before {
+          content: '·';
+          font-size: 41px;
+          margin-top: 0;
+          position: absolute;
+          padding-left: 5px;
+        }
+      }
+    }
 
     li {
       position: relative;
       color: $white;
+
+      .easytree-active {
+        span,
+        a {
+          color: $white;
+        }
+      }
 
       .easytree-node:hover {
         color: $white;
@@ -107,7 +149,10 @@ ul {
 // Page styles
 .content-wrapper {
   background-color: $white;
-  padding: 65px 5px;
+  padding: 0px;
+  .page-content {
+    padding: 65px 5px;
+  }
 }
 .page-title-wrapper {
   padding: 15px 5px;
@@ -470,26 +515,30 @@ ul {
 @include breakpoint(480px, 3) {
   // Page styles
   .content-wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
+    .page-content {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   .page-title-wrapper {
     padding: 25px 10px;
+  }
+  // Additional page menu
+  .additional-menu {
+    padding: 20px 90px 20px 0px;
   }
 }
 
 @include breakpoint(600px, 6) {
   //Page styles
   .content-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    .page-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   .page-title-wrapper {
     padding: 45px 15px;
-  }
-  //Additional page menu
-  .page-menu {
-    margin: -65px -15px 60px;
   }
   //Main page styles
   .main-content {
@@ -501,9 +550,12 @@ ul {
 }
 @include breakpoint(700px, 6) {
   //Page styles
+  //Page styles
   .content-wrapper {
-    padding-left: 75px;
-    padding-right: 75px;
+    .page-content {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
   }
   .page-title-wrapper {
     padding: 60px 75px;
@@ -546,12 +598,19 @@ ul {
   }
 }
 @include breakpoint(720px, 6) {
-  //Additional page menu
-  .page-menu {
-    margin: -65px -75px 60px;
+  // Additional page menu
+  .additional-menu {
+    padding: 20px 160px 20px 70px;
   }
 }
 @include breakpoint(960px, 12) {
+  //Page styles
+  .content-wrapper {
+    padding: 65px 60px;
+    .page-content {
+      padding: 0;
+    }
+  }
   //Additional page menu
   .page-menu {
     margin: 0;
@@ -559,34 +618,35 @@ ul {
   .menu-open {
     display: none;
   }
-
   .additional-menu {
+    font-weight: 300;
     background: none;
     overflow: visible;
+    padding: 0px 10px 0px 0px;
     .menu-header {
       background: $bg-primary-light;
       padding: 5px 5px 5px 30px;
       text-transform: uppercase;
     }
-
     .easytree-focused .easytree-title {
       color: $black;
     }
-
     .easytree-exp-e .easytree-title a {
       color: $black;
     }
-
     .easytree-focused span.easytree-active,
     span.easytree-exp-e {
       background: $green;
       color: $white;
-
+      .easytree-title a{
+        color: $white;
+      }
       &:before {
         color: $white;
       }
     }
     ul {
+      padding: 10px 0px;
       li {
         color: $green;
         a {

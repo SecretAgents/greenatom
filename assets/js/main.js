@@ -6,7 +6,8 @@ $(document).ready(function(){
     nav: true,
     autoHeight: true,
     navText: ""
-  })
+  });
+
 
   $('.menu-open').on("click", function() {
     $('.additional-menu-wrapper').addClass('menu-change-visibility')
@@ -16,9 +17,9 @@ $(document).ready(function(){
     $('.additional-menu-wrapper').removeClass('menu-change-visibility')
   });
 
-  // $('.scrollbar-dynamic').scrollbar();
-
-  if ($('#additional-menu').size) {
-    $('#additional-menu').easytree({disableIcons: true});
+  if ($('.scrollbar-dynamic').size) {
+    $('.scrollbar-dynamic').scrollbar();
   }
+
+  $('#additional-menu').easytree({disableIcons: true});
 });
