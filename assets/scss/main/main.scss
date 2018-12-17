@@ -19,6 +19,91 @@ ul {
   }
 }
 
+//Additional page menu
+.menu-open {
+  background: $green;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.additional-menu {
+  background: $green;
+
+  span {
+    &.easytree-node {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &.easytree-expander {
+      display: inline-block;
+      position: absolute;
+    }
+  }
+
+  .top-blur-block {
+    background: linear-gradient(to bottom, $green, rgba(0,0,0,0));
+  }
+
+  .bottom-blur-block {
+    background: linear-gradient(to top, $green, rgba(0,0,0,0));
+  }
+
+  .easytree-focused span.easytree-active .easytree-title {
+    background: none;
+    color: $white;
+  }
+  .easytree-exp-e .easytree-title a {
+    color: $white;
+  }
+
+  ul.easytree-container ul {
+    margin: 0;
+  }
+  ul.easytree-container li {
+    .easytree-title {
+      padding-left: 20px;
+    }
+
+    .easytree-node {
+      padding: 10px 0px;
+      cursor: pointer;
+      width: 100%;
+      &:before {
+        content: '·';
+        font-size: 41px;
+        margin-top: 0;
+        position: absolute;
+        padding-left: 5px;
+      }
+    }
+
+  }
+
+  ul {
+    padding: 20px 0px;
+    font-size: 17px;
+    list-style: disc inside;
+
+    li {
+      position: relative;
+      color: $white;
+
+      .easytree-node:hover {
+        color: $white;
+
+        a {
+          color: $white;
+        }
+      }
+
+      a {
+        color: $black;
+      }
+    }
+  }
+}
 // Page styles
 .content-wrapper {
   background-color: $white;
@@ -90,7 +175,30 @@ ul {
     }
   }
 }
-
+.persons-list-item {
+  .management-wrapper & {
+    text-align: center;
+    .person-data {
+      a {
+        font-size: 13px;
+        color: $link-primary-pressed;
+        &:hover {
+          color: $link-primary;
+        }
+      }
+    }
+    .person-name {
+      font-size: 15px;
+      font-weight: bold;
+      span {
+        display: block;
+      }
+    }
+    .person-position {
+      font-size: 13px;
+    }
+  }
+}
 .owl-carousel-simple {
   .owl-nav {
     position: absolute;
@@ -354,6 +462,10 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
   }
+  //Additional page menu
+  .page-menu {
+    margin: -65px -15px 60px;
+  }
   //Main page styles
   .main-content {
     .one-column {
@@ -409,8 +521,60 @@ ul {
     }
   }
 }
-
+@include breakpoint(720px, 6) {
+  //Additional page menu
+  .page-menu {
+    margin: -65px -75px 60px;
+  }
+}
 @include breakpoint(960px, 12) {
+  //Additional page menu
+  .page-menu {
+    margin: 0;
+  }
+  .menu-open {
+    display: none;
+  }
+
+  .additional-menu {
+    background: none;
+    overflow: visible;
+    .menu-header {
+      background: $bg-primary-light;
+      padding: 5px 5px 5px 30px;
+      text-transform: uppercase;
+    }
+
+    .easytree-focused .easytree-title {
+      color: $black;
+    }
+
+    .easytree-exp-e .easytree-title a {
+      color: $black;
+    }
+
+    .easytree-focused span.easytree-active,
+    span.easytree-exp-e {
+      background: $green;
+      color: $white;
+
+      &:before {
+        color: $white;
+      }
+    }
+    ul {
+      li {
+        color: $green;
+        a {
+          color: $black;
+        }
+        .easytree-node:hover {
+          color: $white;
+          background: $green;
+        }
+      }
+    }
+  }
   //Page styles
   .content-wrapper {
     padding-left: 60px;
