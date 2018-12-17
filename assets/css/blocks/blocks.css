@@ -119,16 +119,31 @@ h1 {
 .person-avatar img {
   width: 100%; }
 
-.management-person-wrapper .persons-list-item .person-image {
-  float: none; }
-.management-person-wrapper .persons-list-item .person-information {
-  float: none;
-  margin-top: 15px; }
-  .management-person-wrapper .persons-list-item .person-information .person-title {
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .management-person-wrapper .persons-list-item .person-information .person-description {
-    margin-bottom: 10px; }
+.persons-list-item {
+  margin-bottom: 15px; }
+  .management-wrapper .persons-list-item {
+    width: 48.8888888889%;
+    float: left;
+    margin-right: 2.2222222222%; }
+    .management-wrapper .persons-list-item:nth-child(2n) {
+      width: 48.8888888889%;
+      float: right;
+      margin-right: 0; }
+    .management-wrapper .persons-list-item:nth-child(2n-1) {
+      clear: both; }
+  .management-person-wrapper .persons-list-item .person-image {
+    float: none; }
+  .management-person-wrapper .persons-list-item .person-information {
+    float: none;
+    margin-top: 15px; }
+    .management-person-wrapper .persons-list-item .person-information .person-title {
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .management-person-wrapper .persons-list-item .person-information .person-description {
+      margin-bottom: 10px; }
+
+.subsidiary-block .persons-list-item .person-information .person-post {
+  margin-bottom: 15px; }
 
 .description-html-safe ul li {
   margin-top: 10px; }
@@ -149,9 +164,6 @@ h1 {
 .menu-change-visibility .menu-open {
   display: none; }
 
-.page-menu {
-  margin: -65px -5px 60px; }
-
 .menu-open {
   width: 56px;
   height: 56px;
@@ -166,29 +178,36 @@ h1 {
   max-width: 1140px;
   margin: 0 auto;
   display: none; }
+  .additional-menu ul {
+    margin-top: 0; }
+  .additional-menu span.easytree-expander {
+    position: absolute; }
+    .additional-menu span.easytree-expander:after {
+      width: 20px;
+      height: 20px; }
   .additional-menu .menu-close {
     position: absolute;
-    right: 30px;
+    right: 23px;
+    top: 20px;
     z-index: 10; }
   .additional-menu .menu-header {
     display: none; }
   .additional-menu a {
     text-decoration: none; }
-  .additional-menu .top-blur-block {
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    z-index: 1; }
+  .additional-menu .top-blur-block,
   .additional-menu .bottom-blur-block {
-    width: 100%;
-    height: 60px;
+    width: 88%;
+    height: 20px;
     position: absolute;
-    bottom: 0;
     z-index: 1; }
+  .additional-menu .top-blur-block {
+    top: 0; }
+  .additional-menu .bottom-blur-block {
+    bottom: 0; }
   .additional-menu .scrollbar-dynamic {
     margin: 0;
     overflow-y: scroll;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     height: 240px; }
     .additional-menu .scrollbar-dynamic li > ul {
@@ -283,9 +302,6 @@ h1 {
     vertical-align: middle;
     padding-left: 25px; } }
 @media (min-width: 480px) {
-  .page-menu {
-    margin: -65px -10px 60px; }
-
   .menu-open {
     right: 35px; }
 
@@ -296,18 +312,7 @@ h1 {
     width: 65.1515151515%;
     float: right;
     margin-right: 0;
-    margin-top: 0; }
-
-  .management-wrapper .persons-list-item {
-    width: 48.8888888889%;
-    float: left;
-    margin-right: 2.2222222222%; }
-    .management-wrapper .persons-list-item:nth-child(2n) {
-      width: 48.8888888889%;
-      float: right;
-      margin-right: 0; }
-    .management-wrapper .persons-list-item:nth-child(2n-1) {
-      clear: both; } }
+    margin-top: 0; } }
 @media (min-width: 700px) {
   .header .top-menu-block .top-menu-list .sitemap {
     display: inline-block; }
@@ -357,7 +362,10 @@ h1 {
       float: right;
       margin-right: 0; }
     .management-wrapper .persons-list-item:nth-child(3n+1) {
-      clear: both; } }
+      clear: both; }
+
+  .additional-menu .menu-close {
+    right: 90px; } }
 @media (min-width: 800px) {
   .container {
     max-width: 100%;
@@ -384,7 +392,7 @@ h1 {
       height: auto;
       overflow: visible; }
     .additional-menu ul {
-      padding: 0; }
+      margin-top: 20px; }
 
   .page-title-inscription {
     width: 24.1758241758%;

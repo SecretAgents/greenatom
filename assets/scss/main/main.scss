@@ -151,7 +151,9 @@ ul {
     padding: 65px 5px;
   }
 }
-
+.page-title-wrapper {
+  padding: 15px 5px;
+}
 .description-html-safe {
   ul {
     list-style-type: disc;
@@ -219,6 +221,14 @@ ul {
   }
 }
 .persons-list-item {
+  .person-email {
+    a {
+      color: $link-primary-pressed;
+      &:hover {
+        color: $link-primary;
+      }
+    }
+  }
   .management-wrapper & {
     text-align: center;
     .person-data {
@@ -239,6 +249,14 @@ ul {
     }
     .person-position {
       font-size: 13px;
+    }
+  }
+}
+.subsidiary-block {
+  .persons-list {
+    &-item {
+      padding-bottom: 40px;
+      border-bottom: 1px solid #dcdcdc;
     }
   }
 }
@@ -499,6 +517,9 @@ ul {
       padding-right: 10px;
     }
   }
+  .page-title-wrapper {
+    padding: 25px 10px;
+  }
   // Additional page menu
   .additional-menu {
     padding: 20px 90px 20px 0px;
@@ -512,6 +533,9 @@ ul {
       padding-left: 15px;
       padding-right: 15px;
     }
+  }
+  .page-title-wrapper {
+    padding: 45px 15px;
   }
   //Main page styles
   .main-content {
@@ -531,8 +555,7 @@ ul {
     }
   }
   .page-title-wrapper {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 60px 75px;
   }
   // Main page styles
   .main-content {

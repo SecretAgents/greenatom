@@ -176,6 +176,7 @@ h1 {
 }
 //management person page
 .persons-list-item {
+  margin-bottom: 15px;
   .management-wrapper & {
     @include span(3 of 6 first);
     &:nth-child(2n){
@@ -202,7 +203,17 @@ h1 {
     }
   }
 }
-
+.subsidiary-block {
+  .persons-list {
+    &-item {
+      .person-information {
+        .person-post {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
 .description-html-safe {
   ul {
     li {
