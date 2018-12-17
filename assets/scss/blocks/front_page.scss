@@ -146,6 +146,14 @@
     .tile-text {
       display: none;
     }
+    &:hover {
+      .tile-icon {
+        display: none;
+      }
+      .tile-text {
+        display: block;
+      }
+    }
   }
 
   .text-on-hover {
@@ -184,10 +192,6 @@
     }
   }
 
-  .cities-list {
-    display: none;
-  }
-
   .rewards-list {
     .rewards-list-item {
       margin-right: 5px;
@@ -208,6 +212,59 @@
     font: $font-base;
     img {
       display: inline;
+    }
+  }
+}
+
+
+@include susy-breakpoint(600px, 6) {
+  .tile-list {
+    .tile-list-row {
+      margin-bottom: gutter(6);
+    }
+
+    .wide {
+      & > .first {
+        @include span(3);
+        padding-right: gutter(6)/2;
+        display: table-cell;
+        float: none;
+      }
+
+      & > .last {
+        @include span(3 last);
+        padding-left: gutter(6)/2;
+        display: table-cell;
+        float: none;
+      }
+    }
+
+    .simple-color {
+      &::before {
+        width: span(6) - gutter(6);
+      }
+    }
+
+    .half-horizontal {
+      .tile-text {
+        width: span(6) - gutter(6);
+      }
+    }
+
+    .items_3 {
+      .tile-list-item {
+        @include span(6 last);
+      }
+
+      & > .first {
+        @include span(3);
+        margin-bottom: gutter(3);
+      }
+
+      & > .last {
+        @include span(3 last);
+        margin-bottom: gutter(3);
+      }
     }
   }
 }

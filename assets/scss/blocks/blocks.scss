@@ -426,6 +426,26 @@ h1 {
       }
     }
   }
+  .top-menu-list {
+    .dropdown-menu-search,
+    .dropdown-menu-sitemap {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%;
+      z-index: 50;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .top-menu-list-item {
+      &.active {
+        .dropdown-menu-search,
+        .dropdown-menu-sitemap {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint(380px, 3) {
@@ -480,6 +500,22 @@ h1 {
         .navigation-root {
           @include span(5 last);
           @include squish(0.5);
+        }
+      }
+    }
+    .top-menu-list {
+      .top-menu-list-item {
+        .dropdown-menu-sitemap {
+          .sitemap-first-column,
+          .sitemap-third-column {
+            @include span(3);
+          }
+          .sitemap-second-column {
+            @include span(3 last);
+          }
+          .sitemap-third-column {
+            @include span(6 last);
+          }
         }
       }
     }
@@ -553,7 +589,7 @@ h1 {
   }
 }
 
-@include breakpoint(960px, 12) {
+@include susy-breakpoint(960px, 12) {
   // additional page menu
   .menu-open {
     display: none;
@@ -608,6 +644,7 @@ h1 {
           display: none;
           position: absolute;
           z-index: 50;
+          margin-left: -5px;
           a {
             display: block;
           }
@@ -620,16 +657,42 @@ h1 {
           & > a {
             display: block;
             height: 75px;
-            //&:hover {
-            //  & + ul {
-            //    display: block;
-            //  }
-            //}
+            &:hover {
+              margin-left: -5px;
+            }
           }
           &:hover {
+            & > a {
+              margin-left: -5px;
+            }
             & > ul {
               display: block;
             }
+          }
+        }
+      }
+      .top-menu-list-item {
+        .dropdown-menu-search,
+        .dropdown-menu-sitemap {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 100%;
+          z-index: 50;
+          box-sizing: border-box;
+          overflow: hidden;
+        }
+        .sitemap-first-column,
+        .sitemap-second-column  {
+          @include span(4);
+        }
+        .sitemap-third-column {
+          @include span(4 last);
+        }
+        &:hover {
+          .dropdown-menu-search,
+          .dropdown-menu-sitemap {
+            display: block;
           }
         }
       }

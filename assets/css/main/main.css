@@ -180,7 +180,7 @@ ul {
   vertical-align: middle; }
 .header .navigation-toggle-link {
   background: url(../images/icon-navigation.png) no-repeat center center; }
-  .header .navigation-toggle-link:hover {
+  .header .navigation-toggle-link:hover, .header .navigation-toggle-link.active {
     background: #bed33f url(../images/icon-navigation-white.png) no-repeat center center; }
 .header .top-menu-list {
   font-size: 0; }
@@ -293,7 +293,23 @@ ul {
       text-transform: uppercase; }
       .navigation-list .navigation-list-item > a:hover {
         background: rgba(255, 255, 255, 0.7);
-        color: #000; } }
+        color: #000; }
+
+  .top-menu-list .dropdown-menu-search,
+  .top-menu-list .dropdown-menu-sitemap {
+    background: #bed33f;
+    padding: 40px 10px;
+    font: 300 15px/18px "Open Sans", sans-serif;
+    color: #000; }
+    .top-menu-list .dropdown-menu-search a,
+    .top-menu-list .dropdown-menu-sitemap a {
+      color: #000; }
+    .top-menu-list .dropdown-menu-search span,
+    .top-menu-list .dropdown-menu-sitemap span {
+      font: 300 18px/22px "Open Sans", sans-serif; }
+    .top-menu-list .dropdown-menu-search ul ul,
+    .top-menu-list .dropdown-menu-sitemap ul ul {
+      padding-left: 10px; } }
 @media (min-width: 480px) {
   .content-wrapper {
     padding-left: 10px;
@@ -366,14 +382,16 @@ ul {
         padding-left: 10px;
         line-height: 75px; }
         .header .top-menu-block .navigation-list-item > a:hover {
-          padding-left: 15px;
-          margin-left: -5px; }
+          padding-left: 15px; }
         .header .top-menu-block .navigation-list-item > a:after {
           padding-left: 10px;
           content: "•";
           color: #bed33f;
           font-size: 14px;
           font-weight: 600; }
+      .header .top-menu-block .navigation-list-item:hover > a {
+        background: #bed33f;
+        color: #fff; }
       .header .top-menu-block .navigation-list-item:first-child > a {
         padding-left: 15px; }
       .header .top-menu-block .navigation-list-item:last-child > a {
@@ -383,8 +401,23 @@ ul {
       .header .top-menu-block .navigation-list-item ul {
         background: #fff; }
         .header .top-menu-block .navigation-list-item ul a {
-          color: #fff;
+          color: #000;
           padding: 3px 10px 5px; }
+    .header .top-menu-block .top-menu-list .dropdown-menu-search,
+    .header .top-menu-block .top-menu-list .dropdown-menu-sitemap {
+      background: #bed33f;
+      padding: 40px 10px;
+      font: 300 15px/18px "Open Sans", sans-serif;
+      color: #000; }
+      .header .top-menu-block .top-menu-list .dropdown-menu-search a,
+      .header .top-menu-block .top-menu-list .dropdown-menu-sitemap a {
+        color: #000; }
+      .header .top-menu-block .top-menu-list .dropdown-menu-search span,
+      .header .top-menu-block .top-menu-list .dropdown-menu-sitemap span {
+        font: 300 24px/28px "Open Sans", sans-serif; }
+      .header .top-menu-block .top-menu-list .dropdown-menu-search ul ul,
+      .header .top-menu-block .top-menu-list .dropdown-menu-sitemap ul ul {
+        padding-left: 10px; }
 
   .additional-menu {
     background: none;

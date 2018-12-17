@@ -308,7 +308,20 @@ h1 {
           .top-menu-block .navigation-list .navigation-list-item ul li:first-child {
             margin-top: 0; }
     .top-menu-block .navigation-list.active {
-      display: block; } }
+      display: block; }
+
+  .top-menu-list .dropdown-menu-search,
+  .top-menu-list .dropdown-menu-sitemap {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    z-index: 50;
+    box-sizing: border-box;
+    overflow: hidden; }
+  .top-menu-list .top-menu-list-item.active .dropdown-menu-search,
+  .top-menu-list .top-menu-list-item.active .dropdown-menu-sitemap {
+    display: block; } }
 @media (min-width: 380px) {
   .header .logo-block .company-name {
     display: table-cell;
@@ -346,7 +359,20 @@ h1 {
     float: right;
     margin-right: 0;
     margin-left: 8.5185185185%;
-    margin-right: 8.5185185185%; } }
+    margin-right: 8.5185185185%; }
+  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-first-column,
+  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-third-column {
+    width: 48.8888888889%;
+    float: left;
+    margin-right: 2.2222222222%; }
+  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-second-column {
+    width: 48.8888888889%;
+    float: right;
+    margin-right: 0; }
+  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-third-column {
+    width: 100%;
+    float: right;
+    margin-right: 0; } }
 @media (min-width: 700px) {
   .header .top-menu-block .top-menu-list .sitemap {
     display: inline-block; }
@@ -458,7 +484,8 @@ h1 {
       .header .top-menu-block .navigation-root ul {
         display: none;
         position: absolute;
-        z-index: 50; }
+        z-index: 50;
+        margin-left: -5px; }
         .header .top-menu-block .navigation-root ul a {
           display: block; }
     .header .top-menu-block .navigation-list {
@@ -468,8 +495,33 @@ h1 {
         .header .top-menu-block .navigation-list-item > a {
           display: block;
           height: 75px; }
+          .header .top-menu-block .navigation-list-item > a:hover {
+            margin-left: -5px; }
+        .header .top-menu-block .navigation-list-item:hover > a {
+          margin-left: -5px; }
         .header .top-menu-block .navigation-list-item:hover > ul {
           display: block; }
+    .header .top-menu-block .top-menu-list-item .dropdown-menu-search,
+    .header .top-menu-block .top-menu-list-item .dropdown-menu-sitemap {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%;
+      z-index: 50;
+      box-sizing: border-box;
+      overflow: hidden; }
+    .header .top-menu-block .top-menu-list-item .sitemap-first-column,
+    .header .top-menu-block .top-menu-list-item .sitemap-second-column {
+      width: 32.6007326007%;
+      float: left;
+      margin-right: 1.0989010989%; }
+    .header .top-menu-block .top-menu-list-item .sitemap-third-column {
+      width: 32.6007326007%;
+      float: right;
+      margin-right: 0; }
+    .header .top-menu-block .top-menu-list-item:hover .dropdown-menu-search,
+    .header .top-menu-block .top-menu-list-item:hover .dropdown-menu-sitemap {
+      display: block; }
 
   .menu-block-footer {
     width: 57.8754578755%;

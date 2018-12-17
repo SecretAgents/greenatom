@@ -97,6 +97,10 @@
     bottom: 30px; }
 .tile-list .icon-with-list .tile-text {
   display: none; }
+.tile-list .icon-with-list:hover .tile-icon {
+  display: none; }
+.tile-list .icon-with-list:hover .tile-text {
+  display: block; }
 .tile-list .text-on-hover .short-description {
   margin-bottom: 15px; }
   .tile-list .text-on-hover .short-description p:first-child {
@@ -116,8 +120,6 @@
   .tile-list .tile-icon img {
     max-width: 50px;
     max-height: 50px; }
-.tile-list .cities-list {
-  display: none; }
 .tile-list .rewards-list .rewards-list-item {
   margin-right: 5px; }
 
@@ -134,6 +136,41 @@
     .clients-list .clients-list-item img {
       display: inline; }
 
+@media (min-width: 600px) {
+  .tile-list .tile-list-row {
+    margin-bottom: 2.2222222222%; }
+  .tile-list .wide > .first {
+    width: 48.8888888889%;
+    float: left;
+    margin-right: 2.2222222222%;
+    padding-right: 1.1111111111%;
+    display: table-cell;
+    float: none; }
+  .tile-list .wide > .last {
+    width: 48.8888888889%;
+    float: right;
+    margin-right: 0;
+    padding-left: 1.1111111111%;
+    display: table-cell;
+    float: none; }
+  .tile-list .simple-color::before {
+    width: 97.7777777778%; }
+  .tile-list .half-horizontal .tile-text {
+    width: 97.7777777778%; }
+  .tile-list .items_3 .tile-list-item {
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+  .tile-list .items_3 > .first {
+    width: 48.8888888889%;
+    float: left;
+    margin-right: 2.2222222222%;
+    margin-bottom: 4.5454545455%; }
+  .tile-list .items_3 > .last {
+    width: 48.8888888889%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 4.5454545455%; } }
 @media (min-width: 700px) {
   .one-column {
     max-width: 650px;
