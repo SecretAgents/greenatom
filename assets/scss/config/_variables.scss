@@ -12,7 +12,7 @@ $bg-primary-dark:      #424750;
 $bg-dropdown:          $green;
 $bg-dropdown-li-hover: #ecf2c6;
 $bg-blue:              #5978b6;
-$bg-brown:             #dfaa85;
+$bg-brown:             #E0955F;
 $bg-green:              $green;
 $bg-cyan:              #21b2ad;
 
@@ -52,6 +52,12 @@ $padding-li-bullet-mobile:               15px;
 $text-indent-li-bullet-mobile:            0px;
 
 // Fonts
+$font-base-mobile: 300 13px/15px "Open Sans", sans-serif;
+$font-label-small-mobile: 300 16px/20px "Open Sans", sans-serif;
+$font-label-mobile: 300 20px/24px "Open Sans", sans-serif;
+$font-label-big-mobile: 300 24px/28px "Open Sans", sans-serif;
+$font-huge-mobile: 300 44px/50px "Open Sans", sans-serif;
+
 $font-base: 300 15px/18px "Open Sans", sans-serif;
 $font-label-small: 300 18px/22px "Open Sans", sans-serif;
 $font-label: 300 24px/28px "Open Sans", sans-serif;

@@ -75,11 +75,27 @@ ul {
   top: calc(50% - 15px);
   z-index: 1; }
   .owl-carousel-simple .owl-nav button.owl-prev {
-    background: url("../images/arrow-prev.png") no-repeat 0 0;
-    left: 0; }
+    background: url("../images/arrow-prev.png") no-repeat 0 0; }
+    .owl-carousel-simple .owl-nav button.owl-prev:hover {
+      background: url("../images/arrow-prev.png") no-repeat 0 0; }
   .owl-carousel-simple .owl-nav button.owl-next {
-    background: url("../images/arrow-next.png") no-repeat 0 0;
-    right: 0; }
+    background: url("../images/arrow-next.png") no-repeat 0 0; }
+    .owl-carousel-simple .owl-nav button.owl-next:hover {
+      background: url("../images/arrow-next.png") no-repeat 0 0; }
+.owl-carousel-simple.black .owl-nav button.owl-prev {
+  background: url("../images/arrow-prev-black.png") no-repeat 0 0; }
+  .owl-carousel-simple.black .owl-nav button.owl-prev:hover {
+    background: url("../images/arrow-next-black.png") no-repeat 0 0; }
+.owl-carousel-simple.black .owl-nav button.owl-next {
+  background: url("../images/arrow-next-black.png") no-repeat 0 0; }
+  .owl-carousel-simple.black .owl-nav button.owl-next:hover {
+    background: url("../images/arrow-next-black.png") no-repeat 0 0; }
+.owl-carousel-simple.white .owl-nav button.owl-prev {
+  background: url("../images/arrow-prev-white.png") no-repeat center center; }
+.owl-carousel-simple.white .owl-nav button.owl-next {
+  background: url("../images/arrow-next-white.png") no-repeat center center; }
+.owl-carousel-simple.white .owl-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.25); }
 .owl-carousel-simple .owl-dots {
   position: absolute;
   text-align: center; }

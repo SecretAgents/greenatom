@@ -1,6 +1,4 @@
 @import '../config/_base';
-@import "../../../node_modules/susy/sass/susy";
-@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 .tile-list-wrapper {
   .two-columns {
@@ -47,6 +45,22 @@
     & > .last {
       @include span(1.5 last);
       margin-bottom: gutter(3);
+    }
+    .tile-list-item-child {
+      position: relative;
+    }
+    a {
+      &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+      }
+      &:hover {
+        &::before {
+          display: none;
+        }
+      }
     }
   }
 
@@ -113,6 +127,42 @@
     }
   }
 
+  .small-list {
+    position: relative;
+    .tile-title {
+      top: 15px;
+    }
+    .tile-text {
+      display: block;
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+
+  .icon-with-list {
+    .tile-text {
+      display: none;
+    }
+  }
+
+  .text-on-hover {
+    .short-description {
+      margin-bottom: 15px;
+      p {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &:hover {
+      .tile-text {
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
   .tile-text {
     display: none;
     box-sizing: border-box;
@@ -124,11 +174,21 @@
   }
 
   .tile-icon {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
   }
 
   .cities-list {
     display: none;
+  }
+
+  .rewards-list {
+    .rewards-list-item {
+      margin-right: 5px;
+    }
   }
 }
 
@@ -229,14 +289,16 @@
 
     .slider {
       .owl-carousel {
-        padding-left: span(2);
-        padding-right: span(2);
+        padding-left: span(1.5);
+        padding-right: span(1.5);
       }
     }
 
-    .icon-with-list {
-      .tile-text {
-        display: none;
+    .tile-icon {
+      margin-bottom: 40px;
+      img {
+        max-width: none;
+        max-height: none;
       }
     }
   }

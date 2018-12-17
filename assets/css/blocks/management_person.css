@@ -1,0 +1,12 @@
+.persons-list-item .person-image {
+  float: none; }
+.persons-list-item .person-information {
+  float: none;
+  margin-top: 15px; }
+  .persons-list-item .person-information .person-title {
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .persons-list-item .person-information .person-description {
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=management_person.css.map */
