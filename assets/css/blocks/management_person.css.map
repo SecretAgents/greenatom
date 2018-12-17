@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAII,gCAAc;EACZ,KAAK,EAAE,IAAI;AAEb,sCAAoB;EAClB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;EAChB,oDAAc;IACZ,WAAW,EAAE,GAAG;IAChB,aAAa,EAAE,IAAI;EAErB,0DAAoB;IAClB,aAAa,EAAE,IAAI",
-"sources": ["../../scss/blocks/management_person.scss"],
-"names": [],
-"file": "management_person.css"
-}
