@@ -304,6 +304,9 @@ h1 {
     width: auto;
     max-width: 100%; }
 
+.media-content {
+  height: 1200px; }
+
 .owl-carousel .owl-item img {
   width: auto; }
 
@@ -388,6 +391,21 @@ h1 {
   .persons-list-item .person-information .person-description {
     margin-bottom: 10px; }
 
+.page-pagination .desktop {
+  display: none; }
+.page-pagination .items-sorting .sorting-buttons-list {
+  display: inline-block; }
+  .page-pagination .items-sorting .sorting-buttons-list-item {
+    display: inline-block; }
+.page-pagination .items-quantity .items-quantity-list {
+  display: inline-block; }
+  .page-pagination .items-quantity .items-quantity-list-item {
+    display: inline-block; }
+.page-pagination .pagination .page-link {
+  display: inline-block; }
+.page-pagination .pagination .page-item {
+  display: inline-block; }
+
 .management-wrapper .persons-list-item {
   margin-bottom: 30px; }
   .management-wrapper .persons-list-item .person-name {
@@ -398,26 +416,31 @@ h1 {
 .person-avatar img {
   width: 100%; }
 
-.management-wrapper .persons-list-item {
-  width: 48.8888888889%;
-  float: left;
-  margin-right: 2.2222222222%; }
-  .management-wrapper .persons-list-item:nth-child(2n) {
+.persons-list-item {
+  margin-bottom: 15px; }
+  .management-wrapper .persons-list-item {
     width: 48.8888888889%;
-    float: right;
-    margin-right: 0; }
-  .management-wrapper .persons-list-item:nth-child(2n-1) {
-    clear: both; }
-.management-person-wrapper .persons-list-item .person-image {
-  float: none; }
-.management-person-wrapper .persons-list-item .person-information {
-  float: none;
-  margin-top: 15px; }
-  .management-person-wrapper .persons-list-item .person-information .person-title {
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .management-person-wrapper .persons-list-item .person-information .person-description {
-    margin-bottom: 10px; }
+    float: left;
+    margin-right: 2.2222222222%; }
+    .management-wrapper .persons-list-item:nth-child(2n) {
+      width: 48.8888888889%;
+      float: right;
+      margin-right: 0; }
+    .management-wrapper .persons-list-item:nth-child(2n-1) {
+      clear: both; }
+  .management-person-wrapper .persons-list-item .person-image {
+    float: none; }
+  .management-person-wrapper .persons-list-item .person-information {
+    float: none;
+    margin-top: 15px; }
+    .management-person-wrapper .persons-list-item .person-information .person-title {
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .management-person-wrapper .persons-list-item .person-information .person-description {
+      margin-bottom: 10px; }
+
+.subsidiary-block .persons-list-item .person-information .person-post {
+  margin-bottom: 15px; }
 
 .description-html-safe ul li {
   margin-top: 10px; }
@@ -650,6 +673,21 @@ h1 {
       display: block;
       clear: both; } }
 @media (min-width: 960px) {
+  .page-pagination .desktop {
+    display: inline-block; }
+  .page-pagination .items-sorting {
+    float: left; }
+    .page-pagination .items-sorting .sorting-buttons-list {
+      display: inline-block; }
+      .page-pagination .items-sorting .sorting-buttons-list-item {
+        display: inline-block; }
+  .page-pagination .items-quantity {
+    float: right; }
+    .page-pagination .items-quantity .items-quantity-list {
+      display: inline-block; }
+      .page-pagination .items-quantity .items-quantity-list-item {
+        display: inline-block; }
+
   .menu-open {
     display: none; }
 
@@ -1103,11 +1141,16 @@ ul {
       .additional-menu ul li a {
         color: #000; }
 
-.content-wrapper {
+.content-wrapper,
+.media-content-wrapper {
   background-color: #fff;
-  padding: 0px; }
-  .content-wrapper .page-content {
+  padding: 0; }
+  .content-wrapper .page-content,
+  .media-content-wrapper .page-content {
     padding: 65px 5px; }
+
+.page-title-wrapper {
+  padding: 15px 5px; }
 
 .description-html-safe ul {
   list-style-type: disc;
@@ -1155,6 +1198,10 @@ ul {
   width: 10%;
   padding-right: 10px; }
 
+.persons-list-item .person-email a {
+  color: #587daa; }
+  .persons-list-item .person-email a:hover {
+    color: #7a7a7a; }
 .management-wrapper .persons-list-item {
   text-align: center; }
   .management-wrapper .persons-list-item .person-data a {
@@ -1169,6 +1216,30 @@ ul {
       display: block; }
   .management-wrapper .persons-list-item .person-position {
     font-size: 13px; }
+
+.subsidiary-block .persons-list-item {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dcdcdc; }
+
+.pagination-bottom {
+  text-align: center; }
+
+.page-pagination {
+  font-size: 14px; }
+  .page-pagination span {
+    color: #6e7073;
+    font-weight: 600; }
+  .page-pagination .pagination-button {
+    padding: 5px 10px;
+    font-weight: 600; }
+    .page-pagination .pagination-button a {
+      color: #000; }
+    .page-pagination .pagination-button:hover {
+      background: #bed33f;
+      border-radius: 6px; }
+  .page-pagination .selected {
+    background: #bed33f;
+    border-radius: 6px; }
 
 .owl-carousel-simple .owl-nav {
   position: absolute;
@@ -1319,12 +1390,18 @@ ul {
     padding-left: 10px;
     padding-right: 10px; }
 
+  .page-title-wrapper {
+    padding: 25px 10px; }
+
   .additional-menu {
     padding: 20px 90px 20px 0px; } }
 @media (min-width: 600px) {
   .content-wrapper .page-content {
     padding-left: 15px;
     padding-right: 15px; }
+
+  .page-title-wrapper {
+    padding: 45px 15px; }
 
   .main-content .one-column {
     padding-left: 15px;
@@ -1335,8 +1412,7 @@ ul {
     padding-right: 75px; }
 
   .page-title-wrapper {
-    padding-left: 75px;
-    padding-right: 75px; }
+    padding: 60px 75px; }
 
   .main-content .one-column {
     padding-left: 25px;

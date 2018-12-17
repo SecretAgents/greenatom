@@ -25,6 +25,9 @@ h1 {
     width: auto;
     max-width: 100%; }
 
+.media-content {
+  height: 1200px; }
+
 .owl-carousel .owl-item img {
   width: auto; }
 
@@ -109,6 +112,21 @@ h1 {
   .persons-list-item .person-information .person-description {
     margin-bottom: 10px; }
 
+.page-pagination .desktop {
+  display: none; }
+.page-pagination .items-sorting .sorting-buttons-list {
+  display: inline-block; }
+  .page-pagination .items-sorting .sorting-buttons-list-item {
+    display: inline-block; }
+.page-pagination .items-quantity .items-quantity-list {
+  display: inline-block; }
+  .page-pagination .items-quantity .items-quantity-list-item {
+    display: inline-block; }
+.page-pagination .pagination .page-link {
+  display: inline-block; }
+.page-pagination .pagination .page-item {
+  display: inline-block; }
+
 .management-wrapper .persons-list-item {
   margin-bottom: 30px; }
   .management-wrapper .persons-list-item .person-name {
@@ -119,26 +137,31 @@ h1 {
 .person-avatar img {
   width: 100%; }
 
-.management-wrapper .persons-list-item {
-  width: 48.8888888889%;
-  float: left;
-  margin-right: 2.2222222222%; }
-  .management-wrapper .persons-list-item:nth-child(2n) {
+.persons-list-item {
+  margin-bottom: 15px; }
+  .management-wrapper .persons-list-item {
     width: 48.8888888889%;
-    float: right;
-    margin-right: 0; }
-  .management-wrapper .persons-list-item:nth-child(2n-1) {
-    clear: both; }
-.management-person-wrapper .persons-list-item .person-image {
-  float: none; }
-.management-person-wrapper .persons-list-item .person-information {
-  float: none;
-  margin-top: 15px; }
-  .management-person-wrapper .persons-list-item .person-information .person-title {
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .management-person-wrapper .persons-list-item .person-information .person-description {
-    margin-bottom: 10px; }
+    float: left;
+    margin-right: 2.2222222222%; }
+    .management-wrapper .persons-list-item:nth-child(2n) {
+      width: 48.8888888889%;
+      float: right;
+      margin-right: 0; }
+    .management-wrapper .persons-list-item:nth-child(2n-1) {
+      clear: both; }
+  .management-person-wrapper .persons-list-item .person-image {
+    float: none; }
+  .management-person-wrapper .persons-list-item .person-information {
+    float: none;
+    margin-top: 15px; }
+    .management-person-wrapper .persons-list-item .person-information .person-title {
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .management-person-wrapper .persons-list-item .person-information .person-description {
+      margin-bottom: 10px; }
+
+.subsidiary-block .persons-list-item .person-information .person-post {
+  margin-bottom: 15px; }
 
 .description-html-safe ul li {
   margin-top: 10px; }
@@ -371,6 +394,21 @@ h1 {
       display: block;
       clear: both; } }
 @media (min-width: 960px) {
+  .page-pagination .desktop {
+    display: inline-block; }
+  .page-pagination .items-sorting {
+    float: left; }
+    .page-pagination .items-sorting .sorting-buttons-list {
+      display: inline-block; }
+      .page-pagination .items-sorting .sorting-buttons-list-item {
+        display: inline-block; }
+  .page-pagination .items-quantity {
+    float: right; }
+    .page-pagination .items-quantity .items-quantity-list {
+      display: inline-block; }
+      .page-pagination .items-quantity .items-quantity-list-item {
+        display: inline-block; }
+
   .menu-open {
     display: none; }
 
