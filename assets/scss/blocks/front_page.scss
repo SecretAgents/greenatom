@@ -106,6 +106,9 @@
   }
 
   .slider {
+    .slider-item-title {
+      display: none;
+    }
     .tile-title {
       position: static;
       width: 100%;

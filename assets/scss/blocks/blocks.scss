@@ -101,6 +101,12 @@ h1 {
     height: 75px;
     .navigation-list {
       display: none;
+      .navigation-root {
+        margin: 0;
+        ul {
+          display: none;
+        }
+      }
     }
     .top-menu-list {
       display: inline-block;
@@ -690,13 +696,6 @@ h1 {
   .page-menu {
     @include span(3 of 12 first);
   }
-  .header {
-    .top-menu-list {
-      .navigation {
-        display: none;
-      }
-    }
-  }
 
   // Footer styles
   .menu-block-footer {
@@ -763,6 +762,11 @@ h1 {
   }
   //header styles
   .header {
+    .top-menu-list {
+      .navigation {
+        display: none;
+      }
+    }
     .top-menu-block {
       .navigation-list {
         display: inline-block;
@@ -771,8 +775,10 @@ h1 {
           text-transform: uppercase;
           height: 75px;
           vertical-align: middle;
-          color: $white;
           font-size: 13px;
+          a {
+            color: $white;
+          }
         }
         .navigation-list-item::before {
           padding-right: 10px;
@@ -796,41 +802,6 @@ h1 {
       width: 571px;
       float: right;
       margin-right: 75px;
-    }
-  }
-  //main styles
-  .tile-list {
-    &-item {
-      margin-bottom: 12px;
-    }
-    .news-first,
-    .news-second,
-    .news-third,
-    .news-fourth,
-    .news-first-description {
-      .background {
-        height: 277px;
-      }
-    }
-    .half-horizontal {
-      .background {
-        height: 145px;
-      }
-      .title-block {
-        height: 132px;
-      }
-    }
-    .vk,
-    .facebook {
-      .background {
-        height: 133px;
-      }
-    }
-    .instagram {
-      margin-top: 12px;
-    }
-    .social-media-block {
-      padding-left: 0;
     }
   }
   // Footer styles
