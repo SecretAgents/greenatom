@@ -471,6 +471,48 @@ h1 {
 //    }
 //  }
 //}
+.media-content-wrapper {
+  background: white;
+  padding: 50px 30px;
+}
+.media-list {
+  .media-list-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .media-title {
+      font-weight: 400;
+      margin-top: 25px;
+      color: $black;
+      display: block;
+      margin-left: 10px;
+      &:before {
+        content: '•';
+        position: absolute;
+        margin-left: -8px;
+        color: $green;
+      }
+    }
+    .media-date {
+      display: block;
+      margin-top: 10px;
+      margin-left: 10px;
+      color: $grey;
+    }
+    &:hover {
+      background: $bg-primary-light;
+      .media-title {
+        color: $link-primary-pressed;
+      }
+    }
+    .media-item-inner {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 
 @include breakpoint(380px, 3) {
   .header {
@@ -485,6 +527,21 @@ h1 {
 }
 
 @include breakpoint(480px, 3) {
+  //News page
+  .media-content-wrapper {
+    padding: 60px 50px;
+  }
+  .media-list {
+    .media-list-item {
+      @include span(3 of 6 first);
+      &:nth-child(2n){
+        @include span(3 of 6 last);
+      }
+      &:nth-child(2n-1){
+        clear: both;
+      }
+    }
+  }
   //Additional page menu
   .page-menu {
     margin: -65px -10px 60px;
@@ -632,6 +689,27 @@ h1 {
   }
 }
 @include breakpoint(720px, 6) {
+  //News page
+  .media-content-wrapper {
+    padding: 60px 50px;
+  }
+  .media-list {
+    .media-list-item {
+      @include span(2 of 6 first);
+      &:nth-child(2n){
+        @include span(2 of 6);
+      }
+      &:nth-child(2n-1){
+        clear: none;
+      }
+      &:nth-child(3n){
+        @include span(2 of 6 last);
+      }
+      &:nth-child(3n+1){
+        clear: both;
+      }
+    }
+  }
   //management page
   .persons-list-item {
     .management-wrapper & {
