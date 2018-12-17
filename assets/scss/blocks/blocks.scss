@@ -101,6 +101,12 @@ h1 {
     height: 75px;
     .navigation-list {
       display: none;
+      .navigation-root {
+        margin: 0;
+        ul {
+          display: none;
+        }
+      }
     }
     .top-menu-list {
       display: inline-block;
@@ -518,45 +524,6 @@ h1 {
   .page-menu {
     @include span(3 of 12 first);
   }
-  //main content styles
-  //.first-column {
-  //  @include span(6 of 12 no-gutter);
-  //  padding-right: 7px;
-  //}
-  //.second-column {
-  //  @include span(6 of 12 no-gutter last);
-  //  padding-left: 7px;
-  //}
-  //
-  //.tile-list {
-  //  .half-vertical {
-  //    @include span(6 of 6 no-gutter last);
-  //    .left-block {
-  //      @include span(3 of 6 no-gutter);
-  //      display: table-cell;
-  //      float: none;
-  //    }
-  //    .right-block {
-  //      @include span(3 of 6 no-gutter last);
-  //      display: table-cell;
-  //      float: none;
-  //      position: static;
-  //      padding-left: 0px;
-  //      &::before {
-  //        content: '';
-  //        padding-left: 7px;
-  //      }
-  //    }
-  //  }
-  //}
-
-  .header {
-    .top-menu-list {
-      .navigation {
-        display: none;
-      }
-    }
-  }
 
   // Footer styles
   .menu-block-footer {
@@ -623,6 +590,11 @@ h1 {
   }
   //header styles
   .header {
+    .top-menu-list {
+      .navigation {
+        display: none;
+      }
+    }
     .top-menu-block {
       .navigation-list {
         display: inline-block;
@@ -631,8 +603,10 @@ h1 {
           text-transform: uppercase;
           height: 75px;
           vertical-align: middle;
-          color: $white;
           font-size: 13px;
+          a {
+            color: $white;
+          }
         }
         .navigation-list-item::before {
           padding-right: 10px;
@@ -656,41 +630,6 @@ h1 {
       width: 571px;
       float: right;
       margin-right: 75px;
-    }
-  }
-  //main styles
-  .tile-list {
-    &-item {
-      margin-bottom: 12px;
-    }
-    .news-first,
-    .news-second,
-    .news-third,
-    .news-fourth,
-    .news-first-description {
-      .background {
-        height: 277px;
-      }
-    }
-    .half-horizontal {
-      .background {
-        height: 145px;
-      }
-      .title-block {
-        height: 132px;
-      }
-    }
-    .vk,
-    .facebook {
-      .background {
-        height: 133px;
-      }
-    }
-    .instagram {
-      margin-top: 12px;
-    }
-    .social-media-block {
-      padding-left: 0;
     }
   }
   // Footer styles
