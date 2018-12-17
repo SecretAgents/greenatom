@@ -559,6 +559,69 @@ ul {
     display: none;
   }
 
+  .header {
+    padding-left: 65px;
+    padding-right: 65px;
+    .top-menu-block {
+      .navigation-list {
+        &-item {
+          text-transform: uppercase;
+          vertical-align: middle;
+          font-size: 13px;
+          a {
+            color: $white;
+            font-weight: 400;
+            &:hover {
+              background: $bg-green;
+              color: $white;
+            }
+          }
+          > a {
+            padding-left: 10px;
+            line-height: 75px;
+            &:hover {
+              padding-left: 15px;
+              margin-left: -5px;
+            }
+            &:after {
+              padding-left: 10px;
+              content: "•";
+              color: $green;
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+          &:first-child {
+            & > a {
+              padding-left: 15px;
+            }
+          }
+          &:last-child {
+            & > a {
+              padding-right: 15px;
+              &:after {
+                display: none;
+              }
+            }
+          }
+          ul {
+            background: $white;
+            a {
+              color: $white;
+              padding: 3px 10px 5px;
+            }
+          }
+        }
+        //.navigation-list-item::before {
+        //  content: "•";
+        //  color: $green;
+        //  font-size: 14px;
+        //  font-weight: 600;
+        //}
+      }
+    }
+  }
+
   .additional-menu {
     background: none;
     overflow: visible;

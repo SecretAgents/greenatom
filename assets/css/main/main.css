@@ -349,6 +349,43 @@ ul {
   .menu-open {
     display: none; }
 
+  .header {
+    padding-left: 65px;
+    padding-right: 65px; }
+    .header .top-menu-block .navigation-list-item {
+      text-transform: uppercase;
+      vertical-align: middle;
+      font-size: 13px; }
+      .header .top-menu-block .navigation-list-item a {
+        color: #fff;
+        font-weight: 400; }
+        .header .top-menu-block .navigation-list-item a:hover {
+          background: #bed33f;
+          color: #fff; }
+      .header .top-menu-block .navigation-list-item > a {
+        padding-left: 10px;
+        line-height: 75px; }
+        .header .top-menu-block .navigation-list-item > a:hover {
+          padding-left: 15px;
+          margin-left: -5px; }
+        .header .top-menu-block .navigation-list-item > a:after {
+          padding-left: 10px;
+          content: "•";
+          color: #bed33f;
+          font-size: 14px;
+          font-weight: 600; }
+      .header .top-menu-block .navigation-list-item:first-child > a {
+        padding-left: 15px; }
+      .header .top-menu-block .navigation-list-item:last-child > a {
+        padding-right: 15px; }
+        .header .top-menu-block .navigation-list-item:last-child > a:after {
+          display: none; }
+      .header .top-menu-block .navigation-list-item ul {
+        background: #fff; }
+        .header .top-menu-block .navigation-list-item ul a {
+          color: #fff;
+          padding: 3px 10px 5px; }
+
   .additional-menu {
     background: none;
     overflow: visible; }
