@@ -63,18 +63,22 @@ h1 {
 
 .font-white {
   color: #fff; }
+  .font-white a {
+    color: #fff; }
 
 .font-black {
   color: #000; }
+  .font-black a {
+    color: #000; }
 
 .font-label-small {
-  font: 300 18px/22px "Open Sans", sans-serif; }
+  font: 300 16px/20px "Open Sans", sans-serif; }
 
 .font-label {
-  font: 300 24px/28px "Open Sans", sans-serif; }
+  font: 300 20px/24px "Open Sans", sans-serif; }
 
 .font-label-big {
-  font: 300 32px/36px "Open Sans", sans-serif; }
+  font: 300 24px/28px "Open Sans", sans-serif; }
 
 .font-semibold {
   font-weight: 600; }
@@ -109,21 +113,24 @@ a {
 .text-right {
   text-align: right; }
 
-.horizontal-block .button-detail {
-  background-color: #bed33f;
-  color: #fff;
-  border: none;
-  padding: 12px 50px;
+.button {
+  display: inline-block;
   text-transform: uppercase;
-  font: 300 15px/18px "Open Sans", sans-serif;
-  font-weight: 600; }
-.vertical-block .button-detail {
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 50px;
-  text-transform: uppercase;
-  font: 300 15px/18px "Open Sans", sans-serif;
-  font-weight: 600; }
+  font-weight: 400;
+  padding: 5px 30px 7px; }
+  .button.border {
+    border: 2px solid #bed33f;
+    color: #bed33f; }
+    .button.border:hover {
+      color: #fff;
+      background: #bed33f; }
+    .button.border.white {
+      border-color: #fff;
+      color: #fff; }
+      .button.border.white:hover {
+        color: #fff;
+        border-color: #bed33f;
+        background: #bed33f; }
 
 @media (min-width: 360px) {
   .tile-list-item .title {
@@ -195,8 +202,20 @@ a {
     font-weight: 300;
     line-height: 16px; }
 
+  .font-label-small {
+    font: 300 18px/22px "Open Sans", sans-serif; }
+
+  .font-label {
+    font: 300 24px/28px "Open Sans", sans-serif; }
+
+  .font-label-big {
+    font: 300 32px/36px "Open Sans", sans-serif; }
+
   .font-huge {
     font: 300 44px/50px "Open Sans", sans-serif; }
+
+  .font-semibold {
+    font-weight: 600; }
 
   .font-bold {
     font-weight: 700; } }

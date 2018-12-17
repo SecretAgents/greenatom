@@ -1,49 +1,70 @@
-.tile-list {
-  color: #000; }
-  .tile-list .wide .tile-list-item {
-    vertical-align: top; }
-    .tile-list .wide .tile-list-item.simple-color {
-      vertical-align: middle; }
-  .tile-list .simple-color {
-    vertical-align: middle;
-    text-align: center; }
-    .tile-list .simple-color.blue::before {
+.tile-list .wide .tile-list-item {
+  vertical-align: top; }
+  .tile-list .wide .tile-list-item.simple-color {
+    vertical-align: middle; }
+.tile-list .simple-color {
+  vertical-align: middle;
+  text-align: center; }
+  .tile-list .simple-color::before {
+    opacity: 0.8; }
+  .tile-list .simple-color:hover::before {
+    opacity: 1; }
+  .tile-list .simple-color.blue::before {
+    background-color: #5978b6; }
+  .tile-list .simple-color.green::before {
+    background-color: #bed33f; }
+  .tile-list .simple-color.brown::before {
+    background-color: #E0955F; }
+  .tile-list .simple-color.white::before {
+    background-color: #fff;
+    opacity: 1; }
+  .tile-list .simple-color.white:hover {
+    color: #fff; }
+    .tile-list .simple-color.white:hover a {
+      color: #fff; }
+    .tile-list .simple-color.white:hover::before {
       background-color: #5978b6; }
-    .tile-list .simple-color.green::before {
-      background-color: #bed33f; }
-    .tile-list .simple-color.brown::before {
-      background-color: #dfaa85; }
-    .tile-list .simple-color.white::before {
-      background-color: #fff; }
-    .tile-list .simple-color.cyan::before {
-      background-color: #21b2ad; }
-    .tile-list .simple-color.with-image::before {
-      opacity: 0.95; }
-    .tile-list .simple-color .tile-title {
-      padding-left: 0;
-      padding-top: 0; }
-  .tile-list .half-horizontal .tile-text {
-    background: #fff; }
-  .tile-list .slider {
-    background: #fff; }
-    .tile-list .slider .tile-title {
-      text-align: center;
-      padding: 25px 0 0; }
-    .tile-list .slider .slider-item {
-      padding-top: 25px;
-      padding-bottom: 35px; }
-    .tile-list .slider.full .tile-title {
-      text-align: center; }
-    .tile-list .slider.full .slider-item {
-      padding-top: 0;
-      padding-bottom: 0; }
-  .tile-list .tile-title {
-    padding-left: 15px;
-    padding-top: 10px; }
-  .tile-list .tile-text {
-    text-align: left;
-    padding-left: 40px;
-    padding-right: 40px; }
+  .tile-list .simple-color.cyan::before {
+    background-color: #21b2ad; }
+  .tile-list .simple-color.with-image::before {
+    opacity: 0.95; }
+  .tile-list .simple-color.with-image:hover:before {
+    opacity: 1; }
+  .tile-list .simple-color .tile-title {
+    padding-left: 0;
+    padding-top: 0; }
+.tile-list .half-horizontal .tile-text {
+  background: #fff; }
+.tile-list .slider {
+  background: #fff; }
+  .tile-list .slider .tile-title {
+    text-align: center;
+    padding: 25px 0 0; }
+  .tile-list .slider .slider-item {
+    padding-top: 25px;
+    padding-bottom: 35px; }
+  .tile-list .slider.full .tile-title {
+    text-align: center; }
+  .tile-list .slider.full .slider-item {
+    padding-top: 0;
+    padding-bottom: 0; }
+.tile-list .items_3 a::before {
+  background: #fff;
+  opacity: 0.2; }
+.tile-list .small-list .tile-text {
+  padding-left: 15px; }
+.tile-list .text-on-hover .tile-text {
+  padding-bottom: 25px;
+  padding-top: 25px; }
+.tile-list .text-on-hover.big .tile-text {
+  background: #fff; }
+.tile-list .tile-title {
+  padding-left: 15px;
+  padding-top: 10px; }
+.tile-list .tile-text {
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px; }
 
 .clients-list .clients-list-item {
   text-align: center;
