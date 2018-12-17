@@ -18,5 +18,7 @@ $(document).ready(function(){
 
   $('.scrollbar-dynamic').scrollbar();
 
-  $('#additional-menu').easytree({disableIcons: true});
+  if ($('#additional-menu').size) {
+    $('#additional-menu').easytree({disableIcons: true});
+  }
 });
