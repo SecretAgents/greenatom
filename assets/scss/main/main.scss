@@ -289,7 +289,7 @@ ul {
       color: $grey;
     }
     &:hover {
-      background: $bg-primary-light;
+      background: #ededed;
       .media-title {
         color: $link-primary-pressed;
       }
@@ -305,7 +305,7 @@ ul {
   }
 }
 .additional-news {
-  background: $bg-primary-light;
+  background: #ededed;
   .news-title {
     background: $grey;
     padding: 12px;
@@ -329,13 +329,13 @@ ul {
       color: $black;
       &:hover {
         color: $link-primary-pressed;
+        .rosatom-logo {
+          filter: grayscale(0);
+        }
       }
     }
     .rosatom-logo {
-      background: url('../images/logo-rosatom-inactive.png') no-repeat center center;
-      &:hover {
-        background: url('../images/logo-rosatom.png') no-repeat center center;
-      }
+      filter: grayscale(1);
     }
   }
   .additional-media-list {
@@ -383,15 +383,39 @@ ul {
       line-height: 30px;
       color: $black;
       padding: 5px 15px;
+      background-repeat: no-repeat;
+      background-position: center center;
       &:hover {
-        background: $green;
+        background-color: $green;
         border-radius: 6px;
+      }
+    }
+    &.first-link {
+      a {
+        background-image: url("../images/arrow-prev-black-double.png");
+      }
+    }
+    &.last-link {
+      a {
+        background-image: url("../images/arrow-next-black-double.png");
+      }
+    }
+    &.next-link {
+      a {
+        background-image: url("../images/arrow-next-black-tiny.png");
+      }
+    }
+    &.prev-link {
+      a {
+        background-image: url("../images/arrow-prev-black-tiny.png");
       }
     }
   }
   .selected {
-    background: $green;
-    border-radius: 6px;
+    a {
+      background: $green;
+      border-radius: 6px;
+    }
   }
   .page-link {
     a {

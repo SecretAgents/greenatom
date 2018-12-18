@@ -634,25 +634,15 @@ h1 {
   //Media page
   .media-list {
     .media-list-item {
-      @include span(3 of 6 first);
+      @include span(1.5 no-gutters inside);
       &:nth-child(2n){
-        @include span(3 of 6 last);
+        @include span(1.5 no-gutters inside last);
       }
-      &:nth-child(2n-1){
+      &:nth-child(2n+1){
         clear: both;
       }
     }
   }
-  //.tile-list-item {
-  //  .title-block {
-  //    .archive-icon {
-  //      margin: 30% auto 0 auto;
-  //    }
-  //    .work-icon {
-  //      margin: 15% auto 0 auto;
-  //    }
-  //  }
-  //}
 }
 
 @include breakpoint(600px, 6) {
@@ -789,15 +779,15 @@ h1 {
   //Media page
   .media-list {
     .media-list-item {
-      @include span(2 of 6 first);
+      @include span(4 no-gutters inside);
       &:nth-child(2n){
-        @include span(2 of 6);
+        @include span(4 no-gutters inside last);
       }
-      &:nth-child(2n-1){
+      &:nth-child(2n+1){
         clear: none;
       }
       &:nth-child(3n){
-        @include span(2 of 6 last);
+        @include span(4 no-gutters inside last);
       }
       &:nth-child(3n+1){
         clear: both;
@@ -806,7 +796,7 @@ h1 {
   }
 }
 
-@include breakpoint(960px, 12) {
+@include susy-breakpoint(960px, 12) {
   // News page
   .media-content-wrapper {
     .news-content {
@@ -820,24 +810,21 @@ h1 {
   .media-list {
     &.media-page {
       .media-list-item {
-        @include span(3 of 12);
+        @include span(3 no-gutters inside);
         &:nth-child(2n){
-          @include span(3 of 12);
+          @include span(3 no-gutters inside);
         }
         &:nth-child(3n) {
-          @include span(3 of 12);
+          @include span(3 no-gutters inside);
         }
         &:nth-child(4n) {
-          @include span(3 of 12 last);
+          @include span(3 no-gutters inside last);
+          clear: none;
+        }
+        &:nth-child(2n+1){
           clear: none;
         }
         &:nth-child(3n+1) {
-          clear: none;
-        }
-        &:nth-child(4n+1) {
-          clear: both;
-        }
-        &:nth-child(2n-1){
           clear: none;
         }
         &:nth-child(4n+1) {
