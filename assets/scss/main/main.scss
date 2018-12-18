@@ -263,6 +263,30 @@ ul {
     }
   }
 }
+//subsidiary map block
+.subsidiary-insertion {
+  font-size: 18px;
+  background-color: #e2e2e2;
+  padding: 5px 10px;
+}
+.facts-block {
+  padding-left: 5px;
+  padding-right: 5px;
+  .facts-summary-list {
+    &-item {
+      text-align: center;
+      .number {
+        font-size: 31px;
+        font-weight: 600;
+        padding-bottom: 12px;
+        border-bottom: 3px solid $green;
+      }
+      .title {
+        padding-top: 5px;
+      }
+    }
+  }
+}
 .owl-carousel-simple {
   .owl-nav {
     position: absolute;
@@ -513,6 +537,11 @@ ul {
 }
 
 @include breakpoint(480px, 3) {
+  //subsidiary map block
+  .facts-block {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
   // Page styles
   .content-wrapper {
     .page-content {
@@ -530,6 +559,16 @@ ul {
 }
 
 @include breakpoint(600px, 6) {
+  //subsidiary map block
+  .facts-block {
+    padding-left: 40px;
+    padding-right: 25px;
+    .facts-summary-list {
+      &-item {
+        text-align: center;
+      }
+    }
+  }
   //Page styles
   .content-wrapper {
     .page-content {
@@ -602,8 +641,18 @@ ul {
   .additional-menu {
     padding: 20px 160px 20px 70px;
   }
+  //subsidiary map block
+  .facts-block {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 @include breakpoint(960px, 12) {
+  //subsidiary map block
+  .facts-block {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   //Page styles
   .content-wrapper {
     padding: 65px 60px;
@@ -675,6 +724,11 @@ ul {
 @include breakpoint(1200px, 12) {
   .main-content {
     padding-bottom: 85px;
+  }
+  //subsidiary map block
+  .facts-block {
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 
