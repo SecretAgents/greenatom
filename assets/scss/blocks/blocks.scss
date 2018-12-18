@@ -674,6 +674,35 @@ h1 {
     right: 90px;
   }
 }
+
+// one news show
+.news-list {
+  padding: 10px;
+  .news-list-item {
+    padding: 5px 0px;
+    position: relative;
+    margin-left: 10px;
+    &:before {
+      content: '•';
+      position: absolute;
+      margin-left: -10px;
+      color: $white;
+    }
+    .news-title {
+      color: $black;
+    }
+    .news-date {
+      color: $white;
+      display: inline-block;
+      .divider {
+        padding-right: 5px;
+        padding-left: 2px;
+      }
+    }
+  }
+}
+
+
 @include susy-breakpoint(800px, 12) {
   .container {
     @include container(12);
@@ -681,6 +710,22 @@ h1 {
 }
 
 @include breakpoint(960px, 12) {
+  // one news show
+  .news-list {
+    .news-list-item {
+      &:before {
+        color: $green;
+      }
+      .news-date {
+        color: $grey;
+        display: block;
+        margin-top: 2px;
+        .divider {
+          display: none;
+        }
+      }
+    }
+  }
   // additional page menu
   .menu-open {
     display: none;
