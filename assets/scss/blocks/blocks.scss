@@ -108,12 +108,15 @@ h1 {
     .top-menu-list {
       display: inline-block;
       height: 100%;
-      .top-menu-list-item .search {
-        &:hover {
-          .dropdown-menu-search {
-            display: block;
-          }
-        }
+      .dropdown-header-block {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        z-index: 50;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: none;
       }
       &-item {
         display: inline-block;
@@ -125,13 +128,6 @@ h1 {
 }
 .page-title-inscription {
   display: none;
-}
-.dropdown-menu-search {
-  display: none;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 100%;
 }
 //Pages styles
 .persons-list {
@@ -427,20 +423,9 @@ h1 {
     }
   }
   .top-menu-list {
-    .dropdown-menu-search,
-    .dropdown-menu-sitemap {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 100%;
-      z-index: 50;
-      box-sizing: border-box;
-      overflow: hidden;
-    }
     .top-menu-list-item {
       &.active {
-        .dropdown-menu-search,
-        .dropdown-menu-sitemap {
+        .dropdown-header-block {
           display: block;
         }
       }
@@ -464,6 +449,25 @@ h1 {
   //Additional page menu
   .page-menu {
     margin: -65px -10px 60px;
+  }
+  .header {
+    .top-menu-block {
+      .top-menu-list-item {
+        .sitemap-column {
+          @include span(1.5);
+          &:nth-child(2n) {
+            @include span(1.5 last);
+          }
+          &:nth-child(2n+1) {
+            clear: both;
+          }
+        }
+      }
+    }
+
+  }
+  .sitemap-first-column {
+
   }
   .menu-open {
     right: 35px;
@@ -505,17 +509,15 @@ h1 {
     }
     .top-menu-list {
       .top-menu-list-item {
-        .dropdown-menu-sitemap {
-          .sitemap-first-column,
-          .sitemap-third-column {
-            @include span(3);
-          }
-          .sitemap-second-column {
-            @include span(3 last);
-          }
-          .sitemap-third-column {
-            @include span(6 last);
-          }
+        .sitemap-first-column,
+        .sitemap-third-column {
+          @include span(3);
+        }
+        .sitemap-second-column {
+          @include span(3 last);
+        }
+        .sitemap-third-column {
+          @include span(6 last);
         }
       }
     }
@@ -643,7 +645,7 @@ h1 {
         ul {
           display: none;
           position: absolute;
-          z-index: 50;
+          z-index: 200;
           margin-left: -5px;
           a {
             display: block;
@@ -672,8 +674,7 @@ h1 {
         }
       }
       .top-menu-list-item {
-        .dropdown-menu-search,
-        .dropdown-menu-sitemap {
+        .dropdown-header-block {
           position: absolute;
           width: 100%;
           left: 0;
@@ -690,8 +691,7 @@ h1 {
           @include span(4 last);
         }
         &:hover {
-          .dropdown-menu-search,
-          .dropdown-menu-sitemap {
+          .dropdown-header-block {
             display: block;
           }
         }

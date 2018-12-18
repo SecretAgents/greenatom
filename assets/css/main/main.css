@@ -192,6 +192,19 @@ ul {
     background: url(../images/icon-search.png) no-repeat center center; }
     .header .top-menu-list .search:hover {
       background: #bed33f url(../images/icon-search-white.png) no-repeat center center; }
+  .header .top-menu-list .dropdown-header-block {
+    background: #bed33f;
+    padding: 40px 10px;
+    font: 300 15px/18px "Open Sans", sans-serif;
+    color: #000; }
+    .header .top-menu-list .dropdown-header-block a {
+      color: #000; }
+    .header .top-menu-list .dropdown-header-block span {
+      font: 300 18px/22px "Open Sans", sans-serif; }
+    .header .top-menu-list .dropdown-header-block ul ul {
+      padding-left: 10px; }
+    .header .top-menu-list .dropdown-header-block ul:first-child {
+      margin-top: 0; }
 
 .dropdown-menu-list .dropdown-menu-navigation {
   background-color: #bed33f; }
@@ -293,23 +306,7 @@ ul {
       text-transform: uppercase; }
       .navigation-list .navigation-list-item > a:hover {
         background: rgba(255, 255, 255, 0.7);
-        color: #000; }
-
-  .top-menu-list .dropdown-menu-search,
-  .top-menu-list .dropdown-menu-sitemap {
-    background: #bed33f;
-    padding: 40px 10px;
-    font: 300 15px/18px "Open Sans", sans-serif;
-    color: #000; }
-    .top-menu-list .dropdown-menu-search a,
-    .top-menu-list .dropdown-menu-sitemap a {
-      color: #000; }
-    .top-menu-list .dropdown-menu-search span,
-    .top-menu-list .dropdown-menu-sitemap span {
-      font: 300 18px/22px "Open Sans", sans-serif; }
-    .top-menu-list .dropdown-menu-search ul ul,
-    .top-menu-list .dropdown-menu-sitemap ul ul {
-      padding-left: 10px; } }
+        color: #000; } }
 @media (min-width: 480px) {
   .content-wrapper {
     padding-left: 10px;
@@ -403,21 +400,8 @@ ul {
         .header .top-menu-block .navigation-list-item ul a {
           color: #000;
           padding: 3px 10px 5px; }
-    .header .top-menu-block .top-menu-list .dropdown-menu-search,
-    .header .top-menu-block .top-menu-list .dropdown-menu-sitemap {
-      background: #bed33f;
-      padding: 40px 10px;
-      font: 300 15px/18px "Open Sans", sans-serif;
-      color: #000; }
-      .header .top-menu-block .top-menu-list .dropdown-menu-search a,
-      .header .top-menu-block .top-menu-list .dropdown-menu-sitemap a {
-        color: #000; }
-      .header .top-menu-block .top-menu-list .dropdown-menu-search span,
-      .header .top-menu-block .top-menu-list .dropdown-menu-sitemap span {
-        font: 300 24px/28px "Open Sans", sans-serif; }
-      .header .top-menu-block .top-menu-list .dropdown-menu-search ul ul,
-      .header .top-menu-block .top-menu-list .dropdown-menu-sitemap ul ul {
-        padding-left: 10px; }
+    .header .top-menu-block .top-menu-list .dropdown-header-block span {
+      font: 300 24px/28px "Open Sans", sans-serif; }
 
   .additional-menu {
     background: none;

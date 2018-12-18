@@ -79,8 +79,15 @@ h1 {
     .header .top-menu-block .top-menu-list {
       display: inline-block;
       height: 100%; }
-      .header .top-menu-block .top-menu-list .top-menu-list-item .search:hover .dropdown-menu-search {
-        display: block; }
+      .header .top-menu-block .top-menu-list .dropdown-header-block {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        z-index: 50;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: none; }
       .header .top-menu-block .top-menu-list-item {
         display: inline-block;
         height: 100%;
@@ -88,13 +95,6 @@ h1 {
 
 .page-title-inscription {
   display: none; }
-
-.dropdown-menu-search {
-  display: none;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 100%; }
 
 .persons-list-item:first-child {
   margin-top: 0; }
@@ -310,17 +310,7 @@ h1 {
     .top-menu-block .navigation-list.active {
       display: block; }
 
-  .top-menu-list .dropdown-menu-search,
-  .top-menu-list .dropdown-menu-sitemap {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 100%;
-    z-index: 50;
-    box-sizing: border-box;
-    overflow: hidden; }
-  .top-menu-list .top-menu-list-item.active .dropdown-menu-search,
-  .top-menu-list .top-menu-list-item.active .dropdown-menu-sitemap {
+  .top-menu-list .top-menu-list-item.active .dropdown-header-block {
     display: block; } }
 @media (min-width: 380px) {
   .header .logo-block .company-name {
@@ -330,6 +320,17 @@ h1 {
 @media (min-width: 480px) {
   .page-menu {
     margin: -65px -10px 60px; }
+
+  .header .top-menu-block .top-menu-list-item .sitemap-column {
+    width: 47.7272727273%;
+    float: left;
+    margin-right: 4.5454545455%; }
+    .header .top-menu-block .top-menu-list-item .sitemap-column:nth-child(2n) {
+      width: 47.7272727273%;
+      float: right;
+      margin-right: 0; }
+    .header .top-menu-block .top-menu-list-item .sitemap-column:nth-child(2n+1) {
+      clear: both; }
 
   .menu-open {
     right: 35px; }
@@ -360,16 +361,16 @@ h1 {
     margin-right: 0;
     margin-left: 8.5185185185%;
     margin-right: 8.5185185185%; }
-  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-first-column,
-  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-third-column {
+  .header .top-menu-list .top-menu-list-item .sitemap-first-column,
+  .header .top-menu-list .top-menu-list-item .sitemap-third-column {
     width: 48.8888888889%;
     float: left;
     margin-right: 2.2222222222%; }
-  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-second-column {
+  .header .top-menu-list .top-menu-list-item .sitemap-second-column {
     width: 48.8888888889%;
     float: right;
     margin-right: 0; }
-  .header .top-menu-list .top-menu-list-item .dropdown-menu-sitemap .sitemap-third-column {
+  .header .top-menu-list .top-menu-list-item .sitemap-third-column {
     width: 100%;
     float: right;
     margin-right: 0; } }
@@ -484,7 +485,7 @@ h1 {
       .header .top-menu-block .navigation-root ul {
         display: none;
         position: absolute;
-        z-index: 50;
+        z-index: 200;
         margin-left: -5px; }
         .header .top-menu-block .navigation-root ul a {
           display: block; }
@@ -501,8 +502,7 @@ h1 {
           margin-left: -5px; }
         .header .top-menu-block .navigation-list-item:hover > ul {
           display: block; }
-    .header .top-menu-block .top-menu-list-item .dropdown-menu-search,
-    .header .top-menu-block .top-menu-list-item .dropdown-menu-sitemap {
+    .header .top-menu-block .top-menu-list-item .dropdown-header-block {
       position: absolute;
       width: 100%;
       left: 0;
@@ -519,8 +519,7 @@ h1 {
       width: 32.6007326007%;
       float: right;
       margin-right: 0; }
-    .header .top-menu-block .top-menu-list-item:hover .dropdown-menu-search,
-    .header .top-menu-block .top-menu-list-item:hover .dropdown-menu-sitemap {
+    .header .top-menu-block .top-menu-list-item:hover .dropdown-header-block {
       display: block; }
 
   .menu-block-footer {
