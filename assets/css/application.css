@@ -414,6 +414,64 @@ h1 {
   .persons-list-item .person-information .person-description {
     margin-bottom: 10px; }
 
+.page-pagination {
+  margin-bottom: 15px; }
+  .page-pagination .items-sorting {
+    margin-bottom: 10px; }
+    .page-pagination .items-sorting .sorting-buttons-list {
+      display: inline-block; }
+      .page-pagination .items-sorting .sorting-buttons-list-item {
+        display: inline-block; }
+  .page-pagination .items-quantity .items-quantity-list {
+    display: inline-block; }
+    .page-pagination .items-quantity .items-quantity-list-item {
+      display: inline-block; }
+  .page-pagination .pagination .page-link {
+    display: inline-block; }
+  .page-pagination .pagination .page-item {
+    display: inline-block; }
+
+.media-list {
+  margin-top: 30px; }
+  .media-list .media-list-item {
+    margin-bottom: 20px; }
+    .media-list .media-list-item .media-title {
+      margin-top: 18px;
+      display: block; }
+    .media-list .media-list-item .media-date {
+      display: block;
+      margin-top: 5px; }
+    .media-list .media-list-item .media-item-inner img {
+      width: 100%; }
+
+.news-page .media-title {
+  margin-left: 8px; }
+  .news-page .media-title:before {
+    position: absolute;
+    margin-left: -8px; }
+.news-page .media-date {
+  margin-left: 8px; }
+
+.additional-news .news-title {
+  margin: 0; }
+.additional-news .news-rosatom .rosatom-logo {
+  display: inline-block;
+  width: 115px;
+  height: 42px; }
+.additional-news span {
+  display: inline-block; }
+.additional-news a {
+  display: block; }
+.additional-news .additional-media-list {
+  margin-top: 0; }
+  .additional-news .additional-media-list .additional-media-list-item {
+    margin-bottom: 0; }
+    .additional-news .additional-media-list .additional-media-list-item .media-title {
+      margin-top: 0; }
+    .additional-news .additional-media-list .additional-media-list-item .media-date {
+      display: block;
+      margin-top: 5px; }
+
 .management-wrapper .persons-list-item {
   margin-bottom: 30px; }
   .management-wrapper .persons-list-item .person-name {
@@ -549,6 +607,9 @@ h1 {
 .two-columns {
   display: none; }
 
+.breadcrumb-block {
+  margin-top: 25px; }
+
 .logo-block-footer {
   display: inline-block; }
   .logo-block-footer .logo-item {
@@ -672,27 +733,29 @@ h1 {
     width: 65.1515151515%;
     float: right;
     margin-right: 0;
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .media-list .media-list-item {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left; }
+    .media-list .media-list-item:nth-child(2n) {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 50%;
+      float: right; }
+    .media-list .media-list-item:nth-child(2n+1) {
+      clear: both; } }
 @media (min-width: 600px) and (max-width: 959px) {
   .header .top-menu-block .navigation-list .navigation-root {
     width: 82.962962963%;
     float: right;
     margin-right: 0;
     margin-left: 8.5185185185%;
-    margin-right: 8.5185185185%; }
-  .header .top-menu-list .top-menu-list-item .sitemap-first-column,
-  .header .top-menu-list .top-menu-list-item .sitemap-third-column {
-    width: 48.8888888889%;
-    float: left;
-    margin-right: 2.2222222222%; }
-  .header .top-menu-list .top-menu-list-item .sitemap-second-column {
-    width: 48.8888888889%;
-    float: right;
-    margin-right: 0; }
-  .header .top-menu-list .top-menu-list-item .sitemap-third-column {
-    width: 100%;
-    float: right;
-    margin-right: 0; } }
+    margin-right: 8.5185185185%; } }
 @media (min-width: 700px) {
   .header .top-menu-block .top-menu-list .sitemap {
     display: inline-block; }
@@ -770,8 +833,85 @@ h1 {
     .container:after {
       content: " ";
       display: block;
+      clear: both; }
+
+  .media-list .media-list-item {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.3333333333%;
+    float: left; }
+    .media-list .media-list-item:nth-child(2n) {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 33.3333333333%;
+      float: right; }
+    .media-list .media-list-item:nth-child(2n+1) {
+      clear: none; }
+    .media-list .media-list-item:nth-child(3n) {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 33.3333333333%;
+      float: right; }
+    .media-list .media-list-item:nth-child(3n+1) {
       clear: both; } }
 @media (min-width: 960px) {
+  .media-content-wrapper .news-content {
+    width: 74.7252747253%;
+    float: left;
+    margin-right: 1.0989010989%; }
+  .media-content-wrapper .additional-news {
+    width: 24.1758241758%;
+    float: right;
+    margin-right: 0; }
+
+  .media-list.media-page .media-list-item {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left; }
+    .media-list.media-page .media-list-item:nth-child(2n) {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 25%;
+      float: left; }
+    .media-list.media-page .media-list-item:nth-child(3n) {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 25%;
+      float: left; }
+    .media-list.media-page .media-list-item:nth-child(4n) {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 25%;
+      float: right;
+      clear: none; }
+    .media-list.media-page .media-list-item:nth-child(2n+1) {
+      clear: none; }
+    .media-list.media-page .media-list-item:nth-child(3n+1) {
+      clear: none; }
+    .media-list.media-page .media-list-item:nth-child(4n+1) {
+      clear: both; }
+
+  .page-pagination .items-sorting {
+    float: left; }
+    .page-pagination .items-sorting .sorting-buttons-list {
+      display: inline-block; }
+      .page-pagination .items-sorting .sorting-buttons-list-item {
+        display: inline-block; }
+  .page-pagination .items-quantity {
+    float: right; }
+    .page-pagination .items-quantity .items-quantity-list {
+      display: inline-block; }
+      .page-pagination .items-quantity .items-quantity-list-item {
+        display: inline-block; }
+
   .menu-open {
     display: none; }
 
@@ -1293,7 +1433,7 @@ ul {
 
 .content-wrapper {
   background-color: #fff;
-  padding: 0px; }
+  padding: 0; }
   .content-wrapper .page-content {
     padding: 65px 5px; }
 
@@ -1368,6 +1508,113 @@ ul {
 .subsidiary-block .persons-list-item {
   padding-bottom: 40px;
   border-bottom: 1px solid #dcdcdc; }
+
+.media-content-wrapper {
+  background: white;
+  padding: 50px 5px; }
+  .media-content-wrapper .title-news {
+    background: #bed33f;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; }
+
+.media-list .media-list-item {
+  padding: 15px;
+  box-sizing: border-box; }
+  .media-list .media-list-item .media-title {
+    font-weight: 400;
+    color: #000; }
+  .media-list .media-list-item .media-date {
+    color: #a0a0a0; }
+  .media-list .media-list-item:hover {
+    background: #ededed; }
+    .media-list .media-list-item:hover .media-title {
+      color: #587daa; }
+
+.news-page .media-title:before {
+  content: '•';
+  color: #bed33f; }
+
+.additional-news {
+  background: #ededed; }
+  .additional-news .news-title {
+    background: #a0a0a0;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; }
+  .additional-news .news-rosatom {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff; }
+    .additional-news .news-rosatom span {
+      vertical-align: top;
+      padding-top: 11px;
+      padding-right: 3px;
+      font-size: 16px; }
+    .additional-news .news-rosatom a {
+      color: #000; }
+      .additional-news .news-rosatom a:hover {
+        color: #587daa; }
+        .additional-news .news-rosatom a:hover .rosatom-logo {
+          filter: grayscale(0); }
+    .additional-news .news-rosatom .rosatom-logo {
+      filter: grayscale(1); }
+  .additional-news .additional-media-list .additional-media-list-item {
+    box-sizing: border-box;
+    padding: 10px 15px; }
+    .additional-news .additional-media-list .additional-media-list-item:first-child {
+      padding-top: 20px; }
+    .additional-news .additional-media-list .additional-media-list-item:last-child {
+      padding-bottom: 20px; }
+    .additional-news .additional-media-list .additional-media-list-item:hover {
+      background: #fff; }
+      .additional-news .additional-media-list .additional-media-list-item:hover .media-title {
+        color: #587daa; }
+    .additional-news .additional-media-list .additional-media-list-item .media-date {
+      color: #a0a0a0; }
+    .additional-news .additional-media-list .additional-media-list-item .media-title {
+      font-weight: 400;
+      color: #000; }
+      .additional-news .additional-media-list .additional-media-list-item .media-title:before {
+        color: #5978b6; }
+
+.pagination-bottom {
+  text-align: center; }
+
+.page-pagination {
+  font-size: 14px; }
+  .page-pagination span {
+    color: #6e7073;
+    font-weight: 600; }
+  .page-pagination .pagination-button {
+    font-weight: 600; }
+    .page-pagination .pagination-button a {
+      line-height: 30px;
+      color: #000;
+      padding: 5px 15px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+      .page-pagination .pagination-button a:hover {
+        background-color: #bed33f;
+        border-radius: 6px; }
+    .page-pagination .pagination-button.first-link a {
+      background-image: url("../images/arrow-prev-black-double.png"); }
+    .page-pagination .pagination-button.last-link a {
+      background-image: url("../images/arrow-next-black-double.png"); }
+    .page-pagination .pagination-button.next-link a {
+      background-image: url("../images/arrow-next-black-tiny.png"); }
+    .page-pagination .pagination-button.prev-link a {
+      background-image: url("../images/arrow-prev-black-tiny.png"); }
+  .page-pagination .selected a {
+    background: #bed33f;
+    border-radius: 6px; }
+  .page-pagination .page-link a img {
+    vertical-align: middle; }
 
 .owl-carousel-simple .owl-nav {
   position: absolute;
@@ -1483,8 +1730,6 @@ ul {
 .main-content .main-page-slider {
   padding-right: 10px;
   padding-left: 10px; }
-.main-content .breadcrumb-block {
-  padding-top: 35px; }
 .main-content .dropdown-menu {
   font: 300 15px/18px "Open Sans", sans-serif;
   box-shadow: 0 2px 4px #a0a0a0; }
@@ -1561,6 +1806,9 @@ ul {
         background: rgba(255, 255, 255, 0.7);
         color: #000; } }
 @media (min-width: 480px) {
+  .media-content-wrapper {
+    padding: 60px 10px; }
+
   .content-wrapper .page-content {
     padding-left: 10px;
     padding-right: 10px; }
@@ -1571,6 +1819,9 @@ ul {
   .additional-menu {
     padding: 20px 90px 20px 0px; } }
 @media (min-width: 600px) {
+  .media-content-wrapper {
+    padding: 60px 15px; }
+
   .content-wrapper .page-content {
     padding-left: 15px;
     padding-right: 15px; }
@@ -1611,6 +1862,9 @@ ul {
     padding-left: 7.326007326%;
     padding-right: 3.1135531136%; } }
 @media (min-width: 720px) {
+  .media-content-wrapper {
+    padding: 60px 75px; }
+
   .additional-menu {
     padding: 20px 160px 20px 70px; }
 
@@ -1618,10 +1872,21 @@ ul {
     padding-left: 75px;
     padding-right: 75px; } }
 @media (min-width: 960px) {
+  .media-content-wrapper {
+    padding: 65px 60px; }
+
   .content-wrapper {
     padding: 65px 60px; }
     .content-wrapper .page-content {
       padding: 0; }
+
+  .additional-news .news-rosatom {
+    background-color: #e2e2e2; }
+
+  .additional-news .additional-media-list .additional-media-list-item:last-child {
+    padding-bottom: 10px; }
+  .additional-news .news-rosatom {
+    padding-top: 10px; }
 
   .page-menu {
     margin: 0; }
