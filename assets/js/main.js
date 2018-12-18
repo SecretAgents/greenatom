@@ -33,7 +33,8 @@ $(document).ready(function(){
 
   $('.top-menu-list-item').on('click', function(e) {
     e.preventDefault();
-    $('.top-menu-list-item, .navigation-list, .navigation-toggle-link, .dropdown-menu-search, .dropdown-menu-sitemap').removeClass('active');
+    $('.navigation-list, .navigation-toggle-link').removeClass('active');
+    $(this).siblings('.top-menu-list-item').removeClass('active');
     $(this).toggleClass('active');
   });
 

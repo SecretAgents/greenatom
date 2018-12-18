@@ -90,21 +90,29 @@
 .tile-list .small-list {
   position: relative; }
   .tile-list .small-list .tile-title {
-    top: 15px; }
+    top: 0px; }
   .tile-list .small-list .tile-text {
     display: block;
     position: absolute;
-    bottom: 30px; }
+    bottom: 15px; }
 .tile-list .icon-with-list .tile-text {
-  display: none; }
+  display: none;
+  width: 130px;
+  margin: 0 auto; }
+.tile-list .icon-with-list .cities-list {
+  margin: 5px 0; }
 .tile-list .icon-with-list:hover .tile-icon {
   display: none; }
 .tile-list .icon-with-list:hover .tile-text {
   display: block; }
 .tile-list .text-on-hover .short-description {
-  margin-bottom: 15px; }
-  .tile-list .text-on-hover .short-description p:first-child {
-    margin-top: 0; }
+  margin-bottom: 5px; }
+  .tile-list .text-on-hover .short-description p {
+    margin-bottom: 5px; }
+    .tile-list .text-on-hover .short-description p:first-child {
+      margin-top: 0; }
+.tile-list .text-on-hover:hover .tile-title {
+  display: none; }
 .tile-list .text-on-hover:hover .tile-text {
   display: block;
   position: absolute;
@@ -231,10 +239,30 @@
     .tile-list .slider .owl-carousel {
       padding-left: 11.5384615385%;
       padding-right: 11.5384615385%; }
+    .tile-list .text-on-hover .short-description {
+      margin-bottom: 10px; }
+      .tile-list .text-on-hover .short-description p {
+        margin-bottom: 10px; }
+        .tile-list .text-on-hover .short-description p:first-child {
+          margin-top: 0; }
+    .tile-list .text-on-hover:hover .tile-title {
+      display: block; }
     .tile-list .tile-icon {
       margin-bottom: 40px; }
       .tile-list .tile-icon img {
         max-width: none;
         max-height: none; } }
+@media (min-width: 960px) {
+  .tile-list .icon-with-list .tile-text {
+    width: 170px; }
+  .tile-list .small-list .tile-title {
+    top: 10px; }
+  .tile-list .small-list .tile-text {
+    bottom: 20px; } }
+@media (min-width: 1200px) {
+  .tile-list .small-list .tile-title {
+    top: 15px; }
+  .tile-list .small-list .tile-text {
+    bottom: 30px; } }
 
 /*# sourceMappingURL=front_page.css.map */

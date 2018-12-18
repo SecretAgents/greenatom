@@ -13,14 +13,37 @@ h1 {
   @include container;
 }
 .main-slider {
+  box-sizing: border-box;
   margin: 20px auto;
   //max-width: 62.5rem;
   width: 100%;
+  .owl-carousel {
+    margin-bottom: 90px;
+    .owl-dots {
+      margin-top: 35px;
+    }
+  }
   .owl-item {
     img {
       display: inline;
       width: auto;
       max-width: 100%;
+    }
+  }
+  .slider-image-center {
+    max-width: 440px;
+    margin: 0 auto;
+    .slider-title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .slider-image-right {
+    .slider-text-block {
+      margin-bottom: 15px;
+    }
+    .slider-title {
+      margin-bottom: 17px;
     }
   }
 }
@@ -113,10 +136,29 @@ h1 {
         width: 100%;
         left: 0;
         top: 100%;
-        z-index: 50;
+        z-index: 200;
         box-sizing: border-box;
         overflow: hidden;
         display: none;
+        .sitemap-column {
+          & > ul {
+            margin-top: 10px;
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+        .search {
+          height: 30px;
+          width: 100%;
+        }
+        .button-submit {
+          position: absolute;
+          top: 5px;
+          right: 0;
+          width: 25px;
+          height: 22px;
+        }
       }
       &-item {
         display: inline-block;
@@ -346,22 +388,6 @@ h1 {
 .dropdown-menu-sitemap {
   display: none;
 }
-.dropdown-menu-search {
-  .dropdown-menu-search-inner {
-    padding: 20px;
-  }
-  .search {
-    height: 30px;
-    width: 100%;
-  }
-  .button-submit {
-    position: absolute;
-    top: 5px;
-    right: 0;
-    width: 25px;
-    height: 22px;
-  }
-}
 .search-block-footer {
   margin-top: 15px;
   .search {
@@ -377,7 +403,7 @@ h1 {
   }
 }
 
-@include susy-breakpoint(0px 959px, 3) {
+@include susy-breakpoint(0px 1059px, 3) {
   .top-menu-block {
     .navigation-list {
       display: none;
@@ -455,18 +481,27 @@ h1 {
       .top-menu-list-item {
         .sitemap-column {
           @include span(1.5);
-          &:nth-child(2n) {
+          &:nth-child(2) {
             @include span(1.5 last);
           }
-          &:nth-child(2n+1) {
+          &:nth-child(3) {
+            @include span(3 last);
             clear: both;
+            & > ul {
+              @include span(1.5);
+              margin-top: 0;
+              margin-bottom: 10px;
+              &:nth-child(2n) {
+                @include span(1.5 last);
+              }
+              &:nth-child(2n+1) {
+                clear: both;
+              }
+            }
           }
         }
       }
     }
-
-  }
-  .sitemap-first-column {
 
   }
   .menu-open {
@@ -524,7 +559,7 @@ h1 {
   }
 }
 
-@include breakpoint(700px, 6) {
+@include susy-breakpoint(700px, 6) {
   .header {
     .top-menu-block {
       .top-menu-list {
@@ -532,16 +567,31 @@ h1 {
           display: inline-block;
         }
       }
-    }
-  }
-  .dropdown-menu-search {
-    width: 100%;
-    .dropdown-menu-search-inner {
-      padding: 25px;
-    }
-    .form-field {
-      width: 571px;
-      margin: 0 auto;
+      .top-menu-list-item {
+        .sitemap-column {
+          @include span(2);
+          &:nth-child(2n) {
+            @include span(2);
+          }
+          &:nth-child(2n+1) {
+            clear: none;
+          }
+          &:nth-child(3n) {
+            @include span(2 last);
+          }
+          &:nth-child(3n+1) {
+            clear: both;
+          }
+          &:nth-child(3) {
+            & > ul {
+              @include span(6 last);
+              &:nth-child(2n) {
+                @include span(6 last);
+              }
+            }
+          }
+        }
+      }
     }
   }
   .logo-block-footer {
@@ -631,74 +681,6 @@ h1 {
     @include span(3 of 12 first);
   }
 
-  .header {
-    padding-left: 65px;
-    padding-right: 65px;
-    .top-menu-block {
-      .navigation-toggle-link {
-        display: none;
-      }
-      .navigation-root {
-        display: table;
-        margin: 0;
-        height: 100%;
-        ul {
-          display: none;
-          position: absolute;
-          z-index: 200;
-          margin-left: -5px;
-          a {
-            display: block;
-          }
-        }
-      }
-      .navigation-list {
-        display: inline-block;
-        &-item {
-          display: table-cell;
-          & > a {
-            display: block;
-            height: 75px;
-            &:hover {
-              margin-left: -5px;
-            }
-          }
-          &:hover {
-            & > a {
-              margin-left: -5px;
-            }
-            & > ul {
-              display: block;
-            }
-          }
-        }
-      }
-      .top-menu-list-item {
-        .dropdown-header-block {
-          position: absolute;
-          width: 100%;
-          left: 0;
-          top: 100%;
-          z-index: 50;
-          box-sizing: border-box;
-          overflow: hidden;
-        }
-        .sitemap-first-column,
-        .sitemap-second-column  {
-          @include span(4);
-        }
-        .sitemap-third-column {
-          @include span(4 last);
-        }
-        &:hover {
-          .dropdown-header-block {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-
   // Footer styles
   .menu-block-footer {
     @include span(7 of 12 first);
@@ -759,6 +741,55 @@ h1 {
   }
 }
 
+@include susy-breakpoint(1060px, 12) {
+  .header {
+    .top-menu-block {
+      .navigation-toggle-link {
+        display: none;
+      }
+      .navigation-root {
+        display: table;
+        margin: 0;
+        height: 100%;
+        ul {
+          display: none;
+          position: absolute;
+          z-index: 200;
+          margin-left: -5px;
+          a {
+            display: block;
+          }
+        }
+      }
+      .navigation-list {
+        display: inline-block;
+        &-item {
+          display: table-cell;
+          & > a {
+            display: block;
+            height: 75px;
+          }
+          &:hover {
+            & > a {
+              margin-left: -5px;
+            }
+            & > ul {
+              display: block;
+            }
+          }
+        }
+      }
+      .top-menu-list-item {
+        &:hover {
+          .dropdown-header-block {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
 @include breakpoint(1200px, 12) {
   .container {
     max-width: 1140px;
@@ -769,16 +800,6 @@ h1 {
       .navigation {
         display: none;
       }
-    }
-  }
-  .dropdown-menu-search {
-    .dropdown-menu-search-inner {
-      padding: 25px;
-    }
-    .form-field {
-      width: 571px;
-      float: right;
-      margin-right: 75px;
     }
   }
   // Footer styles

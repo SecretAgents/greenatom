@@ -133,18 +133,23 @@
   .small-list {
     position: relative;
     .tile-title {
-      top: 15px;
+      top: 0px;
     }
     .tile-text {
       display: block;
       position: absolute;
-      bottom: 30px;
+      bottom: 15px;
     }
   }
 
   .icon-with-list {
     .tile-text {
       display: none;
+      width: 130px;
+      margin: 0 auto;
+    }
+    .cities-list {
+      margin: 5px 0;
     }
     &:hover {
       .tile-icon {
@@ -158,14 +163,18 @@
 
   .text-on-hover {
     .short-description {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       p {
+        margin-bottom: 5px;
         &:first-child {
           margin-top: 0;
         }
       }
     }
     &:hover {
+      .tile-title {
+        display: none;
+      }
       .tile-text {
         display: block;
         position: absolute;
@@ -354,11 +363,60 @@
       }
     }
 
+    .text-on-hover {
+      .short-description {
+        margin-bottom: 10px;
+        p {
+          margin-bottom: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+      &:hover {
+        .tile-title {
+          display: block;
+        }
+      }
+    }
+
     .tile-icon {
       margin-bottom: 40px;
       img {
         max-width: none;
         max-height: none;
+      }
+    }
+  }
+}
+
+@include susy-breakpoint(960px, 12) {
+  .tile-list {
+    .icon-with-list {
+      .tile-text {
+        width: 170px;
+      }
+    }
+
+    .small-list {
+      .tile-title {
+        top: 10px;
+      }
+      .tile-text {
+        bottom: 20px;
+      }
+    }
+  }
+}
+
+@include susy-breakpoint(1200px, 12) {
+  .tile-list {
+    .small-list {
+      .tile-title {
+        top: 15px;
+      }
+      .tile-text {
+        bottom: 30px;
       }
     }
   }

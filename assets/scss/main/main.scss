@@ -273,9 +273,37 @@ ul {
 }
 
 .main-slider {
+  padding-left: 10px;
+  padding-right: 10px;
   .slider-text-block,
   .slider-image-block {
     vertical-align: middle;
+  }
+  .owl-item-inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .slider-image-center {
+    text-align: center;
+    .slider-title {
+      text-transform: uppercase;
+      font: $font-label;
+      color: $green;
+      font-weight: 600;
+    }
+  }
+  .slider-image-right {
+    text-align: center;
+    text-transform: uppercase;
+    .slider-title {
+      font: $font-label;
+      color: $green;
+      font-weight: 600;
+      span {
+        padding-bottom: 5px;
+        border-bottom: 1px solid $green;
+      }
+    }
   }
 }
 
@@ -306,10 +334,12 @@ ul {
         background: $green url(../images/icon-sitemap-white.png) no-repeat center center;
       }
     }
-    .search {
-      background: url(../images/icon-search.png) no-repeat center center;
-      &:hover {
-        background: $green url(../images/icon-search-white.png) no-repeat center center;
+    .top-menu-list-item {
+      &.search {
+        background: url(../images/icon-search.png) no-repeat center center;
+        &:hover {
+          background: $green url(../images/icon-search-white.png) no-repeat center center;
+        }
       }
     }
     .dropdown-header-block {
@@ -320,15 +350,19 @@ ul {
       a {
         color: $black;
       }
-      span {
-        font: $font-label-small;
-      }
       ul {
         ul {
           padding-left: 10px;
         }
-        &:first-child {
-          margin-top: 0;
+      }
+      .sitemap-column {
+        & > ul {
+          & > li {
+            & > a {
+              font: $font-label-small;
+              font-weight: 600;
+            }
+          }
         }
       }
     }
@@ -361,9 +395,6 @@ ul {
         }
       }
     }
-  }
-  .dropdown-menu-search {
-    background-color: $green;
   }
 }
 
@@ -452,7 +483,7 @@ ul {
   }
 }
 .search-block-footer,
-.dropdown-menu-search {
+.dropdown-header-block {
   .search {
     border-radius: 3px;
     padding-left: 15px;
@@ -470,7 +501,7 @@ ul {
   }
 }
 
-@include susy-breakpoint(0px 959px, 3) {
+@include susy-breakpoint(0px 1059px, 3) {
   .navigation-list {
     background: $green;
     padding: 40px 10px;
@@ -571,6 +602,18 @@ ul {
   .page-menu {
     margin: -65px -75px 60px;
   }
+  .header {
+    .top-menu-list {
+      .top-menu-list-item {
+        &.search {
+          .dropdown-header-block {
+            padding-left: 75px;
+            padding-right: 75px;
+          }
+        }
+      }
+    }
+  }
 }
 @include breakpoint(960px, 12) {
   //Additional page menu
@@ -579,81 +622,6 @@ ul {
   }
   .menu-open {
     display: none;
-  }
-
-  .header {
-    padding-left: 65px;
-    padding-right: 65px;
-    .top-menu-block {
-      .navigation-list {
-        &-item {
-          text-transform: uppercase;
-          vertical-align: middle;
-          font-size: 13px;
-          a {
-            color: $white;
-            font-weight: 400;
-            &:hover {
-              background: $bg-green;
-              color: $white;
-            }
-          }
-          > a {
-            padding-left: 10px;
-            line-height: 75px;
-            &:hover {
-              padding-left: 15px;
-            }
-            &:after {
-              padding-left: 10px;
-              content: "•";
-              color: $green;
-              font-size: 14px;
-              font-weight: 600;
-            }
-          }
-          &:hover {
-            & > a {
-              background: $bg-green;
-              color: $white;
-            }
-          }
-          &:first-child {
-            & > a {
-              padding-left: 15px;
-            }
-          }
-          &:last-child {
-            & > a {
-              padding-right: 15px;
-              &:after {
-                display: none;
-              }
-            }
-          }
-          ul {
-            background: $white;
-            a {
-              color: $black;
-              padding: 3px 10px 5px;
-            }
-          }
-        }
-        //.navigation-list-item::before {
-        //  content: "•";
-        //  color: $green;
-        //  font-size: 14px;
-        //  font-weight: 600;
-        //}
-      }
-      .top-menu-list {
-        .dropdown-header-block {
-          span {
-            font: $font-label;
-          }
-        }
-      }
-    }
   }
 
   .additional-menu {
@@ -707,10 +675,126 @@ ul {
     text-transform: uppercase;
     color: #6e7073;
   }
+
+  .main-slider {
+    .slider-image-right {
+      text-align: left;
+    }
+  }
 }
+
+@include susy-breakpoint(1060px, 12) {
+  .header {
+    padding-left: 65px;
+    padding-right: 65px;
+    .top-menu-block {
+      .navigation-list {
+        &-item {
+          text-transform: uppercase;
+          vertical-align: middle;
+          font-size: 13px;
+          a {
+            color: $white;
+            font-weight: 400;
+            &:hover {
+              background: $bg-green;
+              color: $white;
+            }
+          }
+          > a {
+            padding-left: 4px;
+            line-height: 75px;
+            &:after {
+              padding-left: 4px;
+              content: "•";
+              color: $green;
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+          &:hover {
+            & > a {
+              padding-left: 9px;
+              background: $bg-green;
+              color: $white;
+            }
+          }
+          &:first-child {
+            & > a {
+              padding-left: 9px;
+            }
+          }
+          &:last-child {
+            & > a {
+              padding-right: 9px;
+              &:after {
+                display: none;
+              }
+            }
+          }
+          & > ul {
+            padding-bottom: 10px;
+            padding-top: 10px;
+          }
+          ul {
+            background: $white;
+            a {
+              color: $black;
+              padding: 3px 10px 5px;
+            }
+          }
+        }
+      }
+      .top-menu-list {
+        .dropdown-header-block {
+          span {
+            font: $font-label;
+          }
+        }
+      }
+    }
+  }
+}
+
 @include breakpoint(1200px, 12) {
   .main-content {
     padding-bottom: 85px;
+  }
+  .header {
+    .top-menu-block {
+      .navigation-list {
+        &-item {
+          > a {
+            padding-left: 10px;
+            &:after {
+              padding-left: 10px;
+            }
+          }
+          &:first-child {
+            & > a {
+              padding-left: 15px;
+            }
+          }
+          &:last-child {
+            & > a {
+              padding-right: 15px;
+            }
+          }
+          &:hover {
+            & > a {
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+      .top-menu-list {
+        .dropdown-header-block {
+          span {
+            font: $font-label;
+          }
+        }
+      }
+    }
   }
 }
 
