@@ -20,50 +20,69 @@ ul {
   .parent-menu ul {
     list-style-type: disc; }
 
-.menu-open {
+.page-menu .menu-change-visibility:after {
+  content: '';
+  display: block;
+  margin-top: -4px;
+  height: 4px;
+  width: 100%;
+  box-shadow: 0px 0px 10px black; }
+
+.additional-menu-wrapper .menu-open {
   background: #bed33f;
   border-radius: 50%;
   vertical-align: middle;
   text-align: center; }
 
 .additional-menu {
-  background: #bed33f; }
+  font-weight: 400;
+  background: #bed33f;
+  padding: 20px 60px 20px 0px; }
   .additional-menu span.easytree-node {
     display: inline-block;
     vertical-align: top; }
   .additional-menu span.easytree-expander {
     display: inline-block;
-    position: absolute; }
+    font-weight: bold; }
+    .additional-menu span.easytree-expander:after {
+      padding-left: 4px; }
+  .additional-menu span.easytree-exp-c span.easytree-expander:after {
+    content: '+'; }
+  .additional-menu span.easytree-exp-e span.easytree-expander:after {
+    content: '-'; }
   .additional-menu .top-blur-block {
-    background: linear-gradient(to bottom, #bed33f, rgba(0, 0, 0, 0)); }
+    background: #bed33f;
+    box-shadow: 0px 13px 27px #bed33f; }
   .additional-menu .bottom-blur-block {
-    background: linear-gradient(to top, #bed33f, rgba(0, 0, 0, 0)); }
+    background: #bed33f;
+    box-shadow: 0px -13px 27px #bed33f; }
   .additional-menu .easytree-focused span.easytree-active .easytree-title {
     background: none;
     color: #fff; }
   .additional-menu .easytree-exp-e .easytree-title a {
     color: #fff; }
-  .additional-menu ul.easytree-container ul {
-    margin: 0; }
-  .additional-menu ul.easytree-container li .easytree-title {
-    padding-left: 20px; }
-  .additional-menu ul.easytree-container li .easytree-node {
-    padding: 10px 0px;
-    cursor: pointer;
-    width: 100%; }
-    .additional-menu ul.easytree-container li .easytree-node:before {
-      content: '·';
-      font-size: 41px;
-      margin-top: 0;
-      position: absolute;
-      padding-left: 5px; }
   .additional-menu ul {
     padding: 20px 0px;
-    font-size: 17px;
-    list-style: disc inside; }
+    font-size: 17px; }
+    .additional-menu ul.easytree-container ul {
+      margin: 0; }
+    .additional-menu ul.easytree-container li .easytree-title {
+      padding-left: 20px; }
+    .additional-menu ul.easytree-container li .easytree-node {
+      padding: 10px 0px;
+      width: 100%; }
+      .additional-menu ul.easytree-container li .easytree-node:before {
+        content: '·';
+        font-size: 41px;
+        margin-top: 0;
+        position: absolute;
+        padding-left: 5px; }
     .additional-menu ul li {
       position: relative;
       color: #fff; }
+      .additional-menu ul li .easytree-active span,
+      .additional-menu ul li .easytree-active a {
+        color: #fff; }
       .additional-menu ul li .easytree-node:hover {
         color: #fff; }
         .additional-menu ul li .easytree-node:hover a {
@@ -73,7 +92,12 @@ ul {
 
 .content-wrapper {
   background-color: #fff;
-  padding: 65px 5px; }
+  padding: 0px; }
+  .content-wrapper .page-content {
+    padding: 65px 5px; }
+
+.page-title-wrapper {
+  padding: 15px 5px; }
 
 .description-html-safe ul {
   list-style-type: disc;
@@ -121,6 +145,10 @@ ul {
   width: 10%;
   padding-right: 10px; }
 
+.persons-list-item .person-email a {
+  color: #587daa; }
+  .persons-list-item .person-email a:hover {
+    color: #7a7a7a; }
 .management-wrapper .persons-list-item {
   text-align: center; }
   .management-wrapper .persons-list-item .person-data a {
@@ -135,6 +163,10 @@ ul {
       display: block; }
   .management-wrapper .persons-list-item .person-position {
     font-size: 13px; }
+
+.subsidiary-block .persons-list-item {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dcdcdc; }
 
 .owl-carousel-simple .owl-nav {
   position: absolute;
@@ -328,28 +360,33 @@ ul {
         background: rgba(255, 255, 255, 0.7);
         color: #000; } }
 @media (min-width: 480px) {
-  .content-wrapper {
+  .content-wrapper .page-content {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  .page-title-wrapper {
+    padding: 25px 10px; }
+
+  .additional-menu {
+    padding: 20px 90px 20px 0px; } }
 @media (min-width: 600px) {
-  .content-wrapper {
+  .content-wrapper .page-content {
     padding-left: 15px;
     padding-right: 15px; }
 
-  .page-menu {
-    margin: -65px -15px 60px; }
+  .page-title-wrapper {
+    padding: 45px 15px; }
 
   .main-content .one-column {
     padding-left: 15px;
     padding-right: 15px; } }
 @media (min-width: 700px) {
-  .content-wrapper {
+  .content-wrapper .page-content {
     padding-left: 75px;
     padding-right: 75px; }
 
   .page-title-wrapper {
-    padding-left: 75px;
-    padding-right: 75px; }
+    padding: 60px 75px; }
 
   .main-content .one-column {
     padding-left: 25px;
@@ -373,13 +410,18 @@ ul {
     padding-left: 7.326007326%;
     padding-right: 3.1135531136%; } }
 @media (min-width: 720px) {
-  .page-menu {
-    margin: -65px -75px 60px; }
+  .additional-menu {
+    padding: 20px 160px 20px 70px; }
 
   .header .top-menu-list .top-menu-list-item.search .dropdown-header-block {
     padding-left: 75px;
     padding-right: 75px; } }
 @media (min-width: 960px) {
+  .content-wrapper {
+    padding: 65px 60px; }
+    .content-wrapper .page-content {
+      padding: 0; }
+
   .page-menu {
     margin: 0; }
 
@@ -387,8 +429,10 @@ ul {
     display: none; }
 
   .additional-menu {
+    font-weight: 300;
     background: none;
-    overflow: visible; }
+    overflow: visible;
+    padding: 0px 10px 0px 0px; }
     .additional-menu .menu-header {
       background: #e2e2e2;
       padding: 5px 5px 5px 30px;
@@ -401,16 +445,21 @@ ul {
     .additional-menu span.easytree-exp-e {
       background: #bed33f;
       color: #fff; }
+      .additional-menu .easytree-focused span.easytree-active .easytree-title a,
+      .additional-menu span.easytree-exp-e .easytree-title a {
+        color: #fff; }
       .additional-menu .easytree-focused span.easytree-active:before,
       .additional-menu span.easytree-exp-e:before {
         color: #fff; }
-    .additional-menu ul li {
-      color: #bed33f; }
-      .additional-menu ul li a {
-        color: #000; }
-      .additional-menu ul li .easytree-node:hover {
-        color: #fff;
-        background: #bed33f; }
+    .additional-menu ul {
+      padding: 10px 0px; }
+      .additional-menu ul li {
+        color: #bed33f; }
+        .additional-menu ul li a {
+          color: #000; }
+        .additional-menu ul li .easytree-node:hover {
+          color: #fff;
+          background: #bed33f; }
 
   .content-wrapper {
     padding-left: 60px;
