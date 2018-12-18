@@ -472,23 +472,23 @@ h1 {
 //  }
 //}
 
-//News page
+// News page
+.media-content-wrapper {
+  .title-news {
+    margin: 0px 15px 20px 15px;
+  }
+}
 .media-list {
+  margin-top: 30px;
   .media-list-item {
     margin-bottom: 20px;
     .media-title {
       margin-top: 25px;
       display: block;
-      margin-left: 10px;
-      &:before {
-        position: absolute;
-        margin-left: -8px;
-      }
     }
     .media-date {
       display: block;
       margin-top: 10px;
-      margin-left: 10px;
     }
     .media-item-inner {
       img {
@@ -496,17 +496,40 @@ h1 {
       }
     }
   }
+  &.news-page {
+    .media-title {
+      margin-left: 10px;
+      &:before {
+        position: absolute;
+        margin-left: -8px;
+      }
+    }
+    .media-date {
+      margin-left: 10px;
+    }
+  }
 }
 
 .additional-news {
-  h3 {
+  .news-title {
     margin: 0;
   }
+  .news-rosatom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  span {
+    display: inline-block;
+  }
+  a {
+    display: block;
+  }
   .media-list {
+    margin-top: 0;
     .media-list-item {
       margin-bottom: 0;
       .media-title {
-        margin-top: 10px;
+        margin-top: 0px;
       }
     }
   }
@@ -687,6 +710,26 @@ h1 {
   }
 }
 @include breakpoint(720px, 6) {
+  //management page
+  .persons-list-item {
+    .management-wrapper & {
+      @include span(2 of 6 first);
+      &:nth-child(2n){
+        @include span(2 of 6);
+      }
+      &:nth-child(2n-1){
+        clear: none;
+      }
+      &:nth-child(3n){
+        @include span(2 of 6 last);
+      }
+      &:nth-child(3n+1){
+        clear: both;
+      }
+    }
+  }
+}
+@include susy-breakpoint(800px, 12) {
   //News page
   .media-content-wrapper {
     padding: 60px 50px;
@@ -708,26 +751,6 @@ h1 {
       }
     }
   }
-  //management page
-  .persons-list-item {
-    .management-wrapper & {
-      @include span(2 of 6 first);
-      &:nth-child(2n){
-        @include span(2 of 6);
-      }
-      &:nth-child(2n-1){
-        clear: none;
-      }
-      &:nth-child(3n){
-        @include span(2 of 6 last);
-      }
-      &:nth-child(3n+1){
-        clear: both;
-      }
-    }
-  }
-}
-@include susy-breakpoint(800px, 12) {
   .container {
     @include container(12);
   }

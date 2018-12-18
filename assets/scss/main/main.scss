@@ -452,18 +452,22 @@ ul {
 .media-content-wrapper {
   background: white;
   padding: 50px 30px;
+  .title-news {
+    background: $green;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+  }
 }
 .media-list {
   .media-list-item {
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     .media-title {
       font-weight: 400;
       color: $black;
-      &:before {
-        content: '•';
-        color: $green;
-      }
     }
     .media-date {
       color: $grey;
@@ -475,33 +479,56 @@ ul {
       }
     }
   }
+
+  &.news-page {
+    .media-title {
+      &:before {
+        content: '•';
+        color: $green;
+      }
+    }
+  }
 }
 
 .additional-news {
   background: $bg-primary-light;
-  h3 {
+  .news-title {
     background: $grey;
     padding: 12px;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
     text-transform: uppercase;
     color: $white;
+  }
+  .news-rosatom {
+    text-align: center;
+    span {
+      vertical-align: top;
+      padding-top: 11px;
+      padding-right: 3px;
+      font-size: 16px;
+    }
+    a {
+      color: $black;
+      &:hover {
+        color: $link-primary-pressed;
+      }
+    }
   }
   .media-list {
     padding-top: 15px;
     .media-list-item {
-      padding: 0 10px;
+      padding: 10px 10px;
       &:hover {
         background: $white;
       }
       .media-title {
+        color: $black;
+        a {
+          color: $link-primary-pressed;
+        }
         &:before {
           color: $bg-blue;
-          .media-title {
-            color: $black;
-            a {
-              color: $link-primary-pressed;
-            }
-          }
         }
       }
     }
