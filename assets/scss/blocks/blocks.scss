@@ -24,9 +24,6 @@ h1 {
     }
   }
 }
-.media-content {
-  height: 1200px;
-}
 .owl-carousel {
   .owl-item {
     img {
@@ -161,10 +158,9 @@ h1 {
 }
 //Pagination block
 .page-pagination {
-  .desktop {
-    display: none;
-  }
+  margin-bottom: 15px;
   .items-sorting {
+    margin-bottom: 10px;
     .sorting-buttons-list {
       display: inline-block;
       &-item {
@@ -189,6 +185,73 @@ h1 {
     }
   }
 }
+
+//Media page
+.media-list {
+  margin-top: 30px;
+  .media-list-item {
+    margin-bottom: 20px;
+    .media-title {
+      margin-top: 18px;
+      display: block;
+    }
+    .media-date {
+      display: block;
+      margin-top: 5px;
+    }
+    .media-item-inner {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.news-page {
+  .media-title {
+    margin-left: 8px;
+    &:before {
+      position: absolute;
+      margin-left: -8px;
+    }
+  }
+  .media-date {
+    margin-left: 8px;
+  }
+}
+
+// News page
+.additional-news {
+  .news-title {
+    margin: 0;
+  }
+  .news-rosatom {
+    .rosatom-logo {
+      display: inline-block;
+      width: 115px;
+      height: 42px;
+    }
+  }
+  span {
+    display: inline-block;
+  }
+  a {
+    display: block;
+  }
+  .additional-media-list {
+    margin-top: 0;
+    .additional-media-list-item {
+      margin-bottom: 0;
+      .media-title {
+        margin-top: 0;
+      }
+      .media-date {
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
 //management page
 .persons-list-item {
   .management-wrapper & {
@@ -387,7 +450,9 @@ h1 {
 .two-columns {
   display: none;
 }
-
+.breadcrumb-block {
+  margin-top: 25px;
+}
 //.tile-list {
 //  margin: 0 auto;
 //  max-width: 670px;
@@ -566,7 +631,18 @@ h1 {
       }
     }
   }
-
+  //Media page
+  .media-list {
+    .media-list-item {
+      @include span(3 of 6 first);
+      &:nth-child(2n){
+        @include span(3 of 6 last);
+      }
+      &:nth-child(2n-1){
+        clear: both;
+      }
+    }
+  }
   //.tile-list-item {
   //  .title-block {
   //    .archive-icon {
@@ -710,14 +786,68 @@ h1 {
   .container {
     @include container(12);
   }
+  //Media page
+  .media-list {
+    .media-list-item {
+      @include span(2 of 6 first);
+      &:nth-child(2n){
+        @include span(2 of 6);
+      }
+      &:nth-child(2n-1){
+        clear: none;
+      }
+      &:nth-child(3n){
+        @include span(2 of 6 last);
+      }
+      &:nth-child(3n+1){
+        clear: both;
+      }
+    }
+  }
 }
 
 @include breakpoint(960px, 12) {
+  // News page
+  .media-content-wrapper {
+    .news-content {
+      @include span(9 of 12 first);
+    }
+    .additional-news {
+      @include span(3 of 12 last);
+    }
+  }
+  //Media page
+  .media-list {
+    &.media-page {
+      .media-list-item {
+        @include span(3 of 12);
+        &:nth-child(2n){
+          @include span(3 of 12);
+        }
+        &:nth-child(3n) {
+          @include span(3 of 12);
+        }
+        &:nth-child(4n) {
+          @include span(3 of 12 last);
+          clear: none;
+        }
+        &:nth-child(3n+1) {
+          clear: none;
+        }
+        &:nth-child(4n+1) {
+          clear: both;
+        }
+        &:nth-child(2n-1){
+          clear: none;
+        }
+        &:nth-child(4n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
   //Pagination block
   .page-pagination {
-    .desktop {
-      display: inline-block;
-    }
     .items-sorting {
       float: left;
       .sorting-buttons-list {

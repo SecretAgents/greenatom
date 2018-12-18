@@ -90,12 +90,10 @@ ul {
       .additional-menu ul li a {
         color: #000; }
 
-.content-wrapper,
-.media-content-wrapper {
+.content-wrapper {
   background-color: #fff;
   padding: 0; }
-  .content-wrapper .page-content,
-  .media-content-wrapper .page-content {
+  .content-wrapper .page-content {
     padding: 65px 5px; }
 
 .page-title-wrapper {
@@ -170,6 +168,80 @@ ul {
   padding-bottom: 40px;
   border-bottom: 1px solid #dcdcdc; }
 
+.media-content-wrapper {
+  background: white;
+  padding: 50px 5px; }
+  .media-content-wrapper .title-news {
+    background: #bed33f;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; }
+
+.media-list .media-list-item {
+  padding: 15px;
+  box-sizing: border-box; }
+  .media-list .media-list-item .media-title {
+    font-weight: 400;
+    color: #000; }
+  .media-list .media-list-item .media-date {
+    color: #a0a0a0; }
+  .media-list .media-list-item:hover {
+    background: #e2e2e2; }
+    .media-list .media-list-item:hover .media-title {
+      color: #587daa; }
+
+.news-page .media-title:before {
+  content: '•';
+  color: #bed33f; }
+
+.additional-news {
+  background: #e2e2e2; }
+  .additional-news .news-title {
+    background: #a0a0a0;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; }
+  .additional-news .news-rosatom {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff; }
+    .additional-news .news-rosatom span {
+      vertical-align: top;
+      padding-top: 11px;
+      padding-right: 3px;
+      font-size: 16px; }
+    .additional-news .news-rosatom a {
+      color: #000; }
+      .additional-news .news-rosatom a:hover {
+        color: #587daa; }
+    .additional-news .news-rosatom .rosatom-logo {
+      background: url("../images/logo-rosatom-inactive.png") no-repeat center center; }
+      .additional-news .news-rosatom .rosatom-logo:hover {
+        background: url("../images/logo-rosatom.png") no-repeat center center; }
+  .additional-news .additional-media-list .additional-media-list-item {
+    box-sizing: border-box;
+    padding: 10px 15px; }
+    .additional-news .additional-media-list .additional-media-list-item:first-child {
+      padding-top: 20px; }
+    .additional-news .additional-media-list .additional-media-list-item:last-child {
+      padding-bottom: 20px; }
+    .additional-news .additional-media-list .additional-media-list-item:hover {
+      background: #fff; }
+      .additional-news .additional-media-list .additional-media-list-item:hover .media-title {
+        color: #587daa; }
+    .additional-news .additional-media-list .additional-media-list-item .media-date {
+      color: #a0a0a0; }
+    .additional-news .additional-media-list .additional-media-list-item .media-title {
+      font-weight: 400;
+      color: #000; }
+      .additional-news .additional-media-list .additional-media-list-item .media-title:before {
+        color: #5978b6; }
+
 .pagination-bottom {
   text-align: center; }
 
@@ -179,19 +251,19 @@ ul {
     color: #6e7073;
     font-weight: 600; }
   .page-pagination .pagination-button {
-    padding: 5px 10px;
     font-weight: 600; }
     .page-pagination .pagination-button a {
-      color: #000; }
-    .page-pagination .pagination-button:hover {
-      background: #bed33f;
-      border-radius: 6px; }
+      line-height: 30px;
+      color: #000;
+      padding: 5px 15px; }
+      .page-pagination .pagination-button a:hover {
+        background: #bed33f;
+        border-radius: 6px; }
   .page-pagination .selected {
     background: #bed33f;
     border-radius: 6px; }
   .page-pagination .page-link a img {
-    vertical-align: middle;
-    width: 100%; }
+    vertical-align: middle; }
 
 .owl-carousel-simple .owl-nav {
   position: absolute;
@@ -274,8 +346,6 @@ ul {
 .main-content .main-page-slider {
   padding-right: 10px;
   padding-left: 10px; }
-.main-content .breadcrumb-block {
-  padding-top: 35px; }
 .main-content .dropdown-menu {
   font: 300 15px/18px "Open Sans", sans-serif;
   box-shadow: 0 2px 4px #a0a0a0; }
@@ -338,6 +408,9 @@ ul {
     padding: 0; }
 
 @media (min-width: 480px) {
+  .media-content-wrapper {
+    padding: 60px 10px; }
+
   .content-wrapper .page-content {
     padding-left: 10px;
     padding-right: 10px; }
@@ -348,6 +421,9 @@ ul {
   .additional-menu {
     padding: 20px 90px 20px 0px; } }
 @media (min-width: 600px) {
+  .media-content-wrapper {
+    padding: 60px 15px; }
+
   .content-wrapper .page-content {
     padding-left: 15px;
     padding-right: 15px; }
@@ -388,13 +464,27 @@ ul {
     padding-left: 7.326007326%;
     padding-right: 3.1135531136%; } }
 @media (min-width: 720px) {
+  .media-content-wrapper {
+    padding: 60px 75px; }
+
   .additional-menu {
     padding: 20px 160px 20px 70px; } }
 @media (min-width: 960px) {
+  .media-content-wrapper {
+    padding: 65px 60px; }
+
   .content-wrapper {
     padding: 65px 60px; }
     .content-wrapper .page-content {
       padding: 0; }
+
+  .additional-news .news-rosatom {
+    background-color: #e2e2e2; }
+
+  .additional-news .additional-media-list .additional-media-list-item:last-child {
+    padding-bottom: 10px; }
+  .additional-news .news-rosatom {
+    padding-top: 10px; }
 
   .page-menu {
     margin: 0; }
