@@ -78,6 +78,10 @@
   .half-horizontal {
     .tile-text {
       background: $white;
+      p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
     }
   }
 
@@ -117,11 +121,10 @@
     }
   }
 
-
   .text-on-hover {
     .tile-text {
-      padding-bottom: 25px;
-      padding-top: 25px;
+      padding-bottom: 10px;
+      padding-top: 10px;
     }
     &.big {
       .tile-text {
@@ -136,9 +139,10 @@
   }
 
   .tile-text {
+    font: $font-small;
     text-align: left;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -153,6 +157,38 @@
       img {
         filter: grayscale(0);
       }
+    }
+  }
+}
+
+@include susy-breakpoint(960px, 12) {
+  .tile-list {
+    .tile-text {
+      font: $font-base;
+    }
+
+    .icon-with-list {
+      .tile-text {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@include susy-breakpoint(1060px, 12) {
+  .tile-list {
+    .text-on-hover {
+      .tile-text {
+        padding-bottom: 25px;
+        padding-top: 25px;
+      }
+    }
+    .tile-text {
+      font: $font-base;
+      text-align: left;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 }
