@@ -290,6 +290,14 @@ ul {
     background: $green;
     border-radius: 6px;
   }
+  .page-link {
+    a {
+      img {
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+  }
 }
 .owl-carousel-simple {
   .owl-nav {
