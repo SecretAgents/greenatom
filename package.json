@@ -5,6 +5,7 @@
     "breakpoint-sass": "2.7.1",
     "jquery": "2.2.4",
     "owl.carousel": "2.3.4",
-    "susy": "2.2.14"
+    "susy": "2.2.14",
+    "jquery-colorbox": "1.6.4"
   }
 }

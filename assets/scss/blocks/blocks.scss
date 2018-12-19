@@ -939,6 +939,11 @@ h1 {
     height: 22px;
   }
 }
+.media-content {
+  .header-block-wrapper {
+    margin-bottom: 30px;
+  }
+}
 
 @include susy-breakpoint(0px 1059px, 3) {
   .top-menu-block {
@@ -996,6 +1001,73 @@ h1 {
   }
 }
 
+// one news show
+.additional-menu {
+  .news-list {
+    .news-list-item {
+      position: relative;
+      margin-left: 10px;
+      &:before {
+        position: absolute;
+        margin-left: -15px;
+      }
+      .news-date {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.news-show-date {
+  margin-top: 30px;
+}
+
+.gallery-list {
+  margin-top: 50px;
+  .gallery-list-item {
+    cursor: pointer;
+    margin-bottom: 2%;
+    img {
+      width: 100%;
+    }
+    @include span(3 of 6 first);
+    &:nth-child(2n){
+      @include span(3 of 6 last);
+    }
+    &:nth-child(2n-1){
+      clear: both;
+    }
+  }
+}
+.media-content {
+  .back-media {
+    font-weight: 600;
+    a {
+      background: $green;
+      border-radius: 3px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    img {
+      padding-top: 8px;
+    }
+  }
+  .back-media {
+    margin-left: 15px;
+    display: inline-block;
+    a {
+      width: 55px;
+      height: 30px;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+  .gallery-statistic {
+    display: none;
+  }
+
+}
+
 @include breakpoint(380px, 3) {
   .header {
     .logo-block {
@@ -1010,9 +1082,6 @@ h1 {
 
 @include breakpoint(480px, 3) {
   //Additional page menu
-  .page-menu {
-    margin: -65px -10px 60px;
-  }
   .header {
     .top-menu-block {
       .top-menu-list-item {
@@ -1068,6 +1137,16 @@ h1 {
     }
   }
 
+}
+
+@include susy-breakpoint(600px, 6) {
+  .media-content {
+    .gallery-statistic {
+      display: block;
+      float: right;
+      margin-right: 15px;
+    }
+  }
 }
 
 @include susy-breakpoint(600px 959px, 6) {
@@ -1152,6 +1231,8 @@ h1 {
     margin-top: 30px;
   }
 }
+
+
 @include breakpoint(720px, 6) {
   //subsidiary map block
   .facts-block {
@@ -1185,7 +1266,26 @@ h1 {
   .additional-menu .menu-close {
     right: 90px;
   }
+  // gallery
+  .gallery-list {
+    .gallery-list-item {
+      @include span(2 of 6 first);
+      &:nth-child(2n){
+        @include span(2 of 6);
+      }
+      &:nth-child(2n-1){
+        clear: none;
+      }
+      &:nth-child(3n){
+        @include span(2 of 6 last);
+      }
+      &:nth-child(3n+1){
+        clear: both;
+      }
+    }
+  }
 }
+
 @include susy-breakpoint(800px, 12) {
   .container {
     @include container(12);
@@ -1274,6 +1374,24 @@ h1 {
       }
     }
   }
+
+  // one news show
+  .additional-menu {
+    .news-list {
+      .news-list-item {
+        &:before {
+          margin-left: -10px;
+        }
+        .news-date {
+          display: block;
+          margin-top: 5px;
+          .divider {
+            display: none;
+          }
+        }
+      }
+    }
+  }
   // additional page menu
   .menu-open {
     display: none;
@@ -1286,6 +1404,9 @@ h1 {
     }
     .menu-header {
       display: block;
+      h3 {
+        margin: 7px 0px;
+      }
     }
     .menu-close {
       display: none;

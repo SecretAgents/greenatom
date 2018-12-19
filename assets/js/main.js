@@ -8,7 +8,6 @@ $(document).ready(function(){
     navText: ""
   });
 
-
   $('.menu-open').on("click", function() {
     $('.additional-menu-wrapper').addClass('menu-change-visibility')
   });
@@ -43,5 +42,26 @@ $(document).ready(function(){
 
   if ($('#additional-menu').size()) {
     $('#additional-menu').easytree({disableIcons: true});
+  }
+
+  if ($('.colorbox-gallery').size()) {
+    $('.colorbox-gallery').colorbox({
+      scalePhotos: true,
+      maxHeight: '90%',
+      maxWidth: '90%',
+      reposition: true,
+      opacity: 0.5,
+      current: "{current} из {total}",
+      rel: 'colorbox-gallery'
+    });
+  }
+
+  if ($('.colorbox-video').size()) {
+    $('.colorbox-video').colorbox({
+      width: '600px',
+      height: '400px',
+      iframe: true,
+      maxWidth:'95%',
+      maxHeight:'95%'});
   }
 });

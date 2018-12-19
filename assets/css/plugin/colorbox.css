@@ -1,0 +1,65 @@
+#colorbox #cboxTopLeft, #colorbox #cboxTopCenter, #colorbox #cboxTopRight,
+#colorbox #cboxMiddleLeft, #colorbox #cboxMiddleRight, #colorbox #cboxBottomLeft,
+#colorbox #cboxBottomCenter, #colorbox #cboxBottomRight {
+  background: white; }
+#colorbox #cboxPrevious {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  margin-top: 0;
+  background: url("../../assets/images/colorbox/colorbox-prev.png") no-repeat center center;
+  width: 70px;
+  height: 100%;
+  text-indent: -9999px; }
+  #colorbox #cboxPrevious:hover {
+    background: rgba(255, 255, 255, 0.1) url("../../assets/images/colorbox/colorbox-prev.png") no-repeat center center; }
+#colorbox #cboxNext {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  margin-top: 0;
+  background: url("../../assets/images/colorbox/colorbox-next.png") no-repeat center center;
+  width: 70px;
+  height: 100%;
+  text-indent: -9999px; }
+  #colorbox #cboxNext:hover {
+    background: rgba(255, 255, 255, 0.1) url("../../assets/images/colorbox/colorbox-next.png") no-repeat center center; }
+#colorbox #cboxContent {
+  position: relative; }
+#colorbox #cboxClose {
+  width: 80px;
+  height: 80px;
+  background: url("../../assets/images/colorbox/colorbox-close.png") no-repeat center center;
+  bottom: auto;
+  top: 0;
+  right: 0; }
+#colorbox #cboxTitle {
+  text-align: left;
+  bottom: -31px;
+  color: black;
+  font-size: 13px;
+  padding-right: 50px;
+  box-sizing: border-box; }
+#colorbox #cboxBottomCenter {
+  height: 50px;
+  color: white; }
+#colorbox #cboxBottomleft,
+#colorbox #cboxBottomRight {
+  height: 50px; }
+#colorbox #cboxCurrent {
+  font-size: 13px;
+  bottom: -31px;
+  right: 0px;
+  text-align: right;
+  color: black; }
+
+@media (min-width: 960px) {
+  #colorbox #cboxCurrent,
+  #colorbox #cboxTitle {
+    font-size: 15px; } }
+
+/*# sourceMappingURL=colorbox.css.map */
