@@ -74,8 +74,10 @@
 
 @media (min-width: 960px) {
 
-  #colorbox #cboxCurrent,
-  #colorbox #cboxTitle {
-    font-size: 15px;
+  #colorbox {
+    #cboxCurrent,
+    #cboxTitle {
+      font-size: 15px;
+    }
   }
 }
