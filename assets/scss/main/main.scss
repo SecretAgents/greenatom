@@ -263,6 +263,20 @@ ul {
     }
   }
 }
+// Media page
+.media-content-wrapper {
+  background: white;
+  padding: 50px 5px;
+  .title-news {
+    background: $green;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
 .owl-carousel-simple {
   .owl-nav {
     position: absolute;
@@ -560,6 +574,16 @@ ul {
 }
 
 @include breakpoint(600px, 6) {
+  .media-content {
+    .gallery-statistic {
+      vertical-align: middle;
+      padding-top: 3px;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
   //Page styles
   .content-wrapper {
     .page-content {

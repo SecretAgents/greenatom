@@ -10,13 +10,6 @@ $(document).ready(function(){
 
   jQuery.extend(jQuery.colorbox.settings, {
       current: "{current} из {total}"
-      // previous: "назад",
-      // next: "вперёд",
-      // close: "закрыть",
-      // xhrError: "Не удалось загрузить содержимое.",
-      // imgError: "Не удалось загрузить изображение.",
-      // slideshowStart: "начать слайд-шоу",
-      // slideshowStop: "остановить слайд-шоу"
  });
 
   $('.menu-open').on("click", function() {
@@ -35,7 +28,11 @@ $(document).ready(function(){
     $('#additional-menu').easytree({disableIcons: true});
   }
 
-  if($('.gallery-list-item').size()) {
-    $('.gallery-list-item .image-gallery').colorbox({rel:'image-gallery'});
+  if ($('.colorbox-gallery').size()) {
+    $('.colorbox-gallery').colorbox({rel:'colorbox-gallery', maxWidth:'95%', maxHeight:'95%'});
+  }
+
+  if ($('.colorbox-video').size()) {
+    $('.colorbox-video').colorbox({width: '600px', height: '400px', iframe: true, maxWidth:'95%', maxHeight:'95%'});
   }
 });

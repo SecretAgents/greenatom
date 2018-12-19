@@ -544,6 +544,34 @@ h1 {
     }
   }
 }
+.media-content {
+  .back-media {
+    font-weight: 600;
+    a {
+      background: $green;
+      border-radius: 3px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    img {
+      padding-top: 8px;
+    }
+  }
+  .back-media {
+    margin-left: 15px;
+    display: inline-block;
+    a {
+      width: 55px;
+      height: 30px;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+  .gallery-statistic {
+    display: none;
+  }
+
+}
 
 @include breakpoint(380px, 3) {
   .header {
@@ -587,6 +615,14 @@ h1 {
 }
 
 @include breakpoint(600px, 6) {
+  .media-content {
+    .gallery-statistic {
+      display: block;
+      float: right;
+      margin-right: 15px;
+    }
+  }
+
   //Additional page menu
 
   //.tile-list {
@@ -690,6 +726,8 @@ h1 {
     margin-top: 30px;
   }
 }
+
+
 @include breakpoint(720px, 6) {
   //management page
   .persons-list-item {
@@ -770,6 +808,9 @@ h1 {
     }
     .menu-header {
       display: block;
+      h3 {
+        margin: 7px 0px;
+      }
     }
     .menu-close {
       display: none;
