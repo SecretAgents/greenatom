@@ -54,7 +54,12 @@ h1 {
     }
   }
 }
-
+.main-table {
+  overflow-x: scroll;
+}
+.width-100 {
+  width: 100%;
+}
 .owl-theme {
   .owl-nav {
     left: 0;
@@ -167,6 +172,9 @@ h1 {
     }
   }
 }
+.title-news {
+  margin-bottom: 30px;
+}
 .page-title-inscription {
   display: none;
 }
@@ -191,6 +199,9 @@ h1 {
 //Pagination block
 .page-pagination {
   margin-bottom: 15px;
+  span {
+    margin-right: 5px;
+  }
   .items-sorting {
     margin-bottom: 10px;
     .sorting-buttons-list {
@@ -220,7 +231,6 @@ h1 {
 
 //Media page
 .media-list {
-  margin-top: 30px;
   .media-list-item {
     margin-bottom: 20px;
     .media-title {
@@ -273,6 +283,7 @@ h1 {
     margin-top: 0;
     .additional-media-list-item {
       margin-bottom: 0;
+      position: relative;
       .media-title {
         margin-top: 0;
       }
@@ -735,6 +746,7 @@ h1 {
   }
 }
 .description-html-safe {
+  margin-bottom: 40px;
   ul {
     li {
       margin-top: 10px;
@@ -1253,22 +1265,12 @@ h1 {
   }
   //Pagination block
   .page-pagination {
-    .items-sorting {
-      float: left;
-      .sorting-buttons-list {
-        display: inline-block;
-        &-item {
-          display: inline-block;
-        }
+    &:not(.tiny) {
+      .items-sorting {
+        float: left;
       }
-    }
-    .items-quantity {
-      float: right;
-      .items-quantity-list {
-        display: inline-block;
-        &-item {
-          display: inline-block;
-        }
+      .items-quantity {
+        float: right;
       }
     }
   }
@@ -1457,9 +1459,12 @@ h1 {
   .search-block-footer {
     @include span(4.5 of 12 last);
   }
-  .main-content {
-    .tile-list {
-
+  .page-pagination {
+    .items-sorting {
+      float: left;
+    }
+    .items-quantity {
+      float: right;
     }
   }
   //subsidiary map block
