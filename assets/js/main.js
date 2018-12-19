@@ -16,6 +16,10 @@ $(document).ready(function(){
     $('.additional-menu-wrapper').removeClass('menu-change-visibility')
   });
 
+  if ($('.scrollbar-macosx').size()) {
+    $('.scrollbar-macosx').scrollbar();
+  }
+
   if ($('.scrollbar-dynamic').size()) {
     $('.scrollbar-dynamic').scrollbar();
   }
