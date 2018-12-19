@@ -322,6 +322,12 @@ h1 {
 .owl-carousel .owl-item img {
   width: auto; }
 
+.main-table {
+  overflow-x: scroll; }
+
+.width-100 {
+  width: 100%; }
+
 .owl-theme .owl-nav {
   left: 0;
   box-sizing: border-box;
@@ -401,6 +407,9 @@ h1 {
         height: 100%;
         width: 65px; }
 
+.title-news {
+  margin-bottom: 30px; }
+
 .page-title-inscription {
   display: none; }
 
@@ -416,6 +425,8 @@ h1 {
 
 .page-pagination {
   margin-bottom: 15px; }
+  .page-pagination span {
+    margin-right: 5px; }
   .page-pagination .items-sorting {
     margin-bottom: 10px; }
     .page-pagination .items-sorting .sorting-buttons-list {
@@ -431,18 +442,16 @@ h1 {
   .page-pagination .pagination .page-item {
     display: inline-block; }
 
-.media-list {
-  margin-top: 30px; }
-  .media-list .media-list-item {
-    margin-bottom: 20px; }
-    .media-list .media-list-item .media-title {
-      margin-top: 18px;
-      display: block; }
-    .media-list .media-list-item .media-date {
-      display: block;
-      margin-top: 5px; }
-    .media-list .media-list-item .media-item-inner img {
-      width: 100%; }
+.media-list .media-list-item {
+  margin-bottom: 20px; }
+  .media-list .media-list-item .media-title {
+    margin-top: 18px;
+    display: block; }
+  .media-list .media-list-item .media-date {
+    display: block;
+    margin-top: 5px; }
+  .media-list .media-list-item .media-item-inner img {
+    width: 100%; }
 
 .news-page .media-title {
   margin-left: 8px; }
@@ -465,7 +474,8 @@ h1 {
 .additional-news .additional-media-list {
   margin-top: 0; }
   .additional-news .additional-media-list .additional-media-list-item {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative; }
     .additional-news .additional-media-list .additional-media-list-item .media-title {
       margin-top: 0; }
     .additional-news .additional-media-list .additional-media-list-item .media-date {
@@ -508,14 +518,16 @@ h1 {
 .subsidiary-block .persons-list-item .person-information .person-post {
   margin-bottom: 15px; }
 
-.description-html-safe ul li {
-  margin-top: 10px; }
-  .description-html-safe ul li:first-child {
-    margin-top: 0; }
-  .description-html-safe ul li ul li {
-    margin-top: 0; }
-    .description-html-safe ul li ul li:first-child {
-      margin-top: 10px; }
+.description-html-safe {
+  margin-bottom: 40px; }
+  .description-html-safe ul li {
+    margin-top: 10px; }
+    .description-html-safe ul li:first-child {
+      margin-top: 0; }
+    .description-html-safe ul li ul li {
+      margin-top: 0; }
+      .description-html-safe ul li ul li:first-child {
+        margin-top: 10px; }
 
 .page-image img {
   display: block;
@@ -1881,7 +1893,7 @@ ul {
       padding: 0; }
 
   .additional-news .news-rosatom {
-    background-color: #e2e2e2; }
+    background-color: #ededed; }
 
   .additional-news .additional-media-list .additional-media-list-item:last-child {
     padding-bottom: 10px; }
