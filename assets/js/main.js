@@ -16,8 +16,8 @@ $(document).ready(function(){
     $('.additional-menu-wrapper').removeClass('menu-change-visibility')
   });
 
-  if ($('.scrollbar-dynamic').size()) {
-    $('.scrollbar-dynamic').scrollbar();
+  if ($('.scrollbar-macosx').size()) {
+    $('.scrollbar-macosx').scrollbar();
   }
 
   $('.navigation-toggle-link').on('click', function(e) {
