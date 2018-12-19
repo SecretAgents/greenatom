@@ -1515,6 +1515,24 @@ h1 {
 .media-content .header-block-wrapper {
   margin-bottom: 30px; }
 
+@media (min-width: 0px) and (max-width: 379px) {
+  .additional-menu .scroll-wrapper.scrollbar-macosx {
+    margin-right: -50px; } }
+@media (min-width: 0px) and (max-width: 960px) {
+  .additional-menu:before, .additional-menu:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    z-index: 11;
+    background: #bed33f;
+    left: 0; }
+  .additional-menu:before {
+    top: 0px;
+    box-shadow: 0px 17px 21px #bed33f; }
+  .additional-menu:after {
+    bottom: 0px;
+    box-shadow: 0px -17px 21px #bed33f; } }
 @media (min-width: 0px) and (max-width: 1059px) {
   .navigation-list-item .submenu {
     width: 47%; }
@@ -1624,24 +1642,6 @@ h1 {
 .media-content .gallery-statistic {
   display: none; }
 
-@media (min-width: 0px) and (max-width: 379px) {
-  .additional-menu .scroll-wrapper.scrollbar-macosx {
-    margin-right: -50px; } }
-@media (min-width: 0px) and (max-width: 960px) {
-  .additional-menu:before, .additional-menu:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    z-index: 11;
-    background: #bed33f;
-    left: 0; }
-  .additional-menu:before {
-    top: 0px;
-    box-shadow: 0px 17px 21px #bed33f; }
-  .additional-menu:after {
-    bottom: 0px;
-    box-shadow: 0px -17px 21px #bed33f; } }
 @media (min-width: 380px) {
   .header .logo-block .company-name {
     display: table-cell;
