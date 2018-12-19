@@ -911,18 +911,10 @@ h1 {
     .media-list.media-page .media-list-item:nth-child(4n+1) {
       clear: both; }
 
-  .page-pagination .items-sorting {
+  .page-pagination:not(.tiny) .items-sorting {
     float: left; }
-    .page-pagination .items-sorting .sorting-buttons-list {
-      display: inline-block; }
-      .page-pagination .items-sorting .sorting-buttons-list-item {
-        display: inline-block; }
-  .page-pagination .items-quantity {
+  .page-pagination:not(.tiny) .items-quantity {
     float: right; }
-    .page-pagination .items-quantity .items-quantity-list {
-      display: inline-block; }
-      .page-pagination .items-quantity .items-quantity-list-item {
-        display: inline-block; }
 
   .menu-open {
     display: none; }
@@ -1085,7 +1077,12 @@ h1 {
   .search-block-footer {
     width: 36.8131868132%;
     float: right;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .page-pagination .items-sorting {
+    float: left; }
+  .page-pagination .items-quantity {
+    float: right; } }
 .tile-list-wrapper .two-columns {
   display: none; }
 
