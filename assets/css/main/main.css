@@ -503,27 +503,6 @@ ul {
   color: #a0a0a0; }
 
 @media (min-width: 0px) and (max-width: 1059px) {
-  .navigation-list-item {
-    font-weight: 400; }
-    .navigation-list-item .submenu:before, .navigation-list-item .submenu:after {
-      content: '';
-      background: #bed33f; }
-    .navigation-list-item .submenu:before {
-      box-shadow: 0px 17px 21px #bed33f; }
-    .navigation-list-item .submenu:after {
-      box-shadow: 0px -17px 21px #bed33f; }
-    .navigation-list-item .submenu li {
-      padding-left: 10px;
-      padding-right: 10px; }
-      .navigation-list-item .submenu li:before {
-        content: "•"; }
-      .navigation-list-item .submenu li:hover {
-        color: white; }
-      .navigation-list-item .submenu li:first-child {
-        padding-top: 20px; }
-      .navigation-list-item .submenu li:last-child {
-        padding-bottom: 20px; }
-
   .navigation-list {
     background: #bed33f;
     padding: 40px 10px; }
@@ -531,12 +510,32 @@ ul {
       color: #000; }
       .navigation-list a:hover {
         color: #fff; }
-    .navigation-list .navigation-list-item > a {
-      padding: 8px 0 10px 25px;
-      text-transform: uppercase; }
-      .navigation-list .navigation-list-item > a:hover {
-        background: rgba(255, 255, 255, 0.7);
-        color: #000; } }
+    .navigation-list .navigation-list-item {
+      font-weight: 400; }
+      .navigation-list .navigation-list-item > a {
+        padding: 8px 0 10px 25px;
+        text-transform: uppercase; }
+        .navigation-list .navigation-list-item > a:hover {
+          background: rgba(255, 255, 255, 0.7);
+          color: #000; }
+      .navigation-list .navigation-list-item .submenu:before, .navigation-list .navigation-list-item .submenu:after {
+        content: '';
+        background: #bed33f; }
+      .navigation-list .navigation-list-item .submenu:before {
+        box-shadow: 0px 17px 21px #bed33f; }
+      .navigation-list .navigation-list-item .submenu:after {
+        box-shadow: 0px -17px 21px #bed33f; }
+      .navigation-list .navigation-list-item .submenu li {
+        padding-left: 10px;
+        padding-right: 10px; }
+        .navigation-list .navigation-list-item .submenu li:before {
+          content: "•"; }
+        .navigation-list .navigation-list-item .submenu li:hover {
+          color: white; }
+        .navigation-list .navigation-list-item .submenu li:first-child {
+          padding-top: 20px; }
+        .navigation-list .navigation-list-item .submenu li:last-child {
+          padding-bottom: 20px; } }
 @media (min-width: 480px) {
   .media-content-wrapper {
     padding: 60px 10px; }
