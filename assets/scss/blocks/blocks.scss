@@ -827,22 +827,6 @@ h1 {
     text-decoration: none;
   }
 
-  .top-blur-block,
-  .bottom-blur-block {
-    width: 88%;
-    height: 20px;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .top-blur-block {
-    top: 0;
-  }
-
-  .bottom-blur-block {
-    bottom: 0;
-  }
-
   .scrollbar-macosx {
     margin: 0;
     overflow-y: scroll;
@@ -1481,10 +1465,6 @@ h1 {
   }
   .additional-menu {
     display: block;
-    .top-blur-block,
-    .bottom-blur-block {
-      display: none;
-    }
     .menu-header {
       display: block;
       h3 {

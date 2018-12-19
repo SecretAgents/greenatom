@@ -513,16 +513,6 @@ h1 {
     display: none; }
   .additional-menu a {
     text-decoration: none; }
-  .additional-menu .top-blur-block,
-  .additional-menu .bottom-blur-block {
-    width: 88%;
-    height: 20px;
-    position: absolute;
-    z-index: 1; }
-  .additional-menu .top-blur-block {
-    top: 0; }
-  .additional-menu .bottom-blur-block {
-    bottom: 0; }
   .additional-menu .scrollbar-macosx {
     margin: 0;
     overflow-y: scroll;
@@ -1018,9 +1008,6 @@ h1 {
 
   .additional-menu {
     display: block; }
-    .additional-menu .top-blur-block,
-    .additional-menu .bottom-blur-block {
-      display: none; }
     .additional-menu .menu-header {
       display: block; }
       .additional-menu .menu-header h3 {
