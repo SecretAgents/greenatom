@@ -275,6 +275,44 @@ ul {
   .page-pagination .page-link a img {
     vertical-align: middle; }
 
+.subsidiaries-menu .subsidiaries-menu-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #bed33f;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff; }
+.subsidiaries-menu .subsidiaries-menu-list {
+  padding-left: 20px; }
+  .subsidiaries-menu .subsidiaries-menu-list .subsidiaries-menu-list-item {
+    text-indent: -20px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .subsidiaries-menu .subsidiaries-menu-list .subsidiaries-menu-list-item a:hover {
+      color: #587daa; }
+
+.subsidiary-insertion {
+  font-size: 18px;
+  background-color: #e2e2e2;
+  padding: 5px 10px; }
+
+.facts-block {
+  padding-left: 5px;
+  padding-right: 5px; }
+  .facts-block .facts-summary-list-item {
+    text-align: center; }
+    .facts-block .facts-summary-list-item .number {
+      font-size: 31px;
+      font-weight: 600;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #bed33f; }
+    .facts-block .facts-summary-list-item .title {
+      padding-top: 5px; }
+
 .owl-carousel-simple .owl-nav {
   position: absolute;
   top: calc(50% - 15px);
@@ -488,6 +526,10 @@ ul {
   .media-content-wrapper {
     padding: 60px 10px; }
 
+  .facts-block {
+    padding-left: 75px;
+    padding-right: 75px; }
+
   .content-wrapper .page-content {
     padding-left: 10px;
     padding-right: 10px; }
@@ -506,6 +548,12 @@ ul {
     padding-top: 3px; }
     .media-content .gallery-statistic span {
       font-weight: 600; }
+
+  .facts-block {
+    padding-left: 40px;
+    padding-right: 25px; }
+    .facts-block .facts-summary-list-item {
+      text-align: center; }
 
   .content-wrapper .page-content {
     padding-left: 15px;
@@ -555,10 +603,22 @@ ul {
 
   .header .top-menu-list .top-menu-list-item.search .dropdown-header-block {
     padding-left: 75px;
-    padding-right: 75px; } }
+    padding-right: 75px; }
+
+  .facts-block {
+    padding-left: 25px;
+    padding-right: 25px; } }
 @media (min-width: 960px) {
   .media-content-wrapper {
     padding: 65px 60px; }
+
+  .facts-block {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .subsidiary-insertion {
+    padding-left: 65px;
+    padding-right: 65px; }
 
   .content-wrapper {
     padding: 65px 60px; }
@@ -566,7 +626,7 @@ ul {
       padding: 0; }
 
   .additional-news .news-rosatom {
-    background-color: #e2e2e2; }
+    background-color: #ededed; }
 
   .additional-news .additional-media-list .additional-media-list-item:last-child {
     padding-bottom: 10px; }
@@ -690,6 +750,10 @@ ul {
   .header .top-menu-block .navigation-list-item:hover > a {
     padding-left: 15px; }
   .header .top-menu-block .top-menu-list .dropdown-header-block span {
-    font: 300 24px/28px "Open Sans", sans-serif; } }
+    font: 300 24px/28px "Open Sans", sans-serif; }
+
+  .facts-block {
+    padding-left: 75px;
+    padding-right: 75px; } }
 
 /*# sourceMappingURL=main.css.map */

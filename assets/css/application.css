@@ -999,6 +999,12 @@ h1 {
 .owl-carousel .owl-item img {
   width: auto; }
 
+.main-table {
+  overflow-x: scroll; }
+
+.width-100 {
+  width: 100%; }
+
 .owl-theme .owl-nav {
   left: 0;
   box-sizing: border-box;
@@ -1078,6 +1084,9 @@ h1 {
         height: 100%;
         width: 65px; }
 
+.title-news {
+  margin-bottom: 30px; }
+
 .page-title-inscription {
   display: none; }
 
@@ -1093,6 +1102,8 @@ h1 {
 
 .page-pagination {
   margin-bottom: 15px; }
+  .page-pagination span {
+    margin-right: 5px; }
   .page-pagination .items-sorting {
     margin-bottom: 10px; }
     .page-pagination .items-sorting .sorting-buttons-list {
@@ -1108,18 +1119,16 @@ h1 {
   .page-pagination .pagination .page-item {
     display: inline-block; }
 
-.media-list {
-  margin-top: 30px; }
-  .media-list .media-list-item {
-    margin-bottom: 20px; }
-    .media-list .media-list-item .media-title {
-      margin-top: 18px;
-      display: block; }
-    .media-list .media-list-item .media-date {
-      display: block;
-      margin-top: 5px; }
-    .media-list .media-list-item .media-item-inner img {
-      width: 100%; }
+.media-list .media-list-item {
+  margin-bottom: 20px; }
+  .media-list .media-list-item .media-title {
+    margin-top: 18px;
+    display: block; }
+  .media-list .media-list-item .media-date {
+    display: block;
+    margin-top: 5px; }
+  .media-list .media-list-item .media-item-inner img {
+    width: 100%; }
 
 .news-page .media-title {
   margin-left: 8px; }
@@ -1142,12 +1151,236 @@ h1 {
 .additional-news .additional-media-list {
   margin-top: 0; }
   .additional-news .additional-media-list .additional-media-list-item {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative; }
     .additional-news .additional-media-list .additional-media-list-item .media-title {
       margin-top: 0; }
     .additional-news .additional-media-list .additional-media-list-item .media-date {
       display: block;
       margin-top: 5px; }
+
+.facts-block .facts-summary-list {
+  margin-top: 50px;
+  margin-bottom: 40px; }
+  .facts-block .facts-summary-list-item {
+    display: block;
+    margin: 10px auto 0;
+    max-width: 120px; }
+
+.subsidiary-map {
+  position: relative;
+  width: 100%; }
+  .subsidiary-map img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 70px; }
+  .subsidiary-map .map-item {
+    position: absolute; }
+  .subsidiary-map .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff; }
+    .subsidiary-map .circle a {
+      position: absolute;
+      width: 20px;
+      height: 20px; }
+    .subsidiary-map .circle:hover .circle-inner {
+      display: block; }
+  .subsidiary-map .circle-inner {
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #bed33f;
+    display: none; }
+  .subsidiary-map .podolsk {
+    top: 61%; }
+    .subsidiary-map .podolsk:hover + .podolsk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .podolsk-circle {
+    top: 62%;
+    left: 23%; }
+  .subsidiary-map .elektrostal {
+    top: 54%;
+    left: 1%; }
+    .subsidiary-map .elektrostal:hover + .elektrostal-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .elektrostal-circle {
+    top: 61%;
+    left: 19%; }
+  .subsidiary-map .moskow {
+    top: 45%;
+    left: 3%; }
+    .subsidiary-map .moskow:hover + .moskow-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .moskow-circle {
+    top: 59%;
+    left: 21%; }
+  .subsidiary-map .vladimir {
+    top: 36%;
+    left: 5%; }
+    .subsidiary-map .vladimir:hover + .vladimir-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .vladimir-circle {
+    top: 55%;
+    left: 22%; }
+  .subsidiary-map .piter {
+    top: 28%;
+    left: 7%; }
+    .subsidiary-map .piter:hover + .piter-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .piter-circle {
+    top: 48%;
+    left: 22%; }
+  .subsidiary-map .petrozavodsk {
+    top: 20%;
+    left: 16%; }
+    .subsidiary-map .petrozavodsk:hover + .petrozavodsk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .petrozavodsk-circle {
+    top: 43%;
+    left: 23%; }
+  .subsidiary-map .murmansk {
+    top: 12%;
+    left: 27%; }
+    .subsidiary-map .murmansk:hover + .murmansk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .murmansk-circle {
+    top: 36%;
+    left: 28%; }
+  .subsidiary-map .kovrov {
+    top: 26%;
+    left: 31%; }
+    .subsidiary-map .kovrov:hover + .kovrov-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .kovrov-circle {
+    top: 57%;
+    left: 25%; }
+  .subsidiary-map .novgorod {
+    top: 10%;
+    left: 41%; }
+    .subsidiary-map .novgorod:hover + .novgorod-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .novgorod-circle {
+    top: 56%;
+    left: 28%; }
+  .subsidiary-map .glazov {
+    top: 28%;
+    left: 44%; }
+    .subsidiary-map .glazov:hover + .glazov-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .glazov-circle {
+    top: 61%;
+    left: 27%; }
+  .subsidiary-map .sarov {
+    top: 57%;
+    left: 35%; }
+    .subsidiary-map .sarov:hover + .sarov-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .sarov-circle {
+    top: 66%;
+    left: 26%; }
+  .subsidiary-map .zarechniy {
+    top: 50%;
+    left: 49%; }
+    .subsidiary-map .zarechniy:hover + .zarechniy-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .zarechniy-circle {
+    top: 62%;
+    left: 44%; }
+  .subsidiary-map .seversk {
+    top: 62%;
+    left: 52%; }
+    .subsidiary-map .seversk:hover + .seversk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .seversk-circle {
+    top: 74%;
+    left: 46%; }
+  .subsidiary-map .angarsk {
+    top: 69%;
+    left: 58%; }
+    .subsidiary-map .angarsk:hover + .angarsk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .angarsk-circle {
+    top: 82%;
+    left: 56%; }
+  .subsidiary-map .krasnokamensk {
+    top: 92%;
+    left: 67%; }
+    .subsidiary-map .krasnokamensk:hover + .krasnokamensk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .krasnokamensk-circle {
+    top: 85%;
+    left: 67%; }
+  .subsidiary-map .zelenogorsk {
+    bottom: -9%;
+    left: 59%; }
+    .subsidiary-map .zelenogorsk:hover + .zelenogorsk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .zelenogorsk-circle {
+    top: 79%;
+    left: 52%; }
+  .subsidiary-map .zheleznogorsk {
+    bottom: -4%;
+    left: 49%; }
+    .subsidiary-map .zheleznogorsk:hover + .zheleznogorsk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .zheleznogorsk-circle {
+    top: 78%;
+    left: 48%; }
+  .subsidiary-map .novosibirsk {
+    bottom: -7%;
+    left: 35%; }
+    .subsidiary-map .novosibirsk:hover + .novosibirsk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .novosibirsk-circle {
+    top: 80%;
+    left: 44%; }
+  .subsidiary-map .ekatirenburg {
+    bottom: 5%;
+    left: 26%; }
+    .subsidiary-map .ekatirenburg:hover + .ekatirenburg-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .ekatirenburg-circle {
+    top: 65%;
+    left: 32%; }
+  .subsidiary-map .novouralsk {
+    bottom: -5%;
+    left: 16%; }
+    .subsidiary-map .novouralsk:hover + .novouralsk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .novouralsk-circle {
+    top: 70%;
+    left: 30%; }
+  .subsidiary-map .dimitrovgrad {
+    bottom: 0;
+    left: 0; }
+    .subsidiary-map .dimitrovgrad:hover + .dimitrovgrad-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .dimitrovgrad-circle {
+    top: 75%;
+    left: 25%; }
+  .subsidiary-map .volgodosk {
+    bottom: 17%;
+    left: 0; }
+    .subsidiary-map .volgodosk:hover + .volgodosk-circle .circle-inner {
+      display: block; }
+  .subsidiary-map .volgodosk-circle {
+    top: 77%;
+    left: 17%; }
+
+.subsidiaries-menu {
+  display: none;
+  max-width: 230px; }
+  .subsidiaries-menu .subsidiaries-menu-list-item::before {
+    padding-right: 5px;
+    padding-left: 10px;
+    content: "•";
+    color: #bed33f;
+    font-size: 14px;
+    font-weight: 600; }
 
 .management-wrapper .persons-list-item {
   margin-bottom: 30px; }
@@ -1185,14 +1418,16 @@ h1 {
 .subsidiary-block .persons-list-item .person-information .person-post {
   margin-bottom: 15px; }
 
-.description-html-safe ul li {
-  margin-top: 10px; }
-  .description-html-safe ul li:first-child {
-    margin-top: 0; }
-  .description-html-safe ul li ul li {
-    margin-top: 0; }
-    .description-html-safe ul li ul li:first-child {
-      margin-top: 10px; }
+.description-html-safe {
+  margin-bottom: 40px; }
+  .description-html-safe ul li {
+    margin-top: 10px; }
+    .description-html-safe ul li:first-child {
+      margin-top: 0; }
+    .description-html-safe ul li ul li {
+      margin-top: 0; }
+      .description-html-safe ul li ul li:first-child {
+        margin-top: 10px; }
 
 .page-image img {
   display: block;
@@ -1483,7 +1718,14 @@ h1 {
     float: right;
     margin-right: 0;
     margin-left: 8.5185185185%;
-    margin-right: 8.5185185185%; } }
+    margin-right: 8.5185185185%; }
+
+  .facts-block .facts-summary-list-item {
+    display: inline-block;
+    margin-right: 25px;
+    max-width: none; }
+    .facts-block .facts-summary-list-item:last-child {
+      margin-right: 0; } }
 @media (min-width: 700px) {
   .header .top-menu-block .top-menu-list .sitemap {
     display: inline-block; }
@@ -1534,6 +1776,11 @@ h1 {
   .search-block-footer {
     margin-top: 30px; } }
 @media (min-width: 720px) {
+  .facts-block .facts-summary-list-item {
+    margin-right: 25px; }
+    .facts-block .facts-summary-list-item:last-child {
+      margin-right: 0; }
+
   .management-wrapper .persons-list-item {
     width: 31.8518518519%;
     float: left;
@@ -1586,6 +1833,16 @@ h1 {
     .media-list .media-list-item:nth-child(3n+1) {
       clear: both; } }
 @media (min-width: 960px) {
+  .facts-block .facts-summary-list-item {
+    margin-right: 45px;
+    display: inline-block;
+    max-width: none; }
+    .facts-block .facts-summary-list-item:last-child {
+      margin-right: 0; }
+
+  .subsidiaries-menu {
+    display: block; }
+
   .media-content-wrapper .news-content {
     width: 74.7252747253%;
     float: left;
@@ -1627,18 +1884,10 @@ h1 {
     .media-list.media-page .media-list-item:nth-child(4n+1) {
       clear: both; }
 
-  .page-pagination .items-sorting {
+  .page-pagination:not(.tiny) .items-sorting {
     float: left; }
-    .page-pagination .items-sorting .sorting-buttons-list {
-      display: inline-block; }
-      .page-pagination .items-sorting .sorting-buttons-list-item {
-        display: inline-block; }
-  .page-pagination .items-quantity {
+  .page-pagination:not(.tiny) .items-quantity {
     float: right; }
-    .page-pagination .items-quantity .items-quantity-list {
-      display: inline-block; }
-      .page-pagination .items-quantity .items-quantity-list-item {
-        display: inline-block; }
 
   .gallery-list .gallery-list-item {
     width: 31.8518518519%;
@@ -1701,7 +1950,8 @@ h1 {
     float: right;
     margin-right: 0; }
 
-  .page-menu {
+  .page-menu,
+  .subsidiaries-menu {
     width: 24.1758241758%;
     float: left;
     margin-right: 1.0989010989%; }
@@ -1828,7 +2078,20 @@ h1 {
   .search-block-footer {
     width: 36.8131868132%;
     float: right;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .page-pagination .items-sorting {
+    float: left; }
+  .page-pagination .items-quantity {
+    float: right; }
+
+  .facts-block .facts-summary-list {
+    margin-top: 50px;
+    margin-bottom: 40px; }
+    .facts-block .facts-summary-list-item {
+      margin-right: 65px; }
+      .facts-block .facts-summary-list-item:last-child {
+        margin-right: 0; } }
 .tile-list-wrapper .two-columns {
   display: none; }
 
@@ -2371,6 +2634,44 @@ ul {
   .page-pagination .page-link a img {
     vertical-align: middle; }
 
+.subsidiaries-menu .subsidiaries-menu-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #bed33f;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff; }
+.subsidiaries-menu .subsidiaries-menu-list {
+  padding-left: 20px; }
+  .subsidiaries-menu .subsidiaries-menu-list .subsidiaries-menu-list-item {
+    text-indent: -20px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .subsidiaries-menu .subsidiaries-menu-list .subsidiaries-menu-list-item a:hover {
+      color: #587daa; }
+
+.subsidiary-insertion {
+  font-size: 18px;
+  background-color: #e2e2e2;
+  padding: 5px 10px; }
+
+.facts-block {
+  padding-left: 5px;
+  padding-right: 5px; }
+  .facts-block .facts-summary-list-item {
+    text-align: center; }
+    .facts-block .facts-summary-list-item .number {
+      font-size: 31px;
+      font-weight: 600;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #bed33f; }
+    .facts-block .facts-summary-list-item .title {
+      padding-top: 5px; }
+
 .owl-carousel-simple .owl-nav {
   position: absolute;
   top: calc(50% - 15px);
@@ -2584,6 +2885,10 @@ ul {
   .media-content-wrapper {
     padding: 60px 10px; }
 
+  .facts-block {
+    padding-left: 75px;
+    padding-right: 75px; }
+
   .content-wrapper .page-content {
     padding-left: 10px;
     padding-right: 10px; }
@@ -2602,6 +2907,12 @@ ul {
     padding-top: 3px; }
     .media-content .gallery-statistic span {
       font-weight: 600; }
+
+  .facts-block {
+    padding-left: 40px;
+    padding-right: 25px; }
+    .facts-block .facts-summary-list-item {
+      text-align: center; }
 
   .content-wrapper .page-content {
     padding-left: 15px;
@@ -2651,10 +2962,22 @@ ul {
 
   .header .top-menu-list .top-menu-list-item.search .dropdown-header-block {
     padding-left: 75px;
-    padding-right: 75px; } }
+    padding-right: 75px; }
+
+  .facts-block {
+    padding-left: 25px;
+    padding-right: 25px; } }
 @media (min-width: 960px) {
   .media-content-wrapper {
     padding: 65px 60px; }
+
+  .facts-block {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .subsidiary-insertion {
+    padding-left: 65px;
+    padding-right: 65px; }
 
   .content-wrapper {
     padding: 65px 60px; }
@@ -2662,7 +2985,7 @@ ul {
       padding: 0; }
 
   .additional-news .news-rosatom {
-    background-color: #e2e2e2; }
+    background-color: #ededed; }
 
   .additional-news .additional-media-list .additional-media-list-item:last-child {
     padding-bottom: 10px; }
@@ -2786,7 +3109,11 @@ ul {
   .header .top-menu-block .navigation-list-item:hover > a {
     padding-left: 15px; }
   .header .top-menu-block .top-menu-list .dropdown-header-block span {
-    font: 300 24px/28px "Open Sans", sans-serif; } }
+    font: 300 24px/28px "Open Sans", sans-serif; }
+
+  .facts-block {
+    padding-left: 75px;
+    padding-right: 75px; } }
 .tile-list .wide .tile-list-item {
   vertical-align: top; }
   .tile-list .wide .tile-list-item.simple-color {

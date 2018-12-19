@@ -54,7 +54,12 @@ h1 {
     }
   }
 }
-
+.main-table {
+  overflow-x: scroll;
+}
+.width-100 {
+  width: 100%;
+}
 .owl-theme {
   .owl-nav {
     left: 0;
@@ -167,6 +172,9 @@ h1 {
     }
   }
 }
+.title-news {
+  margin-bottom: 30px;
+}
 .page-title-inscription {
   display: none;
 }
@@ -191,6 +199,9 @@ h1 {
 //Pagination block
 .page-pagination {
   margin-bottom: 15px;
+  span {
+    margin-right: 5px;
+  }
   .items-sorting {
     margin-bottom: 10px;
     .sorting-buttons-list {
@@ -220,7 +231,6 @@ h1 {
 
 //Media page
 .media-list {
-  margin-top: 30px;
   .media-list-item {
     margin-bottom: 20px;
     .media-title {
@@ -273,6 +283,7 @@ h1 {
     margin-top: 0;
     .additional-media-list-item {
       margin-bottom: 0;
+      position: relative;
       .media-title {
         margin-top: 0;
       }
@@ -284,6 +295,399 @@ h1 {
   }
 }
 
+//subsidiary map block
+.facts-block {
+  .facts-summary-list {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    &-item {
+      display: block;
+      margin: 10px auto 0;
+      max-width: 120px;
+    }
+  }
+}
+.subsidiary-map {
+  position: relative;
+  width: 100%;
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 70px;
+  }
+  .map-item {
+    position: absolute;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $white;
+    a {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      .circle-inner {
+        display: block;
+      }
+    }
+  }
+  .circle-inner {
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $green;
+    display: none;
+  }
+  .podolsk {
+    top: 61%;
+    &:hover {
+      + .podolsk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .podolsk-circle {
+    top: 62%;
+    left: 23%;
+  }
+  .elektrostal {
+    top: 54%;
+    left: 1%;
+    &:hover {
+      + .elektrostal-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .elektrostal-circle {
+    top: 61%;
+    left: 19%;
+  }
+  .moskow {
+    top: 45%;
+    left: 3%;
+    &:hover {
+      + .moskow-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .moskow-circle {
+    top: 59%;
+    left: 21%;
+  }
+  .vladimir {
+    top: 36%;
+    left: 5%;
+    &:hover {
+      + .vladimir-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .vladimir-circle {
+    top: 55%;
+    left: 22%;
+  }
+  .piter {
+    top: 28%;
+    left: 7%;
+    &:hover {
+      + .piter-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .piter-circle {
+    top: 48%;
+    left: 22%;
+  }
+  .petrozavodsk {
+    top: 20%;
+    left: 16%;
+    &:hover {
+      + .petrozavodsk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .petrozavodsk-circle {
+    top: 43%;
+    left: 23%;
+  }
+  .murmansk {
+    top: 12%;
+    left: 27%;
+    &:hover {
+      + .murmansk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .murmansk-circle {
+    top: 36%;
+    left: 28%;
+  }
+  .kovrov {
+    top: 26%;
+    left: 31%;
+    &:hover {
+      + .kovrov-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .kovrov-circle {
+    top: 57%;
+    left: 25%;
+  }
+  .novgorod {
+    top: 10%;
+    left: 41%;
+    &:hover {
+      + .novgorod-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .novgorod-circle {
+    top: 56%;
+    left: 28%;
+  }
+  .glazov {
+    top: 28%;
+    left: 44%;
+    &:hover {
+      + .glazov-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .glazov-circle {
+    top: 61%;
+    left: 27%;
+  }
+  .sarov {
+    top: 57%;
+    left: 35%;
+    &:hover {
+      + .sarov-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .sarov-circle {
+    top: 66%;
+    left: 26%;
+  }
+  .zarechniy {
+    top: 50%;
+    left: 49%;
+    &:hover {
+      + .zarechniy-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .zarechniy-circle {
+    top: 62%;
+    left: 44%;
+  }
+  .seversk {
+    top: 62%;
+    left: 52%;
+    &:hover {
+      + .seversk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .seversk-circle {
+    top: 74%;
+    left: 46%;
+  }
+  .angarsk {
+    top: 69%;
+    left: 58%;
+    &:hover {
+      + .angarsk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .angarsk-circle {
+    top: 82%;
+    left: 56%;
+  }
+  .krasnokamensk {
+    top: 92%;
+    left: 67%;
+    &:hover {
+      + .krasnokamensk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .krasnokamensk-circle {
+    top: 85%;
+    left: 67%;
+  }
+  .zelenogorsk {
+    bottom: -9%;
+    left: 59%;
+    &:hover {
+      + .zelenogorsk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .zelenogorsk-circle {
+    top: 79%;
+    left: 52%;
+  }
+  .zheleznogorsk {
+    bottom: -4%;
+    left: 49%;
+    &:hover {
+      + .zheleznogorsk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .zheleznogorsk-circle {
+    top: 78%;
+    left: 48%;
+  }
+  .novosibirsk {
+    bottom: -7%;
+    left: 35%;
+    &:hover {
+      + .novosibirsk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .novosibirsk-circle {
+    top: 80%;
+    left: 44%;
+  }
+  .ekatirenburg {
+    bottom: 5%;
+    left: 26%;
+    &:hover {
+      + .ekatirenburg-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .ekatirenburg-circle {
+    top: 65%;
+    left: 32%;
+  }
+  .novouralsk {
+    bottom: -5%;
+    left: 16%;
+    &:hover {
+      + .novouralsk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .novouralsk-circle {
+    top: 70%;
+    left: 30%;
+  }
+  .dimitrovgrad {
+    bottom: 0;
+    left: 0;
+    &:hover {
+      + .dimitrovgrad-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .dimitrovgrad-circle {
+    top: 75%;
+    left: 25%;
+  }
+  .volgodosk {
+    bottom: 17%;
+    left: 0;
+    &:hover {
+      + .volgodosk-circle {
+        .circle-inner {
+          display: block;
+        }
+      }
+    }
+  }
+  .volgodosk-circle {
+    top: 77%;
+    left: 17%;
+  }
+}
+.subsidiaries-menu {
+  display: none;
+  max-width: 230px;
+  .subsidiaries-menu-title {
+
+  }
+  .subsidiaries-menu-list-item::before {
+    padding-right: 5px;
+    padding-left: 10px;
+    content: "•";
+    color: $green;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
 //management page
 .persons-list-item {
   .management-wrapper & {
@@ -342,6 +746,7 @@ h1 {
   }
 }
 .description-html-safe {
+  margin-bottom: 40px;
   ul {
     li {
       margin-top: 10px;
@@ -750,6 +1155,19 @@ h1 {
       }
     }
   }
+  //subsidiary map block
+  .facts-block {
+    .facts-summary-list {
+      &-item {
+        display: inline-block;
+        margin-right: 25px;
+        max-width: none;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
 @include susy-breakpoint(700px, 6) {
@@ -811,6 +1229,17 @@ h1 {
 
 
 @include breakpoint(720px, 6) {
+  //subsidiary map block
+  .facts-block {
+    .facts-summary-list {
+      &-item {
+        margin-right: 25px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
   //management page
   .persons-list-item {
     .management-wrapper & {
@@ -859,6 +1288,22 @@ h1 {
 }
 
 @include susy-breakpoint(960px, 12) {
+  //subsidiary map block
+  .facts-block {
+    .facts-summary-list {
+      &-item {
+        margin-right: 45px;
+        display: inline-block;
+        max-width: none;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .subsidiaries-menu {
+    display: block;
+  }
   // News page
   .media-content-wrapper {
     .news-content {
@@ -897,22 +1342,12 @@ h1 {
   }
   //Pagination block
   .page-pagination {
-    .items-sorting {
-      float: left;
-      .sorting-buttons-list {
-        display: inline-block;
-        &-item {
-          display: inline-block;
-        }
+    &:not(.tiny) {
+      .items-sorting {
+        float: left;
       }
-    }
-    .items-quantity {
-      float: right;
-      .items-quantity-list {
-        display: inline-block;
-        &-item {
-          display: inline-block;
-        }
+      .items-quantity {
+        float: right;
       }
     }
   }
@@ -990,7 +1425,8 @@ h1 {
   .page-content {
     @include span(9 of 12 last);
   }
-  .page-menu {
+  .page-menu,
+  .subsidiaries-menu {
     @include span(3 of 12 first);
   }
 
@@ -1139,9 +1575,25 @@ h1 {
   .search-block-footer {
     @include span(4.5 of 12 last);
   }
-  .main-content {
-    .tile-list {
-
+  .page-pagination {
+    .items-sorting {
+      float: left;
+    }
+    .items-quantity {
+      float: right;
+    }
+  }
+  //subsidiary map block
+  .facts-block {
+    .facts-summary-list {
+      margin-top: 50px;
+      margin-bottom: 40px;
+      &-item {
+        margin-right: 65px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
