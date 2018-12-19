@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'freesetblackcregular';
+  src: url("../fonts/pt_freeset_black_cyrillic-webfont.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
 h1 {
   font: 300 15px/18px "Open Sans", sans-serif;
   font-weight: 600;
@@ -10,28 +30,6 @@ h1 {
   height: 0;
   clear: both;
   visibility: hidden; }
-
-.padding-general {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px; }
-
-.padding-general-header {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.padding-general-footer-bottom {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px; }
-
-.padding-general-page-title-block {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px; }
 
 .primary-color {
   background-color: #6e7073; }
@@ -49,11 +47,16 @@ h1 {
   font-size: 12px;
   text-align: center; }
 
-.vertical-block .date-block {
-  font: 300 15px/18px "Open Sans", sans-serif;
-  font-size: 14px;
+.font-black .date-block {
+  font-size: 13px;
   font-weight: 600;
-  line-height: 16px; }
+  padding-left: 25px;
+  background: url(../images/icon-calendar.png) no-repeat 0 center; }
+.font-white .date-block {
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 25px;
+  background: url(../images/icon-calendar-white.png) no-repeat 0 center; }
 
 .horizontal-block .short-description {
   font: 300 15px/18px "Open Sans", sans-serif;

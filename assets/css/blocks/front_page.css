@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'freesetblackcregular';
+  src: url("../fonts/pt_freeset_black_cyrillic-webfont.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
 .tile-list-wrapper .two-columns {
   display: none; }
 
@@ -117,9 +137,19 @@
   display: block;
   position: absolute;
   bottom: 0; }
+.tile-list .text-on-hover:hover .blue-back,
+.tile-list .text-on-hover:hover .cyan-back {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  height: 100%; }
 .tile-list .tile-text {
   display: none;
   box-sizing: border-box; }
+.tile-list .blue-back,
+.tile-list .cyan-back {
+  display: none; }
 .tile-list .tile-title {
   position: absolute;
   top: 0; }

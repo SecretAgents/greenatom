@@ -180,12 +180,25 @@
         position: absolute;
         bottom: 0;
       }
+      .blue-back,
+      .cyan-back {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 98%;
+        height: 100%;
+      }
     }
   }
 
   .tile-text {
     display: none;
     box-sizing: border-box;
+  }
+
+  .blue-back,
+  .cyan-back{
+    display: none;
   }
 
   .tile-title {

@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'freesetblackcregular';
+  src: url("../fonts/pt_freeset_black_cyrillic-webfont.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
 html,
 body {
   min-width: 300px;

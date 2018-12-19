@@ -18,7 +18,9 @@ ul {
     list-style-type: disc;
   }
 }
-
+.font-main-logo {
+  font-family: freesetblackcregular, sans-serif;
+}
 .page-menu {
   .menu-change-visibility:after {
     content: '';
@@ -39,7 +41,10 @@ ul {
     text-align: center;
   }
 }
-
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .additional-menu {
   font-weight: 400;
   background: $green;
@@ -730,6 +735,14 @@ ul {
   font-weight: 300;
 }
 //Footer styles
+.footer-main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .footer-bottom {
   color: $white;
   text-align: center;
@@ -941,6 +954,10 @@ ul {
   }
 }
 @include breakpoint(720px, 6) {
+  .container {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
   .media-content-wrapper {
     padding: 60px 75px;
   }
@@ -1092,9 +1109,11 @@ ul {
 }
 
 @include susy-breakpoint(1060px, 12) {
-  .header {
+  .container {
     padding-left: 65px;
     padding-right: 65px;
+  }
+  .header {
     .top-menu-block {
       .navigation-list {
         &-item {

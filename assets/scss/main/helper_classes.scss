@@ -15,38 +15,6 @@ h1 {
     visibility: hidden;
   }
 }
-//Wrappers and inners
-//.main-content,
-//.header-inner,
-//.footer-bottom-inner,
-//.footer-main-inner,
-//.page-title-block-inner {
-//  max-width: 1140px;
-//  margin: 0 auto;
-//}
-//Paddings
-.padding-general {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.padding-general-header {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.padding-general-footer-bottom {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.padding-general-page-title-block {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 
 //Background colors
 .primary-color {
@@ -70,11 +38,17 @@ h1 {
   }
 }
 .date-block {
-  .vertical-block & {
-    font: $font-base;
-    font-size: 14px;
+  .font-black & {
+    font-size: 13px;
     font-weight: 600;
-    line-height: 16px;
+    padding-left: 25px;
+    background: url(../images/icon-calendar.png) no-repeat 0 center;
+  }
+  .font-white & {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 25px;
+    background: url(../images/icon-calendar-white.png) no-repeat 0 center;
   }
 }
 .short-description {
