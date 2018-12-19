@@ -45,14 +45,23 @@ $(document).ready(function(){
   }
 
   if ($('.colorbox-gallery').size()) {
-    jQuery.extend(jQuery.colorbox.settings, {
-        current: "{current} из {total}"
+    $('.colorbox-gallery').colorbox({
+      scalePhotos: true,
+      maxHeight: '90%',
+      maxWidth: '90%',
+      reposition: true,
+      opacity: 0.6,
+      current: "{current} из {total}",
+      rel: 'colorbox-gallery'
     });
-
-    $('.colorbox-gallery').colorbox({rel:'colorbox-gallery', maxWidth:'95%', maxHeight:'95%'});
   }
 
   if ($('.colorbox-video').size()) {
-    $('.colorbox-video').colorbox({width: '600px', height: '400px', iframe: true, maxWidth:'95%', maxHeight:'95%'});
+    $('.colorbox-video').colorbox({
+      width: '600px',
+      height: '400px',
+      iframe: true,
+      maxWidth:'95%',
+      maxHeight:'95%'});
   }
 });

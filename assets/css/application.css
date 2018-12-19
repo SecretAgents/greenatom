@@ -46,7 +46,9 @@
   text-align: left;
   bottom: -31px;
   color: black;
-  font-size: 13px; }
+  font-size: 13px;
+  padding-right: 50px;
+  box-sizing: border-box; }
 #colorbox #cboxBottomCenter {
   height: 50px;
   color: white; }
