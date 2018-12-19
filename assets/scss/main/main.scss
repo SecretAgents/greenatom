@@ -108,7 +108,7 @@ ul {
       }
 
       .easytree-node {
-        padding: 10px 0px;
+        padding: 5px 0px;
         width: 100%;
 
         &:before {
@@ -776,7 +776,7 @@ ul {
 // one news show
 .additional-menu {
   .news-list {
-    padding: 10px;
+    padding: 20px 10px;
     .news-list-item {
       padding: 5px 0px;
       &:before {
@@ -1041,6 +1041,7 @@ ul {
   // one news show
   .additional-menu {
     .news-list {
+      padding: 10px 10px;
       .news-list-item {
         &:before {
           color: $green;
@@ -1065,7 +1066,6 @@ ul {
     display: none;
   }
   .additional-menu {
-    font-weight: 300;
     background: none;
     overflow: visible;
     padding: 0px 10px 0px 0px;
