@@ -939,6 +939,11 @@ h1 {
     height: 22px;
   }
 }
+.media-content {
+  .header-block-wrapper {
+    margin-bottom: 30px;
+  }
+}
 
 @include susy-breakpoint(0px 1059px, 3) {
   .top-menu-block {

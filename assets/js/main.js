@@ -50,7 +50,7 @@ $(document).ready(function(){
       maxHeight: '90%',
       maxWidth: '90%',
       reposition: true,
-      opacity: 0.6,
+      opacity: 0.5,
       current: "{current} из {total}",
       rel: 'colorbox-gallery'
     });

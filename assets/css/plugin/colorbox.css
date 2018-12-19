@@ -9,12 +9,12 @@
   left: 0;
   right: auto;
   margin-top: 0;
-  background: url("../../images/colorbox/colorbox-prev.png") no-repeat center center;
+  background: url("../../assets/images/colorbox/colorbox-prev.png") no-repeat center center;
   width: 70px;
   height: 100%;
   text-indent: -9999px; }
   #colorbox #cboxPrevious:hover {
-    background: rgba(255, 255, 255, 0.1) url("../../images/colorbox/colorbox-prev.png") no-repeat center center; }
+    background: rgba(255, 255, 255, 0.1) url("../../assets/images/colorbox/colorbox-prev.png") no-repeat center center; }
 #colorbox #cboxNext {
   outline: none;
   position: absolute;
@@ -22,18 +22,18 @@
   left: auto;
   right: 0;
   margin-top: 0;
-  background: url("../../images/colorbox/colorbox-next.png") no-repeat center center;
+  background: url("../../assets/images/colorbox/colorbox-next.png") no-repeat center center;
   width: 70px;
   height: 100%;
   text-indent: -9999px; }
   #colorbox #cboxNext:hover {
-    background: rgba(255, 255, 255, 0.1) url("../../images/colorbox/colorbox-next.png") no-repeat center center; }
+    background: rgba(255, 255, 255, 0.1) url("../../assets/images/colorbox/colorbox-next.png") no-repeat center center; }
 #colorbox #cboxContent {
   position: relative; }
 #colorbox #cboxClose {
   width: 80px;
   height: 80px;
-  background: url("../../images/colorbox/colorbox-close.png") no-repeat 0 center;
+  background: url("../../assets/images/colorbox/colorbox-close.png") no-repeat center center;
   bottom: auto;
   top: 0;
   right: 0; }
@@ -56,9 +56,6 @@
   right: 0px;
   text-align: right;
   color: black; }
-
-#cboxOverlay {
-  opacity: 0.5 !important; }
 
 @media (min-width: 960px) {
   #colorbox #cboxCurrent,
