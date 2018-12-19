@@ -2,6 +2,11 @@
 
 @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+@import "../../node_modules/jquery-colorbox/example5/colorbox.css";
+
+@import "plugin/colorbox";
+@import 'plugin/easytree';
+@import 'plugin/scroll_bar';
 
 @import "main/helper_classes";
 

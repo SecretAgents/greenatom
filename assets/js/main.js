@@ -8,10 +8,6 @@ $(document).ready(function(){
     navText: ""
   });
 
-  jQuery.extend(jQuery.colorbox.settings, {
-      current: "{current} из {total}"
- });
-
   $('.menu-open').on("click", function() {
     $('.additional-menu-wrapper').addClass('menu-change-visibility')
   });
@@ -24,11 +20,35 @@ $(document).ready(function(){
     $('.scrollbar-dynamic').scrollbar();
   }
 
+  $('.navigation-toggle-link').on('click', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $('.top-menu-list-item').removeClass('active');
+    $('.navigation-list').toggleClass('active');
+  });
+
+  $('.navigation-list-item > a').on('click', function(e) {
+    e.preventDefault();
+    $('.navigation-list ul').removeClass('active');
+    $(this).siblings('ul').toggleClass('active');
+  });
+
+  $('.top-menu-list-item').on('click', function(e) {
+    e.preventDefault();
+    $('.navigation-list, .navigation-toggle-link').removeClass('active');
+    $(this).siblings('.top-menu-list-item').removeClass('active');
+    $(this).toggleClass('active');
+  });
+
   if ($('#additional-menu').size()) {
     $('#additional-menu').easytree({disableIcons: true});
   }
 
   if ($('.colorbox-gallery').size()) {
+    jQuery.extend(jQuery.colorbox.settings, {
+        current: "{current} из {total}"
+    });
+
     $('.colorbox-gallery').colorbox({rel:'colorbox-gallery', maxWidth:'95%', maxHeight:'95%'});
   }
 
