@@ -1026,7 +1026,7 @@ h1 {
   margin-top: 50px;
   .gallery-list-item {
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     img {
       width: 100%;
     }
@@ -1266,6 +1266,24 @@ h1 {
   .additional-menu .menu-close {
     right: 90px;
   }
+  // gallery
+  .gallery-list {
+    .gallery-list-item {
+      @include span(2 of 6 first);
+      &:nth-child(2n){
+        @include span(2 of 6);
+      }
+      &:nth-child(2n-1){
+        clear: none;
+      }
+      &:nth-child(3n){
+        @include span(2 of 6 last);
+      }
+      &:nth-child(3n+1){
+        clear: both;
+      }
+    }
+  }
 }
 
 @include susy-breakpoint(800px, 12) {
@@ -1353,24 +1371,6 @@ h1 {
       }
       .items-quantity {
         float: right;
-      }
-    }
-  }
-  // gallery
-  .gallery-list {
-    .gallery-list-item {
-      @include span(2 of 6 first);
-      &:nth-child(2n){
-        @include span(2 of 6);
-      }
-      &:nth-child(2n-1){
-        clear: none;
-      }
-      &:nth-child(3n){
-        @include span(2 of 6 last);
-      }
-      &:nth-child(3n+1){
-        clear: both;
       }
     }
   }
