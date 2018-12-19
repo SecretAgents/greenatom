@@ -20,10 +20,6 @@ $(document).ready(function(){
     $('.scrollbar-macosx').scrollbar();
   }
 
-  if ($('.scrollbar-dynamic').size()) {
-    $('.scrollbar-dynamic').scrollbar();
-  }
-
   $('.navigation-toggle-link').on('click', function(e) {
     e.preventDefault();
     $(this).toggleClass('active');
