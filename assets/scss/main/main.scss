@@ -263,6 +263,33 @@ ul {
     }
   }
 }
+.subsidiaries-menu {
+  .subsidiaries-menu-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: $green;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $white;
+  }
+  .subsidiaries-menu-list {
+    padding-left: 20px;
+    .subsidiaries-menu-list-item {
+      text-indent: -20px;
+      font-weight: 600;
+      color: $black;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      a {
+        &:hover {
+          color: $link-primary-pressed;
+        }
+      }
+    }
+  }
+}
 //subsidiary map block
 .subsidiary-insertion {
   font-size: 18px;
@@ -346,11 +373,9 @@ ul {
   .owl-dots {
     position: absolute;
     text-align: center;
-
     span {
       border-radius: 100%;
     }
-
     .owl-dot {
       &.active {
         span {
@@ -652,6 +677,10 @@ ul {
   .facts-block {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .subsidiary-insertion {
+    padding-left: 65px;
+    padding-right: 65px;
   }
   //Page styles
   .content-wrapper {
