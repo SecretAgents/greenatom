@@ -113,9 +113,6 @@
         padding-bottom: 0;
       }
     }
-    .tile-title::before {
-      content: "";
-    }
   }
 
   .items_3 {
@@ -144,13 +141,13 @@
     }
     .tile-title {
       text-indent: -10px;
-    }
-    .tile-title::before {
-      padding-right: 5px;
-      content: "•";
-      color: #bed33f;
-      font-size: 14px;
-      font-weight: 600;
+      &:before {
+        padding-right: 5px;
+        content: "•";
+        color: #bed33f;
+        font-size: 14px;
+        font-weight: 600;
+      }
     }
   }
 
@@ -191,10 +188,9 @@
       .tile-title {
         padding-left: 25px;
         text-indent: -15px;
-      }
-
-      .tile-title::before {
-        font-size: 18px;
+        &:before {
+          font-size: 18px;
+        }
       }
     }
     .half-horizontal {

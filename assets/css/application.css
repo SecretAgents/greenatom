@@ -3332,8 +3332,6 @@ ul {
   .tile-list .slider.full .slider-item {
     padding-top: 0;
     padding-bottom: 0; }
-  .tile-list .slider .tile-title::before {
-    content: ""; }
 .tile-list .items_3 a::before {
   background: #fff;
   opacity: 0.2; }
@@ -3345,12 +3343,12 @@ ul {
   background: #fff; }
 .tile-list .text-on-hover .tile-title {
   text-indent: -10px; }
-.tile-list .text-on-hover .tile-title::before {
-  padding-right: 5px;
-  content: "•";
-  color: #bed33f;
-  font-size: 14px;
-  font-weight: 600; }
+  .tile-list .text-on-hover .tile-title:before {
+    padding-right: 5px;
+    content: "•";
+    color: #bed33f;
+    font-size: 14px;
+    font-weight: 600; }
 .tile-list .tile-title {
   padding-left: 15px;
   padding-top: 10px; }
@@ -3372,8 +3370,8 @@ ul {
   .tile-list .text-on-hover .tile-title {
     padding-left: 25px;
     text-indent: -15px; }
-  .tile-list .text-on-hover .tile-title::before {
-    font-size: 18px; }
+    .tile-list .text-on-hover .tile-title:before {
+      font-size: 18px; }
   .tile-list .half-horizontal .tile-text {
     padding: 10px; } }
 @media (min-width: 720px) {
