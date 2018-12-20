@@ -278,13 +278,6 @@
   }
 }
 
-@include breakpoint(700px, 6) {
-  .one-column {
-    max-width: 650px;
-    margin: 0 auto;
-  }
-}
-
 @include susy-breakpoint(800px, $susy_desktop) {
   .tile-list-wrapper {
     .one-column {
@@ -379,14 +372,6 @@
         }
       }
     }
-
-    .tile-icon {
-      margin-bottom: 40px;
-      img {
-        max-width: none;
-        max-height: none;
-      }
-    }
   }
 }
 
@@ -404,6 +389,13 @@
       }
       .tile-text {
         bottom: 20px;
+      }
+    }
+    .tile-icon {
+      margin-bottom: 40px;
+      img {
+        max-width: none;
+        max-height: none;
       }
     }
   }

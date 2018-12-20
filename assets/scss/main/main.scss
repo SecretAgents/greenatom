@@ -18,7 +18,9 @@ ul {
     list-style-type: disc;
   }
 }
-
+.font-main-logo {
+  font-family: FreeSetBlack, sans-serif;
+}
 .page-menu {
   .menu-change-visibility:after {
     content: '';
@@ -29,7 +31,12 @@ ul {
     box-shadow: 0px 0px 10px black;
   }
 }
-
+.header-inner,
+.footer-main,
+.footer-bottom {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 //Additional page menu
 .additional-menu-wrapper {
   .menu-open {
@@ -39,7 +46,6 @@ ul {
     text-align: center;
   }
 }
-
 .additional-menu {
   font-weight: 400;
   background: $green;
@@ -135,6 +141,10 @@ ul {
       }
     }
   }
+}
+.main-page-content {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 // Page styles
 .content-wrapper {
@@ -666,7 +676,6 @@ ul {
 //Main content styles
 
 .main-content {
-
   .one-column {
     padding-bottom: 65px;
     padding-left: 5px;
@@ -720,6 +729,14 @@ ul {
   font-weight: 300;
 }
 //Footer styles
+.footer-main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .footer-bottom {
   color: $white;
   text-align: center;
@@ -872,6 +889,16 @@ ul {
 }
 
 @include breakpoint(600px, 6) {
+  .main-page-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .media-content-wrapper {
     padding: 60px 15px;
   }
@@ -913,6 +940,16 @@ ul {
   }
 }
 @include breakpoint(700px, 6) {
+  .main-page-content {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
   //Page styles
   .content-wrapper {
     .page-content {
@@ -961,6 +998,16 @@ ul {
   }
 }
 @include breakpoint(720px, 6) {
+  .main-page-content {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .media-content-wrapper {
     padding: 60px 75px;
   }
@@ -987,6 +1034,12 @@ ul {
   }
 }
 @include breakpoint(960px, 12) {
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .media-content-wrapper {
     padding: 65px 60px;
   }
@@ -1113,8 +1166,6 @@ ul {
 
 @include susy-breakpoint(1060px, 12) {
   .header {
-    padding-left: 65px;
-    padding-right: 65px;
     .top-menu-block {
       .navigation-list {
         &-item {
@@ -1185,6 +1236,12 @@ ul {
 }
 
 @include breakpoint(1200px, 12) {
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .main-content {
     padding-bottom: 85px;
   }

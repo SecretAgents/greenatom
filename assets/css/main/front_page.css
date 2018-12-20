@@ -1,3 +1,27 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'FreeSetBlack';
+  src: url("../fonts/FreeSetBlack.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+.tile-list-wrapper {
+  margin-bottom: 50px; }
+
 .tile-list .wide .tile-list-item {
   vertical-align: top; }
   .tile-list .wide .tile-list-item.simple-color {
@@ -24,6 +48,8 @@
       color: #fff; }
     .tile-list .simple-color.white:hover::before {
       background-color: #5978b6; }
+    .tile-list .simple-color.white:hover .date-block {
+      background: url(../images/icon-calendar-white.png) no-repeat 0 center; }
   .tile-list .simple-color.cyan::before {
     background-color: #21b2ad; }
   .tile-list .simple-color.with-image::before {
@@ -34,10 +60,15 @@
     padding-left: 0;
     padding-top: 0; }
 .tile-list .half-horizontal .tile-text {
+  padding: 5px;
   background: #fff; }
   .tile-list .half-horizontal .tile-text p {
     margin-bottom: 5px;
     margin-top: 5px; }
+  .tile-list .half-horizontal .tile-text .date-block {
+    padding-left: 20px;
+    font-weight: 600;
+    background: url(../images/icon-calendar.png) no-repeat 0 center; }
 .tile-list .slider {
   background: #fff; }
   .tile-list .slider .tile-title {
@@ -57,18 +88,25 @@
 .tile-list .small-list .tile-text {
   padding-left: 15px; }
 .tile-list .text-on-hover .tile-text {
-  padding-bottom: 10px;
-  padding-top: 10px; }
+  padding: 10px; }
 .tile-list .text-on-hover.big .tile-text {
   background: #fff; }
+.tile-list .text-on-hover .tile-title {
+  text-indent: -10px; }
+  .tile-list .text-on-hover .tile-title:before {
+    padding-right: 5px;
+    content: "•";
+    color: #bed33f;
+    font-size: 14px;
+    font-weight: 600; }
 .tile-list .tile-title {
   padding-left: 15px;
   padding-top: 10px; }
 .tile-list .tile-text {
   font: 300 12px/14px "Open Sans", sans-serif;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px; }
+  text-align: left; }
+  .tile-list .tile-text .short-description p {
+    margin-top: 10px; }
 
 .clients-list .clients-list-item {
   text-align: center;
@@ -78,18 +116,43 @@
   .clients-list .clients-list-item:hover img {
     filter: grayscale(0); }
 
+@media (min-width: 480px) {
+  .tile-list .text-on-hover .tile-title {
+    padding-left: 25px;
+    text-indent: -15px; }
+    .tile-list .text-on-hover .tile-title:before {
+      font-size: 18px; }
+  .tile-list .half-horizontal .tile-text {
+    padding: 10px; } }
+@media (min-width: 720px) {
+  .tile-list .text-on-hover .tile-text {
+    padding: 30px 50px; }
+  .tile-list .text-on-hover .tile-title::before {
+    font-size: 24px; }
+  .tile-list .half-horizontal .tile-text {
+    padding: 30px 50px 0; } }
+@media (min-width: 800px) {
+  .tile-list .half-horizontal .tile-text {
+    padding: 10px; }
+  .tile-list .tile-text {
+    padding: 10px; } }
 @media (min-width: 960px) {
   .tile-list .tile-text {
-    font: 300 15px/18px "Open Sans", sans-serif; }
+    font: 300 15px/18px "Open Sans", sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px; }
   .tile-list .icon-with-list .tile-text {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .tile-list .half-horizontal .tile-text {
+    padding-left: 20px;
+    padding-right: 20px; } }
 @media (min-width: 1060px) {
   .tile-list .text-on-hover .tile-text {
     padding-bottom: 25px;
     padding-top: 25px; }
   .tile-list .tile-text {
-    font: 300 15px/18px "Open Sans", sans-serif;
     text-align: left;
     padding-left: 40px;
     padding-right: 40px; } }
