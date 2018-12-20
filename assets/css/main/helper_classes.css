@@ -15,8 +15,8 @@
   font-weight: 600;
   font-style: normal; }
 @font-face {
-  font-family: 'freesetblackcregular';
-  src: url("../fonts/pt_freeset_black_cyrillic-webfont.ttf") format("truetype");
+  font-family: 'FreeSetBlack';
+  src: url("../fonts/FreeSetBlack.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 h1 {
