@@ -1152,7 +1152,7 @@ h1 {
 .subsidiary-map {
   position: relative;
   width: 100%; }
-  .subsidiary-map img {
+  .subsidiary-map img.map {
     display: block;
     max-width: 100%;
     margin: 0 auto 70px; }
@@ -1178,180 +1178,180 @@ h1 {
     background: #bed33f;
     display: none; }
   .subsidiary-map .podolsk {
-    top: 61%; }
+    top: 54%; }
     .subsidiary-map .podolsk:hover + .podolsk-circle .circle-inner {
       display: block; }
   .subsidiary-map .podolsk-circle {
-    top: 62%;
-    left: 23%; }
+    top: 57%;
+    left: 25%; }
   .subsidiary-map .elektrostal {
-    top: 54%;
+    top: 45%;
     left: 1%; }
     .subsidiary-map .elektrostal:hover + .elektrostal-circle .circle-inner {
       display: block; }
   .subsidiary-map .elektrostal-circle {
-    top: 61%;
-    left: 19%; }
+    top: 55%;
+    left: 21%; }
   .subsidiary-map .moskow {
-    top: 45%;
+    top: 35%;
     left: 3%; }
     .subsidiary-map .moskow:hover + .moskow-circle .circle-inner {
       display: block; }
   .subsidiary-map .moskow-circle {
-    top: 59%;
-    left: 21%; }
+    top: 53%;
+    left: 24%; }
   .subsidiary-map .vladimir {
-    top: 36%;
+    top: 28%;
     left: 5%; }
     .subsidiary-map .vladimir:hover + .vladimir-circle .circle-inner {
       display: block; }
   .subsidiary-map .vladimir-circle {
-    top: 55%;
-    left: 22%; }
+    top: 49%;
+    left: 24%; }
   .subsidiary-map .piter {
-    top: 28%;
+    top: 21%;
     left: 7%; }
     .subsidiary-map .piter:hover + .piter-circle .circle-inner {
       display: block; }
   .subsidiary-map .piter-circle {
-    top: 48%;
-    left: 22%; }
+    top: 43%;
+    left: 23%; }
   .subsidiary-map .petrozavodsk {
-    top: 20%;
-    left: 16%; }
+    top: 14%;
+    left: 19%; }
     .subsidiary-map .petrozavodsk:hover + .petrozavodsk-circle .circle-inner {
       display: block; }
   .subsidiary-map .petrozavodsk-circle {
-    top: 43%;
-    left: 23%; }
+    top: 40%;
+    left: 24%; }
   .subsidiary-map .murmansk {
-    top: 12%;
-    left: 27%; }
+    top: 7%;
+    left: 31%; }
     .subsidiary-map .murmansk:hover + .murmansk-circle .circle-inner {
       display: block; }
   .subsidiary-map .murmansk-circle {
-    top: 36%;
-    left: 28%; }
+    top: 32%;
+    left: 29%; }
   .subsidiary-map .kovrov {
-    top: 26%;
-    left: 31%; }
+    top: 24%;
+    left: 33%; }
     .subsidiary-map .kovrov:hover + .kovrov-circle .circle-inner {
       display: block; }
   .subsidiary-map .kovrov-circle {
-    top: 57%;
-    left: 25%; }
+    top: 52%;
+    left: 26%; }
   .subsidiary-map .novgorod {
-    top: 10%;
-    left: 41%; }
+    top: 7%;
+    left: 43%; }
     .subsidiary-map .novgorod:hover + .novgorod-circle .circle-inner {
       display: block; }
   .subsidiary-map .novgorod-circle {
-    top: 56%;
-    left: 28%; }
+    top: 51%;
+    left: 29%; }
   .subsidiary-map .glazov {
-    top: 28%;
-    left: 44%; }
+    top: 27%;
+    left: 45%; }
     .subsidiary-map .glazov:hover + .glazov-circle .circle-inner {
       display: block; }
   .subsidiary-map .glazov-circle {
-    top: 61%;
-    left: 27%; }
+    top: 56%;
+    left: 28%; }
   .subsidiary-map .sarov {
-    top: 57%;
-    left: 35%; }
+    top: 49%;
+    left: 36%; }
     .subsidiary-map .sarov:hover + .sarov-circle .circle-inner {
       display: block; }
   .subsidiary-map .sarov-circle {
-    top: 66%;
-    left: 26%; }
+    top: 60%;
+    left: 27%; }
   .subsidiary-map .zarechniy {
-    top: 50%;
-    left: 49%; }
+    top: 43%;
+    left: 50%; }
     .subsidiary-map .zarechniy:hover + .zarechniy-circle .circle-inner {
       display: block; }
   .subsidiary-map .zarechniy-circle {
-    top: 62%;
-    left: 44%; }
+    top: 57%;
+    left: 45%; }
   .subsidiary-map .seversk {
-    top: 62%;
-    left: 52%; }
+    top: 54%;
+    left: 53%; }
     .subsidiary-map .seversk:hover + .seversk-circle .circle-inner {
       display: block; }
   .subsidiary-map .seversk-circle {
-    top: 74%;
+    top: 69%;
     left: 46%; }
   .subsidiary-map .angarsk {
-    top: 69%;
-    left: 58%; }
+    top: 61%;
+    left: 62%; }
     .subsidiary-map .angarsk:hover + .angarsk-circle .circle-inner {
       display: block; }
   .subsidiary-map .angarsk-circle {
-    top: 82%;
-    left: 56%; }
+    top: 76%;
+    left: 58%; }
   .subsidiary-map .krasnokamensk {
-    top: 92%;
-    left: 67%; }
+    top: 88%;
+    left: 72%; }
     .subsidiary-map .krasnokamensk:hover + .krasnokamensk-circle .circle-inner {
       display: block; }
   .subsidiary-map .krasnokamensk-circle {
-    top: 85%;
-    left: 67%; }
+    top: 77%;
+    left: 68%; }
   .subsidiary-map .zelenogorsk {
-    bottom: -9%;
-    left: 59%; }
+    bottom: 0;
+    left: 64%; }
     .subsidiary-map .zelenogorsk:hover + .zelenogorsk-circle .circle-inner {
       display: block; }
   .subsidiary-map .zelenogorsk-circle {
-    top: 79%;
-    left: 52%; }
+    bottom: 25%;
+    left: 53%; }
   .subsidiary-map .zheleznogorsk {
-    bottom: -4%;
+    bottom: 3%;
     left: 49%; }
     .subsidiary-map .zheleznogorsk:hover + .zheleznogorsk-circle .circle-inner {
       display: block; }
   .subsidiary-map .zheleznogorsk-circle {
-    top: 78%;
+    top: 72%;
     left: 48%; }
   .subsidiary-map .novosibirsk {
-    bottom: -7%;
-    left: 35%; }
+    bottom: -4%;
+    left: 41%; }
     .subsidiary-map .novosibirsk:hover + .novosibirsk-circle .circle-inner {
       display: block; }
   .subsidiary-map .novosibirsk-circle {
-    top: 80%;
+    top: 73%;
     left: 44%; }
   .subsidiary-map .ekatirenburg {
-    bottom: 5%;
+    bottom: 15%;
     left: 26%; }
     .subsidiary-map .ekatirenburg:hover + .ekatirenburg-circle .circle-inner {
       display: block; }
   .subsidiary-map .ekatirenburg-circle {
-    top: 65%;
-    left: 32%; }
+    top: 58%;
+    left: 35%; }
   .subsidiary-map .novouralsk {
-    bottom: -5%;
-    left: 16%; }
+    bottom: 7%;
+    left: 14%; }
     .subsidiary-map .novouralsk:hover + .novouralsk-circle .circle-inner {
       display: block; }
   .subsidiary-map .novouralsk-circle {
-    top: 70%;
-    left: 30%; }
+    top: 63%;
+    left: 32%; }
   .subsidiary-map .dimitrovgrad {
-    bottom: 0;
+    bottom: 15%;
     left: 0; }
     .subsidiary-map .dimitrovgrad:hover + .dimitrovgrad-circle .circle-inner {
       display: block; }
   .subsidiary-map .dimitrovgrad-circle {
-    top: 75%;
-    left: 25%; }
+    top: 67%;
+    left: 26%; }
   .subsidiary-map .volgodosk {
-    bottom: 17%;
-    left: 0; }
+    bottom: 27%;
+    left: -1%; }
     .subsidiary-map .volgodosk:hover + .volgodosk-circle .circle-inner {
       display: block; }
   .subsidiary-map .volgodosk-circle {
-    top: 77%;
-    left: 17%; }
+    top: 68%;
+    left: 19%; }
 
 .subsidiaries-menu {
   display: none;
@@ -2744,6 +2744,13 @@ input[type="search"]::-webkit-search-results-decoration {
       border-bottom: 3px solid #bed33f; }
     .facts-block .facts-summary-list-item .title {
       padding-top: 5px; }
+
+.subsidiary-map a {
+  font-weight: 400;
+  color: #58595b; }
+  .subsidiary-map a:hover {
+    font-weight: 600;
+    color: #000; }
 
 .owl-carousel-simple .owl-nav {
   position: absolute;

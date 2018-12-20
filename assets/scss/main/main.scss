@@ -484,6 +484,16 @@ input[type="search"]::-webkit-search-results-decoration {
     }
   }
 }
+.subsidiary-map {
+  a {
+    font-weight: 400;
+    color: #58595b;
+    &:hover {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+}
 .owl-carousel-simple {
   .owl-nav {
     position: absolute;

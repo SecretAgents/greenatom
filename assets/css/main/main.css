@@ -346,6 +346,13 @@ input[type="search"]::-webkit-search-results-decoration {
     .facts-block .facts-summary-list-item .title {
       padding-top: 5px; }
 
+.subsidiary-map a {
+  font-weight: 400;
+  color: #58595b; }
+  .subsidiary-map a:hover {
+    font-weight: 600;
+    color: #000; }
+
 .owl-carousel-simple .owl-nav {
   position: absolute;
   top: calc(50% - 15px);
