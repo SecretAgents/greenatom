@@ -34,9 +34,11 @@ $(document).ready(function(){
 
   $('.top-menu-list-item').on('click', function(e) {
     e.preventDefault();
-    $('.navigation-list, .navigation-toggle-link').removeClass('active');
-    $(this).siblings('.top-menu-list-item').removeClass('active');
-    $(this).toggleClass('active');
+    if (!$(this).find('.dropdown-header-block').has(e.target)) {
+      $('.navigation-list, .navigation-toggle-link').removeClass('active');
+      $(this).siblings('.top-menu-list-item').removeClass('active');
+      $(this).toggleClass('active');
+    }
   });
 
   if ($('#additional-menu').size()) {
