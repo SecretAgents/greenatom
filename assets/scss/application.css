@@ -1343,17 +1343,6 @@ h1 {
     top: 68%;
     left: 19%; }
 
-.subsidiaries-menu {
-  display: none;
-  max-width: 230px; }
-  .subsidiaries-menu .subsidiaries-menu-list-item::before {
-    padding-right: 5px;
-    padding-left: 10px;
-    content: "•";
-    color: #bed33f;
-    font-size: 14px;
-    font-weight: 600; }
-
 .management-wrapper .persons-list-item {
   margin-bottom: 30px; }
   .management-wrapper .persons-list-item .person-name {
@@ -1871,9 +1860,6 @@ h1 {
     .facts-block .facts-summary-list-item:last-child {
       margin-right: 0; }
 
-  .subsidiaries-menu {
-    display: block; }
-
   .media-content-wrapper .news-content {
     width: 74.7252747253%;
     float: left;
@@ -1961,8 +1947,7 @@ h1 {
     float: right;
     margin-right: 0; }
 
-  .page-menu,
-  .subsidiaries-menu {
+  .page-menu {
     width: 24.1758241758%;
     float: left;
     margin-right: 1.0989010989%; }
@@ -2739,7 +2724,6 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 400;
   color: #58595b; }
   .subsidiary-map a:hover {
-    font-weight: 600;
     color: #000; }
 
 .owl-carousel-simple .owl-nav {
@@ -3151,6 +3135,8 @@ input[type="search"]::-webkit-search-results-decoration {
       background: #e2e2e2;
       padding: 5px 5px 5px 20px;
       text-transform: uppercase; }
+      .additional-menu .menu-header:hover {
+        background: #bed33f; }
     .additional-menu .easytree-focused .easytree-title {
       color: #000; }
     .additional-menu .easytree-exp-e .easytree-title a {

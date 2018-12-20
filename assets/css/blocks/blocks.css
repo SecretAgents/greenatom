@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/OpenSans-Light.ttf") format("truetype");
@@ -424,17 +423,6 @@ h1 {
   .subsidiary-map .volgodosk-circle {
     top: 68%;
     left: 19%; }
-
-.subsidiaries-menu {
-  display: none;
-  max-width: 230px; }
-  .subsidiaries-menu .subsidiaries-menu-list-item::before {
-    padding-right: 5px;
-    padding-left: 10px;
-    content: "•";
-    color: #bed33f;
-    font-size: 14px;
-    font-weight: 600; }
 
 .management-wrapper .persons-list-item {
   margin-bottom: 30px; }
@@ -953,9 +941,6 @@ h1 {
     .facts-block .facts-summary-list-item:last-child {
       margin-right: 0; }
 
-  .subsidiaries-menu {
-    display: block; }
-
   .media-content-wrapper .news-content {
     width: 74.7252747253%;
     float: left;
@@ -1043,8 +1028,7 @@ h1 {
     float: right;
     margin-right: 0; }
 
-  .page-menu,
-  .subsidiaries-menu {
+  .page-menu {
     width: 24.1758241758%;
     float: left;
     margin-right: 1.0989010989%; }

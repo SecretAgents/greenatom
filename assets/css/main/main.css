@@ -350,7 +350,6 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 400;
   color: #58595b; }
   .subsidiary-map a:hover {
-    font-weight: 600;
     color: #000; }
 
 .owl-carousel-simple .owl-nav {
@@ -762,6 +761,8 @@ input[type="search"]::-webkit-search-results-decoration {
       background: #e2e2e2;
       padding: 5px 5px 5px 20px;
       text-transform: uppercase; }
+      .additional-menu .menu-header:hover {
+        background: #bed33f; }
     .additional-menu .easytree-focused .easytree-title {
       color: #000; }
     .additional-menu .easytree-exp-e .easytree-title a {

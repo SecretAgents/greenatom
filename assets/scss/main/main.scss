@@ -489,7 +489,6 @@ input[type="search"]::-webkit-search-results-decoration {
     font-weight: 400;
     color: #58595b;
     &:hover {
-      font-weight: 600;
       color: $black;
     }
   }
@@ -1133,6 +1132,9 @@ input[type="search"]::-webkit-search-results-decoration {
       background: $bg-primary-light;
       padding: 5px 5px 5px 20px;
       text-transform: uppercase;
+      &:hover {
+        background: $green;
+      }
     }
     .easytree-focused .easytree-title {
       color: $black;

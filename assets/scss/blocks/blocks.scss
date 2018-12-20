@@ -669,21 +669,6 @@ h1 {
     left: 19%;
   }
 }
-.subsidiaries-menu {
-  display: none;
-  max-width: 230px;
-  .subsidiaries-menu-title {
-
-  }
-  .subsidiaries-menu-list-item::before {
-    padding-right: 5px;
-    padding-left: 10px;
-    content: "•";
-    color: $green;
-    font-size: 14px;
-    font-weight: 600;
-  }
-}
 //management page
 .persons-list-item {
   .management-wrapper & {
@@ -1394,9 +1379,6 @@ h1 {
       }
     }
   }
-  .subsidiaries-menu {
-    display: block;
-  }
   // News page
   .media-content-wrapper {
     .news-content {
@@ -1496,8 +1478,7 @@ h1 {
   .page-content {
     @include span(9 of 12 last);
   }
-  .page-menu,
-  .subsidiaries-menu {
+  .page-menu {
     @include span(3 of 12 first);
   }
 
