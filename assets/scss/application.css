@@ -2456,6 +2456,12 @@ ul {
   padding-left: 10px;
   padding-right: 10px; }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
 .additional-menu-wrapper .menu-open {
   background: #bed33f;
   border-radius: 50%;
@@ -2825,6 +2831,8 @@ ul {
     color: #000; }
     .header .top-menu-list .dropdown-header-block a {
       color: #000; }
+      .header .top-menu-list .dropdown-header-block a:hover {
+        text-decoration: underline; }
     .header .top-menu-list .dropdown-header-block ul ul {
       padding-left: 10px; }
     .header .top-menu-list .dropdown-header-block .sitemap-column > ul > li > a {
