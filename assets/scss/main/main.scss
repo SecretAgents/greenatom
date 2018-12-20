@@ -1132,8 +1132,10 @@ input[type="search"]::-webkit-search-results-decoration {
       background: $bg-primary-light;
       padding: 5px 5px 5px 20px;
       text-transform: uppercase;
+      color: $black;
       &:hover {
         background: $green;
+        color: $white;
       }
     }
     .easytree-focused .easytree-title {

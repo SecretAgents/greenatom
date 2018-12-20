@@ -760,9 +760,11 @@ input[type="search"]::-webkit-search-results-decoration {
     .additional-menu .menu-header {
       background: #e2e2e2;
       padding: 5px 5px 5px 20px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #000; }
       .additional-menu .menu-header:hover {
-        background: #bed33f; }
+        background: #bed33f;
+        color: #fff; }
     .additional-menu .easytree-focused .easytree-title {
       color: #000; }
     .additional-menu .easytree-exp-e .easytree-title a {
