@@ -60,11 +60,15 @@
     padding-left: 0;
     padding-top: 0; }
 .tile-list .half-horizontal .tile-text {
-  padding-top: 25px;
+  padding: 5px;
   background: #fff; }
   .tile-list .half-horizontal .tile-text p {
     margin-bottom: 5px;
     margin-top: 5px; }
+  .tile-list .half-horizontal .tile-text .date-block {
+    padding-left: 20px;
+    font-weight: 600;
+    background: url(../images/icon-calendar.png) no-repeat 0 center; }
 .tile-list .slider {
   background: #fff; }
   .tile-list .slider .tile-title {
@@ -86,8 +90,7 @@
 .tile-list .small-list .tile-text {
   padding-left: 15px; }
 .tile-list .text-on-hover .tile-text {
-  padding-bottom: 10px;
-  padding-top: 10px; }
+  padding: 10px; }
 .tile-list .text-on-hover.big .tile-text {
   background: #fff; }
 .tile-list .text-on-hover .tile-title {
@@ -124,10 +127,21 @@
     padding-left: 25px;
     text-indent: -15px; }
   .tile-list .text-on-hover .tile-title::before {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .tile-list .half-horizontal .tile-text {
+    padding: 10px; } }
 @media (min-width: 720px) {
+  .tile-list .text-on-hover .tile-text {
+    padding: 30px 50px; }
   .tile-list .text-on-hover .tile-title::before {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .tile-list .half-horizontal .tile-text {
+    padding: 30px 50px 0; } }
+@media (min-width: 800px) {
+  .tile-list .half-horizontal .tile-text {
+    padding: 10px; }
+  .tile-list .tile-text {
+    padding: 10px; } }
 @media (min-width: 960px) {
   .tile-list .tile-text {
     font: 300 15px/18px "Open Sans", sans-serif;
@@ -136,7 +150,10 @@
     padding-right: 20px; }
   .tile-list .icon-with-list .tile-text {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .tile-list .half-horizontal .tile-text {
+    padding-left: 20px;
+    padding-right: 20px; } }
 @media (min-width: 1060px) {
   .tile-list .text-on-hover .tile-text {
     padding-bottom: 25px;

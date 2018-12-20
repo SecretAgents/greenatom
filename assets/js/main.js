@@ -4,7 +4,6 @@ $(document).ready(function(){
     loop: true,
     dots: true,
     nav: true,
-    autoHeight: true,
     navText: ""
   });
 

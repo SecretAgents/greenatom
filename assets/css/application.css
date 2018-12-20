@@ -2041,6 +2041,9 @@ h1 {
     float: none;
     display: table-cell; } }
 @media (min-width: 1060px) {
+  .container {
+    max-width: 1140px; }
+
   .navigation-list-item .submenu {
     width: auto; }
 
@@ -2071,9 +2074,6 @@ h1 {
   .header .top-menu-block .top-menu-list-item:hover .dropdown-header-block {
     display: block; } }
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1140px; }
-
   .header .top-menu-list .navigation {
     display: none; }
 
@@ -2327,10 +2327,6 @@ h1 {
     float: right;
     margin-right: 0;
     margin-bottom: 4.5454545455%; } }
-@media (min-width: 700px) {
-  .one-column {
-    max-width: 650px;
-    margin: 0 auto; } }
 @media (min-width: 800px) {
   .tile-list-wrapper .one-column {
     display: none; }
@@ -2394,19 +2390,19 @@ h1 {
         .tile-list .text-on-hover .short-description p:first-child {
           margin-top: 0; }
     .tile-list .text-on-hover:hover .tile-title {
-      display: block; }
-    .tile-list .tile-icon {
-      margin-bottom: 40px; }
-      .tile-list .tile-icon img {
-        max-width: none;
-        max-height: none; } }
+      display: block; } }
 @media (min-width: 960px) {
   .tile-list .icon-with-list .tile-text {
     width: 170px; }
   .tile-list .small-list .tile-title {
     top: 10px; }
   .tile-list .small-list .tile-text {
-    bottom: 20px; } }
+    bottom: 20px; }
+  .tile-list .tile-icon {
+    margin-bottom: 40px; }
+    .tile-list .tile-icon img {
+      max-width: none;
+      max-height: none; } }
 @media (min-width: 1200px) {
   .tile-list .small-list .tile-title {
     top: 15px; }
@@ -2464,15 +2460,17 @@ ul {
   width: 100%;
   box-shadow: 0px 0px 10px black; }
 
+.header-inner,
+.footer-main,
+.footer-bottom {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .additional-menu-wrapper .menu-open {
   background: #bed33f;
   border-radius: 50%;
   vertical-align: middle;
   text-align: center; }
-
-.container {
-  padding-left: 10px;
-  padding-right: 10px; }
 
 .additional-menu {
   font-weight: 400;
@@ -2523,6 +2521,10 @@ ul {
           color: #fff; }
       .additional-menu ul li a {
         color: #000; }
+
+.main-page-content {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .content-wrapper {
   background-color: #fff;
@@ -3002,6 +3004,16 @@ ul {
   .additional-menu {
     padding: 20px 90px 20px 0px; } }
 @media (min-width: 600px) {
+  .main-page-content {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 15px;
+    padding-right: 15px; }
+
   .media-content-wrapper {
     padding: 60px 15px; }
 
@@ -3028,6 +3040,16 @@ ul {
     padding-left: 15px;
     padding-right: 15px; } }
 @media (min-width: 700px) {
+  .main-page-content {
+    padding-left: 75px;
+    padding-right: 75px; }
+
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 75px;
+    padding-right: 75px; }
+
   .content-wrapper .page-content {
     padding-left: 75px;
     padding-right: 75px; }
@@ -3057,9 +3079,15 @@ ul {
     padding-left: 7.326007326%;
     padding-right: 3.1135531136%; } }
 @media (min-width: 720px) {
-  .container {
-    padding-left: 75px;
-    padding-right: 75px; }
+  .main-page-content {
+    padding-left: 60px;
+    padding-right: 60px; }
+
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px; }
 
   .media-content-wrapper {
     padding: 60px 75px; }
@@ -3075,6 +3103,12 @@ ul {
     padding-left: 25px;
     padding-right: 25px; } }
 @media (min-width: 960px) {
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px; }
+
   .media-content-wrapper {
     padding: 65px 60px; }
 
@@ -3160,10 +3194,6 @@ ul {
   .main-slider .slider-image-right {
     text-align: left; } }
 @media (min-width: 1060px) {
-  .container {
-    padding-left: 65px;
-    padding-right: 65px; }
-
   .header .top-menu-block .navigation-list-item {
     text-transform: uppercase;
     vertical-align: middle;
@@ -3204,6 +3234,12 @@ ul {
   .header .top-menu-block .top-menu-list .dropdown-header-block span {
     font: 300 24px/28px "Open Sans", sans-serif; } }
 @media (min-width: 1200px) {
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 0;
+    padding-right: 0; }
+
   .main-content {
     padding-bottom: 85px; }
 
@@ -3284,11 +3320,15 @@ ul {
     padding-left: 0;
     padding-top: 0; }
 .tile-list .half-horizontal .tile-text {
-  padding-top: 25px;
+  padding: 5px;
   background: #fff; }
   .tile-list .half-horizontal .tile-text p {
     margin-bottom: 5px;
     margin-top: 5px; }
+  .tile-list .half-horizontal .tile-text .date-block {
+    padding-left: 20px;
+    font-weight: 600;
+    background: url(../images/icon-calendar.png) no-repeat 0 center; }
 .tile-list .slider {
   background: #fff; }
   .tile-list .slider .tile-title {
@@ -3310,8 +3350,7 @@ ul {
 .tile-list .small-list .tile-text {
   padding-left: 15px; }
 .tile-list .text-on-hover .tile-text {
-  padding-bottom: 10px;
-  padding-top: 10px; }
+  padding: 10px; }
 .tile-list .text-on-hover.big .tile-text {
   background: #fff; }
 .tile-list .text-on-hover .tile-title {
@@ -3348,10 +3387,21 @@ ul {
     padding-left: 25px;
     text-indent: -15px; }
   .tile-list .text-on-hover .tile-title::before {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .tile-list .half-horizontal .tile-text {
+    padding: 10px; } }
 @media (min-width: 720px) {
+  .tile-list .text-on-hover .tile-text {
+    padding: 30px 50px; }
   .tile-list .text-on-hover .tile-title::before {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .tile-list .half-horizontal .tile-text {
+    padding: 30px 50px 0; } }
+@media (min-width: 800px) {
+  .tile-list .half-horizontal .tile-text {
+    padding: 10px; }
+  .tile-list .tile-text {
+    padding: 10px; } }
 @media (min-width: 960px) {
   .tile-list .tile-text {
     font: 300 15px/18px "Open Sans", sans-serif;
@@ -3360,7 +3410,10 @@ ul {
     padding-right: 20px; }
   .tile-list .icon-with-list .tile-text {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .tile-list .half-horizontal .tile-text {
+    padding-left: 20px;
+    padding-right: 20px; } }
 @media (min-width: 1060px) {
   .tile-list .text-on-hover .tile-text {
     padding-bottom: 25px;

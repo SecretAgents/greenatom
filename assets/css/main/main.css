@@ -51,15 +51,17 @@ ul {
   width: 100%;
   box-shadow: 0px 0px 10px black; }
 
+.header-inner,
+.footer-main,
+.footer-bottom {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .additional-menu-wrapper .menu-open {
   background: #bed33f;
   border-radius: 50%;
   vertical-align: middle;
   text-align: center; }
-
-.container {
-  padding-left: 10px;
-  padding-right: 10px; }
 
 .additional-menu {
   font-weight: 400;
@@ -110,6 +112,10 @@ ul {
           color: #fff; }
       .additional-menu ul li a {
         color: #000; }
+
+.main-page-content {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .content-wrapper {
   background-color: #fff;
@@ -589,6 +595,16 @@ ul {
   .additional-menu {
     padding: 20px 90px 20px 0px; } }
 @media (min-width: 600px) {
+  .main-page-content {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 15px;
+    padding-right: 15px; }
+
   .media-content-wrapper {
     padding: 60px 15px; }
 
@@ -615,6 +631,16 @@ ul {
     padding-left: 15px;
     padding-right: 15px; } }
 @media (min-width: 700px) {
+  .main-page-content {
+    padding-left: 75px;
+    padding-right: 75px; }
+
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 75px;
+    padding-right: 75px; }
+
   .content-wrapper .page-content {
     padding-left: 75px;
     padding-right: 75px; }
@@ -644,9 +670,15 @@ ul {
     padding-left: 7.326007326%;
     padding-right: 3.1135531136%; } }
 @media (min-width: 720px) {
-  .container {
-    padding-left: 75px;
-    padding-right: 75px; }
+  .main-page-content {
+    padding-left: 60px;
+    padding-right: 60px; }
+
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px; }
 
   .media-content-wrapper {
     padding: 60px 75px; }
@@ -662,6 +694,12 @@ ul {
     padding-left: 25px;
     padding-right: 25px; } }
 @media (min-width: 960px) {
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px; }
+
   .media-content-wrapper {
     padding: 65px 60px; }
 
@@ -747,10 +785,6 @@ ul {
   .main-slider .slider-image-right {
     text-align: left; } }
 @media (min-width: 1060px) {
-  .container {
-    padding-left: 65px;
-    padding-right: 65px; }
-
   .header .top-menu-block .navigation-list-item {
     text-transform: uppercase;
     vertical-align: middle;
@@ -791,6 +825,12 @@ ul {
   .header .top-menu-block .top-menu-list .dropdown-header-block span {
     font: 300 24px/28px "Open Sans", sans-serif; } }
 @media (min-width: 1200px) {
+  .header-inner,
+  .footer-main,
+  .footer-bottom {
+    padding-left: 0;
+    padding-right: 0; }
+
   .main-content {
     padding-bottom: 85px; }
 

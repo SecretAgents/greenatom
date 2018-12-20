@@ -1123,6 +1123,9 @@ h1 {
     float: none;
     display: table-cell; } }
 @media (min-width: 1060px) {
+  .container {
+    max-width: 1140px; }
+
   .navigation-list-item .submenu {
     width: auto; }
 
@@ -1153,9 +1156,6 @@ h1 {
   .header .top-menu-block .top-menu-list-item:hover .dropdown-header-block {
     display: block; } }
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1140px; }
-
   .header .top-menu-list .navigation {
     display: none; }
 

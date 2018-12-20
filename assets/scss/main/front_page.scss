@@ -80,11 +80,16 @@
 
   .half-horizontal {
     .tile-text {
-      padding-top: 25px;
+      padding: 5px;
       background: $white;
       p {
         margin-bottom: 5px;
         margin-top: 5px;
+      }
+      .date-block {
+        padding-left: 20px;
+        font-weight: 600;
+        background: url(../images/icon-calendar.png) no-repeat 0 center;
       }
     }
   }
@@ -130,8 +135,7 @@
 
   .text-on-hover {
     .tile-text {
-      padding-bottom: 10px;
-      padding-top: 10px;
+      padding: 10px;
     }
     &.big {
       .tile-text {
@@ -199,19 +203,44 @@
         font-size: 18px;
       }
     }
+    .half-horizontal {
+      .tile-text {
+        padding: 10px;
+      }
+    }
   }
 }
 
 @include susy-breakpoint(720px, 6) {
   .tile-list {
     .text-on-hover {
+      .tile-text {
+        padding: 30px 50px;
+      }
       .tile-title::before {
         font-size: 24px;
+      }
+    }
+    .half-horizontal {
+      .tile-text {
+        padding: 30px 50px 0;
       }
     }
   }
 }
 
+@include susy-breakpoint(800px, 6) {
+  .tile-list {
+    .half-horizontal {
+      .tile-text {
+        padding: 10px;
+      }
+    }
+    .tile-text {
+      padding: 10px;
+    }
+  }
+}
 
 @include susy-breakpoint(960px, 12) {
   .tile-list {
@@ -226,6 +255,13 @@
       .tile-text {
         padding-left: 0;
         padding-right: 0;
+      }
+    }
+
+    .half-horizontal {
+      .tile-text {
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
   }

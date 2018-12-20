@@ -1566,6 +1566,9 @@ h1 {
 }
 
 @include susy-breakpoint(1060px, 12) {
+  .container {
+    max-width: 1140px;
+  }
   .navigation-list-item {
     .submenu {
       width: auto;
@@ -1620,9 +1623,6 @@ h1 {
 }
 
 @include breakpoint(1200px, 12) {
-  .container {
-    max-width: 1140px;
-  }
   //header styles
   .header {
     .top-menu-list {
