@@ -432,6 +432,8 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #000; }
     .header .top-menu-list .dropdown-header-block a {
       color: #000; }
+      .header .top-menu-list .dropdown-header-block a:hover {
+        text-decoration: underline; }
     .header .top-menu-list .dropdown-header-block ul ul {
       padding-left: 10px; }
     .header .top-menu-list .dropdown-header-block .sitemap-column > ul > li > a {

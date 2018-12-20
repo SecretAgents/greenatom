@@ -632,6 +632,9 @@ input[type="search"]::-webkit-search-results-decoration {
       color: $black;
       a {
         color: $black;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       ul {
         ul {
