@@ -19,7 +19,6 @@
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
-node_modules/
 .sass-cache/
 # Gradle
 .idea/**/gradle.xml
