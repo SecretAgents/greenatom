@@ -137,19 +137,9 @@
   display: block;
   position: absolute;
   bottom: 0; }
-.tile-list .text-on-hover:hover .blue-back,
-.tile-list .text-on-hover:hover .cyan-back {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 98%;
-  height: 100%; }
 .tile-list .tile-text {
   display: none;
   box-sizing: border-box; }
-.tile-list .blue-back,
-.tile-list .cyan-back {
-  display: none; }
 .tile-list .tile-title {
   position: absolute;
   top: 0; }

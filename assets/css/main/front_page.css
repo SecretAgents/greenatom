@@ -109,10 +109,6 @@
   text-align: left; }
   .tile-list .tile-text .short-description p {
     margin-top: 10px; }
-.tile-list .blue-back {
-  background-color: #216c8a; }
-.tile-list .cyan-back {
-  background-color: #16b9b7; }
 
 .clients-list .clients-list-item {
   text-align: center;
