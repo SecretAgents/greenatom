@@ -982,7 +982,7 @@ h1 {
   width: auto; }
 
 .main-table {
-  overflow-x: scroll; }
+  overflow-x: auto; }
 
 .width-100 {
   width: 100%; }
