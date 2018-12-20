@@ -321,36 +321,30 @@ h1 {
     position: absolute;
   }
   .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: $white;
-    a {
-      position: absolute;
-      width: 20px;
-      height: 20px;
+    //width: 10px;
+    //height: 10px;
+    //border-radius: 50%;
+    //background: $white;
+    .circle-inner {
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $white;
+      border: 1px solid $white;
     }
     &:hover {
       .circle-inner {
-        display: block;
+        background: $green;
       }
     }
-  }
-  .circle-inner {
-    margin-top: 1px;
-    margin-left: 1px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: $green;
-    display: none;
   }
   .podolsk {
     top: 54%;
     &:hover {
       + .podolsk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -365,7 +359,7 @@ h1 {
     &:hover {
       + .elektrostal-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -380,7 +374,7 @@ h1 {
     &:hover {
       + .moskow-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -395,7 +389,7 @@ h1 {
     &:hover {
       + .vladimir-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -410,7 +404,7 @@ h1 {
     &:hover {
       + .piter-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -425,7 +419,7 @@ h1 {
     &:hover {
       + .petrozavodsk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -440,7 +434,7 @@ h1 {
     &:hover {
       + .murmansk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -455,7 +449,7 @@ h1 {
     &:hover {
       + .kovrov-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -470,7 +464,7 @@ h1 {
     &:hover {
       + .novgorod-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -485,7 +479,7 @@ h1 {
     &:hover {
       + .glazov-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -500,7 +494,7 @@ h1 {
     &:hover {
       + .sarov-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -515,7 +509,7 @@ h1 {
     &:hover {
       + .zarechniy-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -530,7 +524,7 @@ h1 {
     &:hover {
       + .seversk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -545,7 +539,7 @@ h1 {
     &:hover {
       + .angarsk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -560,7 +554,7 @@ h1 {
     &:hover {
       + .krasnokamensk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -575,7 +569,7 @@ h1 {
     &:hover {
       + .zelenogorsk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -590,7 +584,7 @@ h1 {
     &:hover {
       + .zheleznogorsk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -605,7 +599,7 @@ h1 {
     &:hover {
       + .novosibirsk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -620,7 +614,7 @@ h1 {
     &:hover {
       + .ekatirenburg-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -635,7 +629,7 @@ h1 {
     &:hover {
       + .novouralsk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -650,7 +644,7 @@ h1 {
     &:hover {
       + .dimitrovgrad-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }
@@ -665,7 +659,7 @@ h1 {
     &:hover {
       + .volgodosk-circle {
         .circle-inner {
-          display: block;
+          background: $green;
         }
       }
     }

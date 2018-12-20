@@ -1158,29 +1158,19 @@ h1 {
     margin: 0 auto 70px; }
   .subsidiary-map .map-item {
     position: absolute; }
-  .subsidiary-map .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #fff; }
-    .subsidiary-map .circle a {
-      position: absolute;
-      width: 20px;
-      height: 20px; }
-    .subsidiary-map .circle:hover .circle-inner {
-      display: block; }
-  .subsidiary-map .circle-inner {
-    margin-top: 1px;
-    margin-left: 1px;
+  .subsidiary-map .circle .circle-inner {
+    display: block;
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #bed33f;
-    display: none; }
+    background: #fff;
+    border: 1px solid #fff; }
+  .subsidiary-map .circle:hover .circle-inner {
+    background: #bed33f; }
   .subsidiary-map .podolsk {
     top: 54%; }
     .subsidiary-map .podolsk:hover + .podolsk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .podolsk-circle {
     top: 57%;
     left: 25%; }
@@ -1188,7 +1178,7 @@ h1 {
     top: 45%;
     left: 1%; }
     .subsidiary-map .elektrostal:hover + .elektrostal-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .elektrostal-circle {
     top: 55%;
     left: 21%; }
@@ -1196,7 +1186,7 @@ h1 {
     top: 35%;
     left: 3%; }
     .subsidiary-map .moskow:hover + .moskow-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .moskow-circle {
     top: 53%;
     left: 24%; }
@@ -1204,7 +1194,7 @@ h1 {
     top: 28%;
     left: 5%; }
     .subsidiary-map .vladimir:hover + .vladimir-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .vladimir-circle {
     top: 49%;
     left: 24%; }
@@ -1212,7 +1202,7 @@ h1 {
     top: 21%;
     left: 7%; }
     .subsidiary-map .piter:hover + .piter-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .piter-circle {
     top: 43%;
     left: 23%; }
@@ -1220,7 +1210,7 @@ h1 {
     top: 14%;
     left: 19%; }
     .subsidiary-map .petrozavodsk:hover + .petrozavodsk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .petrozavodsk-circle {
     top: 40%;
     left: 24%; }
@@ -1228,7 +1218,7 @@ h1 {
     top: 7%;
     left: 31%; }
     .subsidiary-map .murmansk:hover + .murmansk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .murmansk-circle {
     top: 32%;
     left: 29%; }
@@ -1236,7 +1226,7 @@ h1 {
     top: 24%;
     left: 33%; }
     .subsidiary-map .kovrov:hover + .kovrov-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .kovrov-circle {
     top: 52%;
     left: 26%; }
@@ -1244,7 +1234,7 @@ h1 {
     top: 7%;
     left: 43%; }
     .subsidiary-map .novgorod:hover + .novgorod-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .novgorod-circle {
     top: 51%;
     left: 29%; }
@@ -1252,7 +1242,7 @@ h1 {
     top: 27%;
     left: 45%; }
     .subsidiary-map .glazov:hover + .glazov-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .glazov-circle {
     top: 56%;
     left: 28%; }
@@ -1260,7 +1250,7 @@ h1 {
     top: 49%;
     left: 36%; }
     .subsidiary-map .sarov:hover + .sarov-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .sarov-circle {
     top: 60%;
     left: 27%; }
@@ -1268,7 +1258,7 @@ h1 {
     top: 43%;
     left: 50%; }
     .subsidiary-map .zarechniy:hover + .zarechniy-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .zarechniy-circle {
     top: 57%;
     left: 45%; }
@@ -1276,7 +1266,7 @@ h1 {
     top: 54%;
     left: 53%; }
     .subsidiary-map .seversk:hover + .seversk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .seversk-circle {
     top: 69%;
     left: 46%; }
@@ -1284,7 +1274,7 @@ h1 {
     top: 61%;
     left: 62%; }
     .subsidiary-map .angarsk:hover + .angarsk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .angarsk-circle {
     top: 76%;
     left: 58%; }
@@ -1292,7 +1282,7 @@ h1 {
     top: 88%;
     left: 72%; }
     .subsidiary-map .krasnokamensk:hover + .krasnokamensk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .krasnokamensk-circle {
     top: 77%;
     left: 68%; }
@@ -1300,7 +1290,7 @@ h1 {
     bottom: 0;
     left: 64%; }
     .subsidiary-map .zelenogorsk:hover + .zelenogorsk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .zelenogorsk-circle {
     bottom: 25%;
     left: 53%; }
@@ -1308,7 +1298,7 @@ h1 {
     bottom: 3%;
     left: 49%; }
     .subsidiary-map .zheleznogorsk:hover + .zheleznogorsk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .zheleznogorsk-circle {
     top: 72%;
     left: 48%; }
@@ -1316,7 +1306,7 @@ h1 {
     bottom: -4%;
     left: 41%; }
     .subsidiary-map .novosibirsk:hover + .novosibirsk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .novosibirsk-circle {
     top: 73%;
     left: 44%; }
@@ -1324,7 +1314,7 @@ h1 {
     bottom: 15%;
     left: 26%; }
     .subsidiary-map .ekatirenburg:hover + .ekatirenburg-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .ekatirenburg-circle {
     top: 58%;
     left: 35%; }
@@ -1332,7 +1322,7 @@ h1 {
     bottom: 7%;
     left: 14%; }
     .subsidiary-map .novouralsk:hover + .novouralsk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .novouralsk-circle {
     top: 63%;
     left: 32%; }
@@ -1340,7 +1330,7 @@ h1 {
     bottom: 15%;
     left: 0; }
     .subsidiary-map .dimitrovgrad:hover + .dimitrovgrad-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .dimitrovgrad-circle {
     top: 67%;
     left: 26%; }
@@ -1348,7 +1338,7 @@ h1 {
     bottom: 27%;
     left: -1%; }
     .subsidiary-map .volgodosk:hover + .volgodosk-circle .circle-inner {
-      display: block; }
+      background: #bed33f; }
   .subsidiary-map .volgodosk-circle {
     top: 68%;
     left: 19%; }
